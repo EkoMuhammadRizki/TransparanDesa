@@ -1,7 +1,7 @@
 'use client'
 
 import Link from 'next/link'
-import { Bell, LogOut } from 'lucide-react'
+import { LogOut } from 'lucide-react'
 import { Logo } from '@/components/logo'
 import Swal from 'sweetalert2'
 
@@ -45,26 +45,27 @@ export function AppHeader() {
 
 
         {/* Right User Actions */}
-        <div className="flex items-center gap-3">
-          <button className="relative flex size-8 items-center justify-center rounded-lg text-muted-foreground hover:bg-muted hover:text-foreground transition-colors">
-            <Bell className="size-4" />
-            <span className="absolute top-1 right-1 size-2 rounded-full bg-terracotta" />
-          </button>
-
-          <div className="flex items-center gap-2.5 rounded-lg border border-border bg-card px-3 py-1.5">
-            <div className="flex size-7 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold">
+        <div className="flex items-center gap-2.5 sm:gap-3">
+          <Link
+            href="/profil"
+            title="Buka Profil Pengguna"
+            className="flex items-center gap-2.5 rounded-xl border border-border bg-card px-3 py-1.5 hover:border-primary/50 hover:bg-muted/60 transition-all shadow-2xs group cursor-pointer"
+          >
+            <div className="flex size-7 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-xs group-hover:scale-105 transition-transform">
               {user.nama[0]}
             </div>
-            <div className="hidden sm:block">
-              <p className="text-xs font-semibold text-foreground leading-none">{user.nama}</p>
+            <div className="hidden sm:block text-left">
+              <p className="text-xs font-semibold text-foreground group-hover:text-primary transition-colors leading-none">
+                {user.nama}
+              </p>
               <p className="text-[10px] text-muted-foreground">{user.peran}</p>
             </div>
-          </div>
+          </Link>
 
           <button
             type="button"
             onClick={handleLogout}
-            className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-card hover:bg-muted px-2.5 py-1.5 text-xs font-medium text-muted-foreground hover:text-terracotta transition-colors cursor-pointer"
+            className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-card hover:bg-muted hover:border-rose-300 px-2.5 py-1.5 text-xs font-medium text-muted-foreground hover:text-rose-600 transition-colors cursor-pointer shadow-2xs"
           >
             <LogOut className="size-3.5" />
             <span className="hidden sm:inline">Keluar</span>
