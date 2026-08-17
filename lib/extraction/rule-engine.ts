@@ -147,32 +147,52 @@ export function runValidationRules(doc: APBDesDocExtract): ValidationReport {
     }
   })
 
-  // R4: Duplicate Item Detection
+  // R4: Duplicate Item Detection (Context-Aware Siskeudes)
+  // Duplikasi SEJATI = (Kode Rekening sama DAN Nominal Anggaran sama DAN Uraian sama)
+  const flaggedDuplicatePairs = new Set<string>()
   for (let i = 0; i < doc.items.length; i++) {
     for (let j = i + 1; j < doc.items.length; j++) {
       const itemA = doc.items[i]
       const itemB = doc.items[j]
 
-      // Cek duplikasi kode rekening yang persis
-      const isSameCode = Boolean(itemA.kode_rekening && itemB.kode_rekening && itemA.kode_rekening === itemB.kode_rekening)
-      
-      // Cek kesamaan uraian fuzzy (> 90%) dan nominal identik
-      const similarity = calculateSimilarity(itemA.uraian || '', itemB.uraian || '')
-      const isSameAmount = itemA.nominal_anggaran === itemB.nominal_anggaran
+      // Jika kode rekening berbeda, ini jelas pos sah di sub-bidang/kegiatan lain
+      if (itemA.kode_rekening && itemB.kode_rekening && itemA.kode_rekening.trim() !== itemB.kode_rekening.trim()) {
+        continue
+      }
 
-      if (isSameCode || (similarity >= 0.90 && isSameAmount)) {
+      const isSameAmount = itemA.nominal_anggaran === itemB.nominal_anggaran
+      // Jika nominal berbeda, ini adalah pos belanja di kegiatan berbeda (misal belanja perlengkapan Posyandu vs Kantor)
+      if (!isSameAmount) {
+        continue
+      }
+
+      const similarity = calculateSimilarity(itemA.uraian || '', itemB.uraian || '')
+      const isSameCode = Boolean(
+        itemA.kode_rekening &&
+        itemB.kode_rekening &&
+        itemA.kode_rekening.trim() === itemB.kode_rekening.trim()
+      )
+      
+      const pairKey = `${minIdx(i, j)}-${maxIdx(i, j)}`
+
+      // Flag HANYA jika nominal sama DAN (kode rekening sama ATAU uraian identik persis >= 98%)
+      if (!flaggedDuplicatePairs.has(pairKey) && isSameAmount && (isSameCode || similarity >= 0.98)) {
+        flaggedDuplicatePairs.add(pairKey)
         logs.push({
           rule_code: 'R4_DUPLICATE_ITEM',
           is_passed: false,
-          penalty_score: 0.15,
+          penalty_score: 0.05,
           error_message: `Potensi duplikasi antara Item #${i + 1} ("${itemA.uraian}") dan Item #${j + 1} ("${itemB.uraian}") dengan nominal Rp ${itemA.nominal_anggaran.toLocaleString('id-ID')}.`,
           affected_item_index: j,
         })
         warningCount++
-        totalPenalty += 0.15
+        totalPenalty += 0.05
       }
     }
   }
+
+  function minIdx(a: number, b: number) { return a < b ? a : b }
+  function maxIdx(a: number, b: number) { return a > b ? a : b }
 
   // R5: Missing Field Detection
   doc.items.forEach((item, idx) => {

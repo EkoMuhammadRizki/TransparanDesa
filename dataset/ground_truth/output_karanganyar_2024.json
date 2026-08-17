@@ -2,768 +2,4009 @@
   "file_name": "1737009663369277.pdf",
   "page_count": 9,
   "extracted_data": {
-    "nama_desa": "Karanganyar",
-    "kabupaten": null,
-    "provinsi": null,
+    "nama_desa": "Desa Pemerintah Desa Karanganyar",
+    "kabupaten": "Kabupaten (Auto-detected)",
+    "provinsi": "Provinsi (Auto-detected)",
     "tahun_anggaran": 2024,
-    "total_pendapatan": 2029831300,
-    "total_belanja": 2120883519,
-    "total_pembiayaan": 91052219,
+    "total_pendapatan": 15916163050,
+    "total_belanja": 15916163050,
+    "total_pembiayaan": 0,
     "items": [
       {
-        "kode_rekening": "5.1.1.01",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Penghasilan Tetap Kepala Desa",
-        "nominal_anggaran": 48620000,
-        "nominal_realisasi": 48620000
+        "kode_rekening": "4.1.",
+        "kategori": "Lainnya",
+        "uraian": "Pendapatan Asli Desa",
+        "nominal_anggaran": 34201300,
+        "nominal_realisasi": 29071105
       },
       {
-        "kode_rekening": "5.1.1.02",
+        "kode_rekening": "4.1.1.",
+        "kategori": "Lainnya",
+        "uraian": "Hasil Usaha Desa",
+        "nominal_anggaran": 7701300,
+        "nominal_realisasi": 6546105
+      },
+      {
+        "kode_rekening": "4.1.1.01.",
+        "kategori": "Lainnya",
+        "uraian": "Bagi Hasil BUMDes",
+        "nominal_anggaran": 7701300,
+        "nominal_realisasi": 6546105
+      },
+      {
+        "kode_rekening": "4.1.2.",
+        "kategori": "Lainnya",
+        "uraian": "Hasil Aset Desa",
+        "nominal_anggaran": 26500000,
+        "nominal_realisasi": 22525000
+      },
+      {
+        "kode_rekening": "4.1.2.01.",
+        "kategori": "Lainnya",
+        "uraian": "Pengelolaan Tanah Kas Desa",
+        "nominal_anggaran": 25000000,
+        "nominal_realisasi": 21250000
+      },
+      {
+        "kode_rekening": "4.1.2.99.",
+        "kategori": "Lainnya",
+        "uraian": "Lain-lain Hasil Aset Desa",
+        "nominal_anggaran": 1500000,
+        "nominal_realisasi": 1275000
+      },
+      {
+        "kode_rekening": "4.2.",
+        "kategori": "Lainnya",
+        "uraian": "Pendapatan Transfer",
+        "nominal_anggaran": 1995630000,
+        "nominal_realisasi": 1696285500
+      },
+      {
+        "kode_rekening": "4.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Dana Desa",
+        "nominal_anggaran": 1271714000,
+        "nominal_realisasi": 1080956900
+      },
+      {
+        "kode_rekening": "4.2.1.01.",
+        "kategori": "Lainnya",
+        "uraian": "Dana Desa",
+        "nominal_anggaran": 1271714000,
+        "nominal_realisasi": 1080956900
+      },
+      {
+        "kode_rekening": "4.2.2.",
+        "kategori": "Lainnya",
+        "uraian": "Bagi Hasil Pajak dan Retribusi",
+        "nominal_anggaran": 45549000,
+        "nominal_realisasi": 38716650
+      },
+      {
+        "kode_rekening": "4.2.2.01.",
+        "kategori": "Lainnya",
+        "uraian": "Bagi Hasil Pajak dan Retribusi Daerah Kabupaten/Kota",
+        "nominal_anggaran": 45549000,
+        "nominal_realisasi": 38716650
+      },
+      {
+        "kode_rekening": "4.2.3.",
+        "kategori": "Lainnya",
+        "uraian": "Alokasi Dana Desa",
+        "nominal_anggaran": 618367000,
+        "nominal_realisasi": 525611950
+      },
+      {
+        "kode_rekening": "4.2.3.01.",
+        "kategori": "Lainnya",
+        "uraian": "Alokasi Dana Desa",
+        "nominal_anggaran": 618367000,
+        "nominal_realisasi": 525611950
+      },
+      {
+        "kode_rekening": "4.2.5.",
+        "kategori": "Lainnya",
+        "uraian": "Bantuan Keuangan Kabupaten/Kota",
+        "nominal_anggaran": 60000000,
+        "nominal_realisasi": 51000000
+      },
+      {
+        "kode_rekening": "4.2.5.01.",
+        "kategori": "Lainnya",
+        "uraian": "Bantuan Keuangan dari APBD Kabupaten/Kota",
+        "nominal_anggaran": 60000000,
+        "nominal_realisasi": 51000000
+      },
+      {
+        "kode_rekening": "4.3.",
+        "kategori": "Lainnya",
+        "uraian": "Pendapatan Lain-lain 0,00",
+        "nominal_anggaran": 421303,
+        "nominal_realisasi": 358107
+      },
+      {
+        "kode_rekening": "4.3.6.",
+        "kategori": "Lainnya",
+        "uraian": "Bunga Bank 0,00",
+        "nominal_anggaran": 421303,
+        "nominal_realisasi": 358107
+      },
+      {
+        "kode_rekening": "4.3.6.01.",
+        "kategori": "Lainnya",
+        "uraian": "Bunga Bank 0,00",
+        "nominal_anggaran": 421303,
+        "nominal_realisasi": 358107
+      },
+      {
+        "kode_rekening": "1.1",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penyelenggaran Belanja Siltap, Tunjangan dan",
+        "nominal_anggaran": 691870569,
+        "nominal_realisasi": 588089983
+      },
+      {
+        "kode_rekening": "1.1.1",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penyediaan Penghasilan Tetap dan Tunjangan",
+        "nominal_anggaran": 67220000,
+        "nominal_realisasi": 57137000
+      },
+      {
+        "kode_rekening": "5.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pegawai",
+        "nominal_anggaran": 67220000,
+        "nominal_realisasi": 57137000
+      },
+      {
+        "kode_rekening": "5.1.1.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penghasilan Tetap dan Tunjangan Kepala Desa",
+        "nominal_anggaran": 67220000,
+        "nominal_realisasi": 57137000
+      },
+      {
+        "kode_rekening": "5.1.1.01.",
+        "kategori": "Lainnya",
+        "uraian": "Penghasilan Tetap Kepala Desa",
+        "nominal_anggaran": 48620000,
+        "nominal_realisasi": 41327000
+      },
+      {
+        "kode_rekening": "5.1.1.02.",
         "kategori": "Operasional Pemerintah Desa",
         "uraian": "Tunjangan Kepala Desa",
         "nominal_anggaran": 18600000,
-        "nominal_realisasi": 18600000
+        "nominal_realisasi": 15810000
       },
       {
-        "kode_rekening": "5.1.2.01",
+        "kode_rekening": "1.1.2",
         "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penyediaan Penghasilan Tetap dan Tunjangan",
+        "nominal_anggaran": 443888000,
+        "nominal_realisasi": 377304800
+      },
+      {
+        "kode_rekening": "5.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pegawai",
+        "nominal_anggaran": 443888000,
+        "nominal_realisasi": 377304800
+      },
+      {
+        "kode_rekening": "5.1.2.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penghasilan Tetap dan Tunjangan Perangkat Desa",
+        "nominal_anggaran": 443888000,
+        "nominal_realisasi": 377304800
+      },
+      {
+        "kode_rekening": "5.1.2.01.",
+        "kategori": "Lainnya",
         "uraian": "Penghasilan Tetap Perangkat Desa",
         "nominal_anggaran": 320138000,
-        "nominal_realisasi": 320138000
+        "nominal_realisasi": 272117300
       },
       {
-        "kode_rekening": "5.1.2.02",
+        "kode_rekening": "5.1.2.02.",
         "kategori": "Operasional Pemerintah Desa",
         "uraian": "Tunjangan Perangkat Desa",
         "nominal_anggaran": 123750000,
-        "nominal_realisasi": 123750000
+        "nominal_realisasi": 105187500
       },
       {
-        "kode_rekening": "5.1.3.01",
-        "kategori": "Operasional Pemerintah Desa",
+        "kode_rekening": "1.1.3",
+        "kategori": "Lainnya",
+        "uraian": "Penyediaan Jaminan Sosial bagi Kepala Desa",
+        "nominal_anggaran": 38256000,
+        "nominal_realisasi": 32517600
+      },
+      {
+        "kode_rekening": "5.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pegawai",
+        "nominal_anggaran": 38256000,
+        "nominal_realisasi": 32517600
+      },
+      {
+        "kode_rekening": "5.1.3.",
+        "kategori": "Lainnya",
+        "uraian": "Jaminan Sosial Kepala Desa dan Perangkat Desa",
+        "nominal_anggaran": 38256000,
+        "nominal_realisasi": 32517600
+      },
+      {
+        "kode_rekening": "5.1.3.01.",
+        "kategori": "Kesehatan",
         "uraian": "Jaminan Kesehatan Kepala Desa",
         "nominal_anggaran": 2244000,
-        "nominal_realisasi": 2244000
+        "nominal_realisasi": 1907400
       },
       {
-        "kode_rekening": "5.1.3.02",
-        "kategori": "Operasional Pemerintah Desa",
+        "kode_rekening": "5.1.3.02.",
+        "kategori": "Kesehatan",
         "uraian": "Jaminan Kesehatan Perangkat Desa",
         "nominal_anggaran": 14775600,
-        "nominal_realisasi": 14775600
+        "nominal_realisasi": 12559260
       },
       {
-        "kode_rekening": "5.1.3.03",
-        "kategori": "Operasional Pemerintah Desa",
+        "kode_rekening": "5.1.3.03.",
+        "kategori": "Lainnya",
         "uraian": "Jaminan Ketenagakerjaan Kepala Desa",
         "nominal_anggaran": 2800200,
-        "nominal_realisasi": 2800200
+        "nominal_realisasi": 2380170
       },
       {
-        "kode_rekening": "5.1.3.04",
-        "kategori": "Operasional Pemerintah Desa",
+        "kode_rekening": "5.1.3.04.",
+        "kategori": "Lainnya",
         "uraian": "Jaminan Ketenagakerjaan Perangkat Desa",
         "nominal_anggaran": 18436200,
-        "nominal_realisasi": 17908200
+        "nominal_realisasi": 15670770
       },
       {
-        "kode_rekening": "5.2.1.01",
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 28326569,
+        "nominal_realisasi": 24077583
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 11834736,
+        "nominal_realisasi": 10059525
+      },
+      {
+        "kode_rekening": "5.2.1.01.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Operasional Pemdes",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos",
         "nominal_anggaran": 4103000,
-        "nominal_realisasi": 4103000
+        "nominal_realisasi": 3487550
       },
       {
-        "kode_rekening": "5.2.1.03",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Perlengkapan Alat Rumah Tangga dan Bahan Kebersihan",
-        "nominal_anggaran": 689936,
-        "nominal_realisasi": 615000
-      },
-      {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Operasional Pemdes",
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
         "nominal_anggaran": 1201800,
-        "nominal_realisasi": 1201800
+        "nominal_realisasi": 1021530
       },
       {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Operasional Pemdes",
-        "nominal_anggaran": 2840000,
-        "nominal_realisasi": 1920000
-      },
-      {
-        "kode_rekening": "5.2.1.09",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut - Operasional Pemdes",
+        "kode_rekening": "5.2.1.09.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut",
         "nominal_anggaran": 3000000,
-        "nominal_realisasi": 3000000
+        "nominal_realisasi": 2550000
       },
       {
-        "kode_rekening": "5.2.2.99",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Jasa Honorarium Lainnya - Operasional Pemdes",
+        "kode_rekening": "5.2.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium",
         "nominal_anggaran": 3000000,
-        "nominal_realisasi": 3000000
+        "nominal_realisasi": 2550000
       },
       {
-        "kode_rekening": "5.2.3.01",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Operasional Pemdes",
+        "kode_rekening": "5.2.2.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium Lainnya",
+        "nominal_anggaran": 3000000,
+        "nominal_realisasi": 2550000
+      },
+      {
+        "kode_rekening": "5.2.3.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas",
         "nominal_anggaran": 8550000,
-        "nominal_realisasi": 5000000
+        "nominal_realisasi": 7267500
       },
       {
-        "kode_rekening": "5.2.5.01",
+        "kode_rekening": "5.2.3.01.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota",
+        "nominal_anggaran": 8550000,
+        "nominal_realisasi": 7267500
+      },
+      {
+        "kode_rekening": "5.2.5.",
         "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran",
+        "nominal_anggaran": 4436833,
+        "nominal_realisasi": 3771308
+      },
+      {
+        "kode_rekening": "5.2.5.01.",
+        "kategori": "Lainnya",
         "uraian": "Belanja Jasa Langganan Listrik",
         "nominal_anggaran": 4436833,
-        "nominal_realisasi": 2326000
+        "nominal_realisasi": 3771308
       },
       {
-        "kode_rekening": "5.2.5.99",
+        "kode_rekening": "5.2.5.99.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Operasional Perkantoran lainnya - Operasional Pemdes",
-        "nominal_anggaran": 0,
-        "nominal_realisasi": 84260
+        "uraian": "Belanja Operasional Perkantoran lainnya 0,00",
+        "nominal_anggaran": 84260,
+        "nominal_realisasi": 71621
       },
       {
-        "kode_rekening": "5.2.6.02",
-        "kategori": "Operasional Pemerintah Desa",
+        "kode_rekening": "5.2.6.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pemeliharaan",
+        "nominal_anggaran": 505000,
+        "nominal_realisasi": 429250
+      },
+      {
+        "kode_rekening": "5.2.6.02.",
+        "kategori": "Lainnya",
         "uraian": "Belanja Pemeliharaan Kendaraan Bermotor",
         "nominal_anggaran": 505000,
-        "nominal_realisasi": 488000
+        "nominal_realisasi": 429250
       },
       {
-        "kode_rekening": "5.1.4.01",
+        "kode_rekening": "1.1.5",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penyediaan Tunjangan BPD",
+        "nominal_anggaran": 33300000,
+        "nominal_realisasi": 28305000
+      },
+      {
+        "kode_rekening": "5.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pegawai",
+        "nominal_anggaran": 33300000,
+        "nominal_realisasi": 28305000
+      },
+      {
+        "kode_rekening": "5.1.4.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Tunjangan BPD",
+        "nominal_anggaran": 33300000,
+        "nominal_realisasi": 28305000
+      },
+      {
+        "kode_rekening": "5.1.4.01.",
         "kategori": "Operasional Pemerintah Desa",
         "uraian": "Tunjangan Kedudukan BPD",
         "nominal_anggaran": 20700000,
-        "nominal_realisasi": 20700000
+        "nominal_realisasi": 17595000
       },
       {
-        "kode_rekening": "5.1.4.02",
+        "kode_rekening": "5.1.4.02.",
         "kategori": "Operasional Pemerintah Desa",
         "uraian": "Tunjangan Kinerja BPD",
         "nominal_anggaran": 12600000,
-        "nominal_realisasi": 12600000
+        "nominal_realisasi": 10710000
       },
       {
-        "kode_rekening": "5.2.5.08",
+        "kode_rekening": "1.1.7",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penyediaan Insentif/Operasional RT/RW",
+        "nominal_anggaran": 47880000,
+        "nominal_realisasi": 40698000
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 47880000,
+        "nominal_realisasi": 40698000
+      },
+      {
+        "kode_rekening": "5.2.5.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran",
+        "nominal_anggaran": 47880000,
+        "nominal_realisasi": 40698000
+      },
+      {
+        "kode_rekening": "5.2.5.08.",
         "kategori": "Operasional Pemerintah Desa",
         "uraian": "Belanja Insentif/Operasional RT/RW",
         "nominal_anggaran": 47880000,
-        "nominal_realisasi": 47520000
+        "nominal_realisasi": 40698000
       },
       {
-        "kode_rekening": "5.2.1.99",
+        "kode_rekening": "1.1.8",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Perlengkapan Lainnya - Operasional Dana Desa",
+        "uraian": "Penyediaan Operasional Pemerintah Desa yang",
         "nominal_anggaran": 33000000,
-        "nominal_realisasi": 32916000
+        "nominal_realisasi": 28050000
       },
       {
-        "kode_rekening": "5.2.6.04",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Pemeliharaan Bangunan Kantor Desa",
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 33000000,
+        "nominal_realisasi": 28050000
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 33000000,
+        "nominal_realisasi": 28050000
+      },
+      {
+        "kode_rekening": "5.2.1.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan Lainnya",
+        "nominal_anggaran": 33000000,
+        "nominal_realisasi": 28050000
+      },
+      {
+        "kode_rekening": "1.2",
+        "kategori": "Lainnya",
+        "uraian": "Penyediaan Sarana Prasarana Pemerintahan Desa",
+        "nominal_anggaran": 52140351,
+        "nominal_realisasi": 44319298
+      },
+      {
+        "kode_rekening": "1.2.3",
+        "kategori": "Lainnya",
+        "uraian": "Pembangunan/Rehabilitasi/Peningkatan",
+        "nominal_anggaran": 52140351,
+        "nominal_realisasi": 44319298
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
         "nominal_anggaran": 14315085,
-        "nominal_realisasi": 14056500
+        "nominal_realisasi": 12167822
       },
       {
-        "kode_rekening": "5.3.4.02",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Upah Tenaga Kerja Kantor Desa",
-        "nominal_anggaran": 893625,
-        "nominal_realisasi": 843750
+        "kode_rekening": "5.2.6.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pemeliharaan",
+        "nominal_anggaran": 14315085,
+        "nominal_realisasi": 12167822
       },
       {
-        "kode_rekening": "5.3.4.03",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Bahan Baku/Material Kantor Desa",
-        "nominal_anggaran": 14796791,
-        "nominal_realisasi": 14758125
+        "kode_rekening": "5.2.6.04.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pemeliharaan Bangunan",
+        "nominal_anggaran": 14315085,
+        "nominal_realisasi": 12167822
       },
       {
-        "kode_rekening": "5.3.5.02",
+        "kode_rekening": "5.3.",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal",
+        "nominal_anggaran": 37825266,
+        "nominal_realisasi": 32151476
+      },
+      {
+        "kode_rekening": "5.3.4.",
         "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja Prasarana Kantor Desa",
+        "uraian": "Belanja Modal Gedung, Bangunan dan Taman",
+        "nominal_anggaran": 15690416,
+        "nominal_realisasi": 13336853
+      },
+      {
+        "kode_rekening": "5.3.5.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan/Prasarana Jalan",
+        "nominal_anggaran": 22134850,
+        "nominal_realisasi": 18814622
+      },
+      {
+        "kode_rekening": "5.3.5.02.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja",
         "nominal_anggaran": 3117750,
-        "nominal_realisasi": 3075000
+        "nominal_realisasi": 2650087
       },
       {
-        "kode_rekening": "5.3.5.03",
+        "kode_rekening": "5.3.5.03.",
         "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Jalan - Bahan Baku/Material Prasarana Kantor Desa",
+        "uraian": "Belanja Modal Jalan - Bahan Baku/Material",
         "nominal_anggaran": 19017100,
-        "nominal_realisasi": 18995000
+        "nominal_realisasi": 16164535
       },
       {
-        "kode_rekening": "5.2.1.99",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Perlengkapan Lainnya - Pemutakhiran Profil Desa",
+        "kode_rekening": "1.3",
+        "kategori": "Lainnya",
+        "uraian": "Pengelolaan Administrasi Kependudukan,",
         "nominal_anggaran": 5000000,
-        "nominal_realisasi": 4000000
+        "nominal_realisasi": 4250000
       },
       {
-        "kode_rekening": "5.2.1.01",
+        "kode_rekening": "1.3.2",
+        "kategori": "Lainnya",
+        "uraian": "Penyusunan, Pendataan, dan Pemutakhiran",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "5.2.1.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan Lainnya",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "1.4",
+        "kategori": "Lainnya",
+        "uraian": "Penyelenggaraan Tata Praja Pemerintahan,",
+        "nominal_anggaran": 112436200,
+        "nominal_realisasi": 95570770
+      },
+      {
+        "kode_rekening": "1.4.1",
+        "kategori": "Lainnya",
+        "uraian": "Penyelenggaraan Musyawarah Perencanaan",
+        "nominal_anggaran": 9472500,
+        "nominal_realisasi": 8051625
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 9472500,
+        "nominal_realisasi": 8051625
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 9472500,
+        "nominal_realisasi": 8051625
+      },
+      {
+        "kode_rekening": "5.2.1.01.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Musrenbangdes",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos",
         "nominal_anggaran": 547500,
-        "nominal_realisasi": 547500
+        "nominal_realisasi": 465375
       },
       {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Musrenbangdes",
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
         "nominal_anggaran": 825000,
-        "nominal_realisasi": 805000
+        "nominal_realisasi": 701250
       },
       {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Musrenbangdes",
-        "nominal_anggaran": 8100000,
-        "nominal_realisasi": 5850000
+        "kode_rekening": "1.4.2",
+        "kategori": "Lainnya",
+        "uraian": "Penyelenggaraan Musyawaran Desa Lainnya",
+        "nominal_anggaran": 9667500,
+        "nominal_realisasi": 8217375
       },
       {
-        "kode_rekening": "5.2.1.01",
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 9667500,
+        "nominal_realisasi": 8217375
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 9667500,
+        "nominal_realisasi": 8217375
+      },
+      {
+        "kode_rekening": "5.2.1.01.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Musdes Non Reguler",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos",
         "nominal_anggaran": 592500,
-        "nominal_realisasi": 0
+        "nominal_realisasi": 503625
       },
       {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Musdes Non Reguler",
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
         "nominal_anggaran": 825000,
-        "nominal_realisasi": 0
+        "nominal_realisasi": 701250
       },
       {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Musdes Non Reguler",
-        "nominal_anggaran": 8250000,
-        "nominal_realisasi": 0
+        "kode_rekening": "1.4.3",
+        "kategori": "Lainnya",
+        "uraian": "Penyusunan Dokumen Perencanaan Desa",
+        "nominal_anggaran": 9202500,
+        "nominal_realisasi": 7822125
       },
       {
-        "kode_rekening": "5.2.1.01",
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 9202500,
+        "nominal_realisasi": 7822125
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 9202500,
+        "nominal_realisasi": 7822125
+      },
+      {
+        "kode_rekening": "5.2.1.01.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - RPJMDesa/RKPDesa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos",
         "nominal_anggaran": 277500,
-        "nominal_realisasi": 127500
+        "nominal_realisasi": 235875
       },
       {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - RPJMDesa/RKPDesa",
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
         "nominal_anggaran": 825000,
-        "nominal_realisasi": 280000
+        "nominal_realisasi": 701250
       },
       {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - RPJMDesa/RKPDesa",
-        "nominal_anggaran": 8100000,
-        "nominal_realisasi": 1950000
+        "kode_rekening": "1.4.8",
+        "kategori": "Lainnya",
+        "uraian": "Pengembangan Sistem Informasi Desa",
+        "nominal_anggaran": 45755000,
+        "nominal_realisasi": 38891750
       },
       {
-        "kode_rekening": "5.2.5.05",
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 26705000,
+        "nominal_realisasi": 22699250
+      },
+      {
+        "kode_rekening": "5.2.5.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Jasa Langganan Internet - Sistem Informasi Desa",
+        "uraian": "Belanja Operasional Perkantoran",
         "nominal_anggaran": 13200000,
-        "nominal_realisasi": 7517200
+        "nominal_realisasi": 11220000
       },
       {
-        "kode_rekening": "5.2.6.03",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Pemeliharaan Peralatan - Sistem Informasi Desa",
+        "kode_rekening": "5.2.5.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Langganan Internet",
+        "nominal_anggaran": 13200000,
+        "nominal_realisasi": 11220000
+      },
+      {
+        "kode_rekening": "5.2.6.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pemeliharaan",
+        "nominal_anggaran": 13505000,
+        "nominal_realisasi": 11479250
+      },
+      {
+        "kode_rekening": "5.2.6.03.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pemeliharaan Peralatan",
         "nominal_anggaran": 3405000,
-        "nominal_realisasi": 1900000
+        "nominal_realisasi": 2894250
       },
       {
-        "kode_rekening": "5.2.6.08",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Pemeliharaan Jaringan dan Instalasi",
-        "nominal_anggaran": 10100000,
-        "nominal_realisasi": 10100000
+        "kode_rekening": "5.3.",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal",
+        "nominal_anggaran": 19050000,
+        "nominal_realisasi": 16192500
       },
       {
-        "kode_rekening": "5.3.2.03",
-        "kategori": "Operasional Pemerintah Desa",
+        "kode_rekening": "5.3.2.03.",
+        "kategori": "Pemberdayaan Masyarakat",
         "uraian": "Belanja Modal Peralatan Komputer",
         "nominal_anggaran": 19050000,
-        "nominal_realisasi": 19050000
+        "nominal_realisasi": 16192500
       },
       {
-        "kode_rekening": "5.2.3.03",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Kursus Pelatihan Kerjasama Pemerintahan",
+        "kode_rekening": "1.4.9",
+        "kategori": "Lainnya",
+        "uraian": "Koordinasi/Kerjasama Penyelenggaraan",
+        "nominal_anggaran": 23338700,
+        "nominal_realisasi": 19837895
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 23338700,
+        "nominal_realisasi": 19837895
+      },
+      {
+        "kode_rekening": "5.2.3.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas",
         "nominal_anggaran": 18000000,
-        "nominal_realisasi": 1250000
+        "nominal_realisasi": 15300000
       },
       {
-        "kode_rekening": "5.2.5.99",
+        "kode_rekening": "5.2.3.03.",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Kursus Pelatihan",
+        "nominal_anggaran": 18000000,
+        "nominal_realisasi": 15300000
+      },
+      {
+        "kode_rekening": "5.2.5.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Operasional Perkantoran lainnya - Koordinasi Pemerintahan",
+        "uraian": "Belanja Operasional Perkantoran",
         "nominal_anggaran": 5338700,
-        "nominal_realisasi": 5338700
+        "nominal_realisasi": 4537895
       },
       {
-        "kode_rekening": "5.2.1.01",
+        "kode_rekening": "5.2.5.99.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Sosialisasi Pilkades/BPD",
+        "uraian": "Belanja Operasional Perkantoran lainnya",
+        "nominal_anggaran": 5338700,
+        "nominal_realisasi": 4537895
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 15000000,
+        "nominal_realisasi": 12750000
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 5390000,
+        "nominal_realisasi": 4581500
+      },
+      {
+        "kode_rekening": "5.2.1.01.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos",
         "nominal_anggaran": 555000,
-        "nominal_realisasi": 555000
+        "nominal_realisasi": 471750
       },
       {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Sosialisasi Pilkades/BPD",
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
         "nominal_anggaran": 335000,
-        "nominal_realisasi": 335000
+        "nominal_realisasi": 284750
       },
       {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Sosialisasi Pilkades/BPD",
-        "nominal_anggaran": 4500000,
-        "nominal_realisasi": 4500000
-      },
-      {
-        "kode_rekening": "5.2.2.99",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Jasa Honorarium Lainnya - Sosialisasi Pilkades/BPD",
+        "kode_rekening": "5.2.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium",
         "nominal_anggaran": 860000,
-        "nominal_realisasi": 860000
+        "nominal_realisasi": 731000
       },
       {
-        "kode_rekening": "5.2.3.01",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Sosialisasi Pilkades/BPD",
+        "kode_rekening": "5.2.2.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium Lainnya",
+        "nominal_anggaran": 860000,
+        "nominal_realisasi": 731000
+      },
+      {
+        "kode_rekening": "5.2.3.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas",
         "nominal_anggaran": 3750000,
-        "nominal_realisasi": 3750000
+        "nominal_realisasi": 3187500
       },
       {
-        "kode_rekening": "5.2.5.99",
+        "kode_rekening": "5.2.3.01.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota",
+        "nominal_anggaran": 3750000,
+        "nominal_realisasi": 3187500
+      },
+      {
+        "kode_rekening": "5.2.5.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Operasional Perkantoran lainnya - Sosialisasi Pilkades/BPD",
+        "uraian": "Belanja Operasional Perkantoran",
         "nominal_anggaran": 5000000,
-        "nominal_realisasi": 4470000
+        "nominal_realisasi": 4250000
       },
       {
-        "kode_rekening": "5.2.3.01",
+        "kode_rekening": "5.2.5.99.",
         "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Administrasi PBB",
+        "uraian": "Belanja Operasional Perkantoran lainnya",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "1.5",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Pertanahan",
+        "nominal_anggaran": 15544000,
+        "nominal_realisasi": 13212400
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 15544000,
+        "nominal_realisasi": 13212400
+      },
+      {
+        "kode_rekening": "5.2.3.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas",
         "nominal_anggaran": 12000000,
-        "nominal_realisasi": 12000000
+        "nominal_realisasi": 10200000
       },
       {
-        "kode_rekening": "5.2.5.07",
+        "kode_rekening": "5.2.3.01.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota",
+        "nominal_anggaran": 12000000,
+        "nominal_realisasi": 10200000
+      },
+      {
+        "kode_rekening": "5.2.5.",
         "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran",
+        "nominal_anggaran": 3544000,
+        "nominal_realisasi": 3012400
+      },
+      {
+        "kode_rekening": "5.2.5.07.",
+        "kategori": "Lainnya",
         "uraian": "Belanja Jasa Perpanjangan Ijin/Pajak",
         "nominal_anggaran": 3544000,
-        "nominal_realisasi": 3230000
+        "nominal_realisasi": 3012400
       },
       {
-        "kode_rekening": "5.2.2.99",
+        "kode_rekening": "2.1",
         "kategori": "Pendidikan",
-        "uraian": "Belanja Jasa Honorarium Lainnya - PAUD/TK/TPA/Madrasah Nonformal",
+        "uraian": "Sub Bidang Pendidikan",
+        "nominal_anggaran": 73780000,
+        "nominal_realisasi": 62713000
+      },
+      {
+        "kode_rekening": "2.1.1",
+        "kategori": "Lainnya",
+        "uraian": "Penyelenggaran",
         "nominal_anggaran": 52800000,
-        "nominal_realisasi": 47600000
+        "nominal_realisasi": 44880000
       },
       {
-        "kode_rekening": "5.2.1.01",
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 52800000,
+        "nominal_realisasi": 44880000
+      },
+      {
+        "kode_rekening": "5.2.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium",
+        "nominal_anggaran": 52800000,
+        "nominal_realisasi": 44880000
+      },
+      {
+        "kode_rekening": "5.2.2.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium Lainnya",
+        "nominal_anggaran": 52800000,
+        "nominal_realisasi": 44880000
+      },
+      {
+        "kode_rekening": "2.1.3",
         "kategori": "Pendidikan",
-        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Pelatihan Pendidikan",
+        "uraian": "Penyuluhan dan Pelatihan Pendidikan Bagi",
+        "nominal_anggaran": 2980000,
+        "nominal_realisasi": 2533000
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 2980000,
+        "nominal_realisasi": 2533000
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 2580000,
+        "nominal_realisasi": 2193000
+      },
+      {
+        "kode_rekening": "5.2.1.01.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos",
         "nominal_anggaran": 570000,
-        "nominal_realisasi": 570000
+        "nominal_realisasi": 484500
       },
       {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Pendidikan",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Pelatihan Pendidikan",
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
         "nominal_anggaran": 210000,
-        "nominal_realisasi": 210000
+        "nominal_realisasi": 178500
       },
       {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Pendidikan",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Pelatihan Pendidikan",
-        "nominal_anggaran": 1800000,
-        "nominal_realisasi": 1800000
-      },
-      {
-        "kode_rekening": "5.2.2.04",
-        "kategori": "Pendidikan",
-        "uraian": "Belanja Jasa Honorarium Tenaga Ahli/Narasumber - Pelatihan Pendidikan",
+        "kode_rekening": "5.2.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium",
         "nominal_anggaran": 400000,
-        "nominal_realisasi": 400000
+        "nominal_realisasi": 340000
       },
       {
-        "kode_rekening": "5.2.7.99",
-        "kategori": "Pendidikan",
-        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Sarpras/Alat Peraga PAUD",
+        "kode_rekening": "2.1.6",
+        "kategori": "Lainnya",
+        "uraian": "Pembangunan/Rehabilitasi/Peningkatan/Pengad",
+        "nominal_anggaran": 18000000,
+        "nominal_realisasi": 15300000
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
         "nominal_anggaran": 8000000,
-        "nominal_realisasi": 8000000
+        "nominal_realisasi": 6800000
       },
       {
-        "kode_rekening": "5.3.4.02",
-        "kategori": "Pendidikan",
-        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Upah Tenaga Kerja Sarpras PAUD",
-        "nominal_anggaran": 3822000,
-        "nominal_realisasi": 3822000
-      },
-      {
-        "kode_rekening": "5.3.4.03",
-        "kategori": "Pendidikan",
-        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Bahan Baku/Material Sarpras PAUD",
-        "nominal_anggaran": 6178000,
-        "nominal_realisasi": 6177000
-      },
-      {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Kesehatan",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Poskesdes/Polindes",
-        "nominal_anggaran": 5050000,
-        "nominal_realisasi": 4800000
-      },
-      {
-        "kode_rekening": "5.2.2.99",
-        "kategori": "Kesehatan",
-        "uraian": "Belanja Jasa Honorarium Lainnya - Poskesdes/Polindes",
-        "nominal_anggaran": 27000000,
-        "nominal_realisasi": 27000000
-      },
-      {
-        "kode_rekening": "5.2.4.03",
-        "kategori": "Kesehatan",
-        "uraian": "Belanja Jasa Sewa Sarana Mobilitas - Poskesdes",
-        "nominal_anggaran": 300000,
-        "nominal_realisasi": 300000
-      },
-      {
-        "kode_rekening": "5.2.7.99",
-        "kategori": "Kesehatan",
-        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Poskesdes",
-        "nominal_anggaran": 1730000,
-        "nominal_realisasi": 1380000
-      },
-      {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Kesehatan",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Makanan Tambahan Posyandu",
-        "nominal_anggaran": 29400000,
-        "nominal_realisasi": 23400000
-      },
-      {
-        "kode_rekening": "5.2.3.01",
-        "kategori": "Kesehatan",
-        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Posyandu",
-        "nominal_anggaran": 2250000,
-        "nominal_realisasi": 1450000
-      },
-      {
-        "kode_rekening": "5.2.7.99",
-        "kategori": "Kesehatan",
-        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Posyandu",
-        "nominal_anggaran": 41250000,
-        "nominal_realisasi": 35500000
-      },
-      {
-        "kode_rekening": "5.2.1.01",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Peningkatan Jalan Lingkungan",
-        "nominal_anggaran": 140000,
-        "nominal_realisasi": 140000
-      },
-      {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Peningkatan Jalan Lingkungan",
-        "nominal_anggaran": 100000,
-        "nominal_realisasi": 100000
-      },
-      {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Peningkatan Jalan Lingkungan",
-        "nominal_anggaran": 162500,
-        "nominal_realisasi": 162500
-      },
-      {
-        "kode_rekening": "5.2.3.01",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Peningkatan Jalan Lingkungan",
-        "nominal_anggaran": 200000,
-        "nominal_realisasi": 200000
-      },
-      {
-        "kode_rekening": "5.3.5.02",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja Jalan Lingkungan",
-        "nominal_anggaran": 97532758,
-        "nominal_realisasi": 97345000
-      },
-      {
-        "kode_rekening": "5.3.5.03",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Jalan - Bahan Baku/Material Jalan Lingkungan",
-        "nominal_anggaran": 291960554,
-        "nominal_realisasi": 274562850
-      },
-      {
-        "kode_rekening": "5.3.5.05",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Jalan - Administrasi Kegiatan Jalan Lingkungan",
-        "nominal_anggaran": 600000,
-        "nominal_realisasi": 600000
-      },
-      {
-        "kode_rekening": "5.2.1.99",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Barang Perlengkapan Lainnya - Jalan Usaha Tani",
-        "nominal_anggaran": 6600000,
-        "nominal_realisasi": 6600000
-      },
-      {
-        "kode_rekening": "5.3.5.02",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja Jalan Usaha Tani",
-        "nominal_anggaran": 54471988,
-        "nominal_realisasi": 54416000
-      },
-      {
-        "kode_rekening": "5.3.5.03",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Jalan - Bahan Baku/Material Jalan Usaha Tani",
-        "nominal_anggaran": 222193000,
-        "nominal_realisasi": 216796500
-      },
-      {
-        "kode_rekening": "5.2.7.03",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Bantuan Bangunan untuk Diserahkan kepada Masyarakat - RTLH",
-        "nominal_anggaran": 50000000,
-        "nominal_realisasi": 40000000
-      },
-      {
-        "kode_rekening": "5.3.7.02",
-        "kategori": "Infrastruktur",
-        "uraian": "Belanja Modal Irigasi/Embung/Drainase/dll - Upah Tenaga Kerja Sanitasi Pemukiman",
-        "nominal_anggaran": 5000000,
-        "nominal_realisasi": 0
-      },
-      {
-        "kode_rekening": "5.2.7.03",
-        "kategori": "Kesehatan",
-        "uraian": "Belanja Bantuan Bangunan untuk Diserahkan kepada Masyarakat - Jamban/MCK Umum",
+        "kode_rekening": "5.3.",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal",
         "nominal_anggaran": 10000000,
-        "nominal_realisasi": 0
+        "nominal_realisasi": 8500000
       },
       {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Informasi Publik Desa",
-        "nominal_anggaran": 2625000,
-        "nominal_realisasi": 1295000
+        "kode_rekening": "5.3.4.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Gedung, Bangunan dan Taman",
+        "nominal_anggaran": 10000000,
+        "nominal_realisasi": 8500000
       },
       {
-        "kode_rekening": "5.2.5.99",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Operasional Perkantoran lainnya - Informasi Publik Desa",
-        "nominal_anggaran": 2919599,
-        "nominal_realisasi": 2500000
+        "kode_rekening": "2.2",
+        "kategori": "Kesehatan",
+        "uraian": "Sub Bidang Kesehatan",
+        "nominal_anggaran": 106980000,
+        "nominal_realisasi": 90933000
       },
       {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Keamanan/Ketertiban",
-        "nominal_anggaran": 255000,
-        "nominal_realisasi": 0
+        "kode_rekening": "2.2.1",
+        "kategori": "Kesehatan",
+        "uraian": "Penyelenggaraan Pos Kesehatan Desa/Polindes",
+        "nominal_anggaran": 34080000,
+        "nominal_realisasi": 28968000
       },
       {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Keamanan/Ketertiban",
-        "nominal_anggaran": 750000,
-        "nominal_realisasi": 0
-      },
-      {
-        "kode_rekening": "5.2.1.09",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut - Keamanan/Ketertiban (Linmas)",
-        "nominal_anggaran": 9000000,
-        "nominal_realisasi": 7900000
-      },
-      {
-        "kode_rekening": "5.2.2.04",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Jasa Honorarium Tenaga Ahli/Narasumber - Pelatihan Keamanan",
-        "nominal_anggaran": 400000,
-        "nominal_realisasi": 0
-      },
-      {
-        "kode_rekening": "5.2.2.99",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Jasa Honorarium Lainnya - Peningkatan Kapasitas Keamanan",
-        "nominal_anggaran": 7760000,
-        "nominal_realisasi": 7520000
-      },
-      {
-        "kode_rekening": "5.2.7.99",
+        "kode_rekening": "5.2.",
         "kategori": "Lainnya",
-        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Kesiapsiagaan/Tanggap Bencana",
-        "nominal_anggaran": 12569000,
-        "nominal_realisasi": 8300000
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 34080000,
+        "nominal_realisasi": 28968000
       },
       {
-        "kode_rekening": "5.2.7.99",
+        "kode_rekening": "5.2.1.",
         "kategori": "Lainnya",
-        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Festival Kesenian/HUT RI",
-        "nominal_anggaran": 7362600,
-        "nominal_realisasi": 7350000
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 5050000,
+        "nominal_realisasi": 4292500
       },
       {
-        "kode_rekening": "5.2.2.99",
-        "kategori": "Operasional Pemerintah Desa",
-        "uraian": "Belanja Jasa Honorarium Lainnya - Pembinaan LKMD/LPM/LPMD",
-        "nominal_anggaran": 4080000,
-        "nominal_realisasi": 4010000
+        "kode_rekening": "5.2.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium",
+        "nominal_anggaran": 27000000,
+        "nominal_realisasi": 22950000
       },
       {
-        "kode_rekening": "5.2.1.01",
-        "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Pembinaan PKK",
-        "nominal_anggaran": 350000,
-        "nominal_realisasi": 350000
+        "kode_rekening": "5.2.2.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium Lainnya",
+        "nominal_anggaran": 27000000,
+        "nominal_realisasi": 22950000
       },
       {
-        "kode_rekening": "5.2.1.05",
-        "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Barang Cetak dan Penggandaan - Pembinaan PKK",
+        "kode_rekening": "5.2.4.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Sewa",
         "nominal_anggaran": 300000,
-        "nominal_realisasi": 297000
+        "nominal_realisasi": 255000
       },
       {
-        "kode_rekening": "5.2.1.06",
-        "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Pembinaan PKK",
-        "nominal_anggaran": 4350000,
-        "nominal_realisasi": 4350000
+        "kode_rekening": "5.2.4.03.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Sewa Sarana Mobilitas",
+        "nominal_anggaran": 300000,
+        "nominal_realisasi": 255000
       },
       {
-        "kode_rekening": "5.2.1.09",
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 72900000,
+        "nominal_realisasi": 61965000
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 29400000,
+        "nominal_realisasi": 24990000
+      },
+      {
+        "kode_rekening": "5.2.3.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas",
+        "nominal_anggaran": 2250000,
+        "nominal_realisasi": 1912500
+      },
+      {
+        "kode_rekening": "5.2.3.01.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota",
+        "nominal_anggaran": 2250000,
+        "nominal_realisasi": 1912500
+      },
+      {
+        "kode_rekening": "2.3",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Pekerjaan Umum dan Penataan Ruang",
+        "nominal_anggaran": 673960800,
+        "nominal_realisasi": 572866680
+      },
+      {
+        "kode_rekening": "2.3.11",
+        "kategori": "Lainnya",
+        "uraian": "Pembangunan/Rehabilitasi/Peningkatan/Pengera",
+        "nominal_anggaran": 390695812,
+        "nominal_realisasi": 332091440
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 602500,
+        "nominal_realisasi": 512125
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 402500,
+        "nominal_realisasi": 342125
+      },
+      {
+        "kode_rekening": "5.2.1.01.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos",
+        "nominal_anggaran": 140000,
+        "nominal_realisasi": 119000
+      },
+      {
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
+        "nominal_anggaran": 100000,
+        "nominal_realisasi": 85000
+      },
+      {
+        "kode_rekening": "5.2.3.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas",
+        "nominal_anggaran": 200000,
+        "nominal_realisasi": 170000
+      },
+      {
+        "kode_rekening": "5.2.3.01.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota",
+        "nominal_anggaran": 200000,
+        "nominal_realisasi": 170000
+      },
+      {
+        "kode_rekening": "5.3.",
         "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut - Pembinaan PKK",
+        "uraian": "Belanja Modal",
+        "nominal_anggaran": 390093312,
+        "nominal_realisasi": 331579315
+      },
+      {
+        "kode_rekening": "5.3.5.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan/Prasarana Jalan",
+        "nominal_anggaran": 390093312,
+        "nominal_realisasi": 331579315
+      },
+      {
+        "kode_rekening": "5.3.5.02.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja",
+        "nominal_anggaran": 97532757,
+        "nominal_realisasi": 82902843
+      },
+      {
+        "kode_rekening": "5.3.5.03.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Bahan Baku/Material",
+        "nominal_anggaran": 291960554,
+        "nominal_realisasi": 248166470
+      },
+      {
+        "kode_rekening": "5.3.5.05.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Administrasi Kegiatan",
+        "nominal_anggaran": 600000,
+        "nominal_realisasi": 510000
+      },
+      {
+        "kode_rekening": "2.3.12",
+        "kategori": "Lainnya",
+        "uraian": "Pembangunan/Rehabilitasi/Peningkatan/Pengera",
+        "nominal_anggaran": 283264988,
+        "nominal_realisasi": 240775239
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 6600000,
+        "nominal_realisasi": 5610000
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 6600000,
+        "nominal_realisasi": 5610000
+      },
+      {
+        "kode_rekening": "5.2.1.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan Lainnya",
+        "nominal_anggaran": 6600000,
+        "nominal_realisasi": 5610000
+      },
+      {
+        "kode_rekening": "5.3.",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal",
+        "nominal_anggaran": 276664988,
+        "nominal_realisasi": 235165239
+      },
+      {
+        "kode_rekening": "5.3.5.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan/Prasarana Jalan",
+        "nominal_anggaran": 276664988,
+        "nominal_realisasi": 235165239
+      },
+      {
+        "kode_rekening": "5.3.5.02.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja",
+        "nominal_anggaran": 54471988,
+        "nominal_realisasi": 46301189
+      },
+      {
+        "kode_rekening": "5.3.5.03.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Bahan Baku/Material",
+        "nominal_anggaran": 222193000,
+        "nominal_realisasi": 188864050
+      },
+      {
+        "kode_rekening": "2.4",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Kawasan Pemukiman",
+        "nominal_anggaran": 65000000,
+        "nominal_realisasi": 55250000
+      },
+      {
+        "kode_rekening": "2.4.1",
+        "kategori": "Lainnya",
+        "uraian": "Dukungan Pelaksanaan Program",
+        "nominal_anggaran": 50000000,
+        "nominal_realisasi": 42500000
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 50000000,
+        "nominal_realisasi": 42500000
+      },
+      {
+        "kode_rekening": "2.4.5",
+        "kategori": "Kesehatan",
+        "uraian": "Pemeliharaan Sanitasi Pemukiman",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "5.3.",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "2.4.14",
+        "kategori": "Lainnya",
+        "uraian": "Pembangunan/Rehabilitas/Peningkatan Fasilitas",
+        "nominal_anggaran": 10000000,
+        "nominal_realisasi": 8500000
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 10000000,
+        "nominal_realisasi": 8500000
+      },
+      {
+        "kode_rekening": "2.6",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Perhubungan, Komunikasi dan",
+        "nominal_anggaran": 5544599,
+        "nominal_realisasi": 4712909
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 5544599,
+        "nominal_realisasi": 4712909
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 2625000,
+        "nominal_realisasi": 2231250
+      },
+      {
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
+        "nominal_anggaran": 2625000,
+        "nominal_realisasi": 2231250
+      },
+      {
+        "kode_rekening": "5.2.5.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran",
+        "nominal_anggaran": 2919599,
+        "nominal_realisasi": 2481659
+      },
+      {
+        "kode_rekening": "5.2.5.99.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran lainnya",
+        "nominal_anggaran": 2919599,
+        "nominal_realisasi": 2481659
+      },
+      {
+        "kode_rekening": "3.1",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Ketenteraman, Ketertiban Umum dan",
+        "nominal_anggaran": 30734000,
+        "nominal_realisasi": 26123900
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 18165000,
+        "nominal_realisasi": 15440250
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 10005000,
+        "nominal_realisasi": 8504250
+      },
+      {
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
+        "nominal_anggaran": 255000,
+        "nominal_realisasi": 216750
+      },
+      {
+        "kode_rekening": "5.2.1.09.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut",
+        "nominal_anggaran": 9000000,
+        "nominal_realisasi": 7650000
+      },
+      {
+        "kode_rekening": "5.2.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium",
+        "nominal_anggaran": 8160000,
+        "nominal_realisasi": 6936000
+      },
+      {
+        "kode_rekening": "5.2.2.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium Lainnya",
+        "nominal_anggaran": 7760000,
+        "nominal_realisasi": 6596000
+      },
+      {
+        "kode_rekening": "3.1.4",
+        "kategori": "Lainnya",
+        "uraian": "Persiapan Kesiapsiagaan/Tanggap Bencana",
+        "nominal_anggaran": 12569000,
+        "nominal_realisasi": 10683650
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 12569000,
+        "nominal_realisasi": 10683650
+      },
+      {
+        "kode_rekening": "3.2",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Kebudayaan dan Keagamaan",
+        "nominal_anggaran": 7362600,
+        "nominal_realisasi": 6258210
+      },
+      {
+        "kode_rekening": "3.2.3",
+        "kategori": "Lainnya",
+        "uraian": "Penyelenggaran Festival Kesenian,",
+        "nominal_anggaran": 7362600,
+        "nominal_realisasi": 6258210
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 7362600,
+        "nominal_realisasi": 6258210
+      },
+      {
+        "kode_rekening": "3.4",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Kelembagaan Masyarakat",
+        "nominal_anggaran": 12080000,
+        "nominal_realisasi": 10268000
+      },
+      {
+        "kode_rekening": "3.4.2",
+        "kategori": "Lainnya",
+        "uraian": "Pembinaan LKMD/LPM/LPMD",
+        "nominal_anggaran": 4080000,
+        "nominal_realisasi": 3468000
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 4080000,
+        "nominal_realisasi": 3468000
+      },
+      {
+        "kode_rekening": "5.2.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium",
+        "nominal_anggaran": 4080000,
+        "nominal_realisasi": 3468000
+      },
+      {
+        "kode_rekening": "5.2.2.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Jasa Honorarium Lainnya",
+        "nominal_anggaran": 4080000,
+        "nominal_realisasi": 3468000
+      },
+      {
+        "kode_rekening": "3.4.3",
+        "kategori": "Lainnya",
+        "uraian": "Pembinaan PKK",
+        "nominal_anggaran": 8000000,
+        "nominal_realisasi": 6800000
+      },
+      {
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 8000000,
+        "nominal_realisasi": 6800000
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 6500000,
+        "nominal_realisasi": 5525000
+      },
+      {
+        "kode_rekening": "5.2.1.01.",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos",
+        "nominal_anggaran": 350000,
+        "nominal_realisasi": 297500
+      },
+      {
+        "kode_rekening": "5.2.1.05.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Cetak dan Penggandaan",
+        "nominal_anggaran": 300000,
+        "nominal_realisasi": 255000
+      },
+      {
+        "kode_rekening": "5.2.1.09.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut",
         "nominal_anggaran": 1500000,
-        "nominal_realisasi": 0
+        "nominal_realisasi": 1275000
       },
       {
-        "kode_rekening": "5.2.3.01",
-        "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Pembinaan PKK",
+        "kode_rekening": "5.2.3.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas",
         "nominal_anggaran": 1500000,
-        "nominal_realisasi": 1425000
+        "nominal_realisasi": 1275000
       },
       {
-        "kode_rekening": "5.3.4.02",
+        "kode_rekening": "5.2.3.01.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota",
+        "nominal_anggaran": 1500000,
+        "nominal_realisasi": 1275000
+      },
+      {
+        "kode_rekening": "4.2",
         "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Upah Tenaga Kerja Produksi Tanaman Pangan",
-        "nominal_anggaran": 33203000,
-        "nominal_realisasi": 33203000
+        "uraian": "Sub Bidang Pertanian dan Peternakan",
+        "nominal_anggaran": 235000000,
+        "nominal_realisasi": 199750000
       },
       {
-        "kode_rekening": "5.3.4.03",
+        "kode_rekening": "5.3.",
         "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Bahan Baku/Material Produksi Tanaman Pangan",
-        "nominal_anggaran": 86797000,
-        "nominal_realisasi": 82846800
+        "uraian": "Belanja Modal",
+        "nominal_anggaran": 120000000,
+        "nominal_realisasi": 102000000
       },
       {
-        "kode_rekening": "5.2.7.02",
-        "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Bantuan Mesin/Peralatan/Kendaraan untuk Diserahkan kepada Masyarakat - Peternakan",
-        "nominal_anggaran": 7312500,
-        "nominal_realisasi": 7312500
+        "kode_rekening": "5.3.4.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Gedung, Bangunan dan Taman",
+        "nominal_anggaran": 120000000,
+        "nominal_realisasi": 102000000
       },
       {
-        "kode_rekening": "5.2.7.05",
+        "kode_rekening": "5.2.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 83317050,
+        "nominal_realisasi": 70819492
+      },
+      {
+        "kode_rekening": "5.2.7.05.",
         "kategori": "Pemberdayaan Masyarakat",
         "uraian": "Belanja Bantuan Bibit Tanaman/Hewan/Ikan",
         "nominal_anggaran": 63000000,
-        "nominal_realisasi": 63000000
+        "nominal_realisasi": 53550000
       },
       {
-        "kode_rekening": "5.2.7.99",
+        "kode_rekening": "5.3.",
         "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Peternakan",
-        "nominal_anggaran": 13004550,
-        "nominal_realisasi": 12965500
+        "uraian": "Belanja Modal",
+        "nominal_anggaran": 31682950,
+        "nominal_realisasi": 26930507
       },
       {
-        "kode_rekening": "5.3.4.02",
-        "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Upah Tenaga Kerja Kandang/Produksi Peternakan",
-        "nominal_anggaran": 11993900,
-        "nominal_realisasi": 6793500
+        "kode_rekening": "5.3.4.",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Gedung, Bangunan dan Taman",
+        "nominal_anggaran": 31682950,
+        "nominal_realisasi": 26930507
       },
       {
-        "kode_rekening": "5.3.4.03",
+        "kode_rekening": "4.6",
         "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Bahan Baku/Material Kandang/Produksi Peternakan",
-        "nominal_anggaran": 19689050,
-        "nominal_realisasi": 18981125
-      },
-      {
-        "kode_rekening": "5.2.1.99",
-        "kategori": "Pemberdayaan Masyarakat",
-        "uraian": "Belanja Barang Perlengkapan Lainnya - Pelatihan Pengelolaan BUM Desa",
+        "uraian": "Sub Bidang Dukungan Penanaman Modal",
         "nominal_anggaran": 5000000,
-        "nominal_realisasi": 0
+        "nominal_realisasi": 4250000
       },
       {
-        "kode_rekening": "5.4.1.01",
+        "kode_rekening": "5.2.",
         "kategori": "Lainnya",
-        "uraian": "Belanja Tidak Terduga - Kegiatan Penanggulangan Bencana",
+        "uraian": "Belanja Barang dan Jasa",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "5.2.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "5.2.1.99.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang Perlengkapan Lainnya",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4250000
+      },
+      {
+        "kode_rekening": "5.1",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Penanggulangan Bencana",
         "nominal_anggaran": 10450400,
-        "nominal_realisasi": 7892000
+        "nominal_realisasi": 8882840
       },
       {
-        "kode_rekening": "5.4.1.01",
+        "kode_rekening": "5.1.0",
         "kategori": "Lainnya",
-        "uraian": "Belanja Tidak Terduga - Penanganan Keadaan Mendesak (BLT Desa)",
+        "uraian": "Kegiatan Penanggulanan Bencana",
+        "nominal_anggaran": 10450400,
+        "nominal_realisasi": 8882840
+      },
+      {
+        "kode_rekening": "5.4.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Tidak Terduga",
+        "nominal_anggaran": 10450400,
+        "nominal_realisasi": 8882840
+      },
+      {
+        "kode_rekening": "5.4.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Tidak Terduga",
+        "nominal_anggaran": 10450400,
+        "nominal_realisasi": 8882840
+      },
+      {
+        "kode_rekening": "5.4.1.01.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Tidak Terduga",
+        "nominal_anggaran": 10450400,
+        "nominal_realisasi": 8882840
+      },
+      {
+        "kode_rekening": "5.3",
+        "kategori": "Lainnya",
+        "uraian": "Sub Bidang Keadaan Mendesak",
         "nominal_anggaran": 18000000,
-        "nominal_realisasi": 18000000
+        "nominal_realisasi": 15300000
+      },
+      {
+        "kode_rekening": "5.3.0",
+        "kategori": "Lainnya",
+        "uraian": "Penanganan Keadaan Mendesak",
+        "nominal_anggaran": 18000000,
+        "nominal_realisasi": 15300000
+      },
+      {
+        "kode_rekening": "5.4.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Tidak Terduga",
+        "nominal_anggaran": 18000000,
+        "nominal_realisasi": 15300000
+      },
+      {
+        "kode_rekening": "5.4.1.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Tidak Terduga",
+        "nominal_anggaran": 18000000,
+        "nominal_realisasi": 15300000
+      },
+      {
+        "kode_rekening": "5.4.1.01.",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Tidak Terduga",
+        "nominal_anggaran": 18000000,
+        "nominal_realisasi": 15300000
+      },
+      {
+        "kode_rekening": "6.1.",
+        "kategori": "Lainnya",
+        "uraian": "Penerimaan Pembiayaan",
+        "nominal_anggaran": 91052219,
+        "nominal_realisasi": 77394386
+      },
+      {
+        "kode_rekening": "6.1.1.",
+        "kategori": "Lainnya",
+        "uraian": "SILPA Tahun Sebelumnya",
+        "nominal_anggaran": 91052219,
+        "nominal_realisasi": 77394386
+      },
+      {
+        "kode_rekening": "6.1.1.01.",
+        "kategori": "Lainnya",
+        "uraian": "SILPA Tahun Sebelumnya",
+        "nominal_anggaran": 91052219,
+        "nominal_realisasi": 77394386
       }
     ]
   },
   "validation_report": {
-    "is_valid": true,
+    "is_valid": false,
     "hard_violation_count": 0,
-    "warning_count": 0,
-    "total_penalty": 0.0,
-    "calculated_total_belanja": 2120883519,
-    "document_total_belanja": 2120883519,
+    "warning_count": 333,
+    "total_penalty": 1.0,
+    "calculated_total_belanja": 15916163050,
+    "document_total_belanja": 15916163050,
     "subtotal_difference": 0,
     "logs": [
       {
         "rule_code": "R2_SUBTOTAL_CONSISTENCY",
         "is_passed": true,
         "penalty_score": 0.0,
-        "error_message": "Konsistensi subtotal valid (Total Belanja: Rp 2,120,883,519).",
+        "error_message": "Konsistensi subtotal valid (Total Belanja: Rp 15,916,163,050).",
         "affected_item_index": null
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #8 ('Dana Desa') dan Item #9 ('Dana Desa') dengan nominal Rp 1,271,714,000.",
+        "affected_item_index": 8
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #12 ('Alokasi Dana Desa') dan Item #13 ('Alokasi Dana Desa') dengan nominal Rp 618,367,000.",
+        "affected_item_index": 12
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #17 ('Bunga Bank 0,00') dan Item #18 ('Bunga Bank 0,00') dengan nominal Rp 421,303.",
+        "affected_item_index": 17
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #62 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 61
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #77 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 76
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #82 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 81
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #87 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 86
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #92 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 91
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #110 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 109
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #132 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 131
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #143 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 142
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #38 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 11,834,736.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #39 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #83 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 4,103,000.",
+        "affected_item_index": 82
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #39 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #88 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 4,103,000.",
+        "affected_item_index": 87
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #39 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #93 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 4,103,000.",
+        "affected_item_index": 92
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #39 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #111 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 4,103,000.",
+        "affected_item_index": 110
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #39 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #133 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 4,103,000.",
+        "affected_item_index": 132
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #39 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #156 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 4,103,000.",
+        "affected_item_index": 155
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #39 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #206 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 4,103,000.",
+        "affected_item_index": 205
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #84 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 83
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #89 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 88
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #94 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 93
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #112 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 111
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #134 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 133
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #157 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 156
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #183 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 182
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #189 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 188
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #40 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 1,201,800.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #41 ('Belanja Pakaian Dinas/Seragam/Atribut') dan Item #190 ('Belanja Pakaian Dinas/Seragam/Atribut') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 189
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #41 ('Belanja Pakaian Dinas/Seragam/Atribut') dan Item #208 ('Belanja Pakaian Dinas/Seragam/Atribut') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 207
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #42 ('Belanja Jasa Honorarium') dan Item #113 ('Belanja Jasa Honorarium') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 112
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #42 ('Belanja Jasa Honorarium') dan Item #128 ('Belanja Jasa Honorarium') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 127
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #42 ('Belanja Jasa Honorarium') dan Item #135 ('Belanja Jasa Honorarium') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 134
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #42 ('Belanja Jasa Honorarium') dan Item #144 ('Belanja Jasa Honorarium') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 143
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #42 ('Belanja Jasa Honorarium') dan Item #191 ('Belanja Jasa Honorarium') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 190
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #42 ('Belanja Jasa Honorarium') dan Item #201 ('Belanja Jasa Honorarium') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 200
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #43 ('Belanja Jasa Honorarium Lainnya') dan Item #114 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 113
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #43 ('Belanja Jasa Honorarium Lainnya') dan Item #129 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 128
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #43 ('Belanja Jasa Honorarium Lainnya') dan Item #145 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 144
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #43 ('Belanja Jasa Honorarium Lainnya') dan Item #192 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 191
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #43 ('Belanja Jasa Honorarium Lainnya') dan Item #202 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 3,000,000.",
+        "affected_item_index": 201
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #44 ('Belanja Perjalanan Dinas') dan Item #105 ('Belanja Perjalanan Dinas') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 104
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #44 ('Belanja Perjalanan Dinas') dan Item #115 ('Belanja Perjalanan Dinas') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 114
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #44 ('Belanja Perjalanan Dinas') dan Item #121 ('Belanja Perjalanan Dinas') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 120
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #44 ('Belanja Perjalanan Dinas') dan Item #150 ('Belanja Perjalanan Dinas') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 149
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #44 ('Belanja Perjalanan Dinas') dan Item #158 ('Belanja Perjalanan Dinas') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 157
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #44 ('Belanja Perjalanan Dinas') dan Item #209 ('Belanja Perjalanan Dinas') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 208
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #45 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #116 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 115
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #45 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #122 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 121
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #45 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #151 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 150
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #45 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #159 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 158
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #45 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #210 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 8,550,000.",
+        "affected_item_index": 209
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #46 ('Belanja Operasional Perkantoran') dan Item #58 ('Belanja Operasional Perkantoran') dengan nominal Rp 4,436,833.",
+        "affected_item_index": 57
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #46 ('Belanja Operasional Perkantoran') dan Item #97 ('Belanja Operasional Perkantoran') dengan nominal Rp 4,436,833.",
+        "affected_item_index": 96
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #46 ('Belanja Operasional Perkantoran') dan Item #107 ('Belanja Operasional Perkantoran') dengan nominal Rp 4,436,833.",
+        "affected_item_index": 106
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #46 ('Belanja Operasional Perkantoran') dan Item #117 ('Belanja Operasional Perkantoran') dengan nominal Rp 4,436,833.",
+        "affected_item_index": 116
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #46 ('Belanja Operasional Perkantoran') dan Item #123 ('Belanja Operasional Perkantoran') dengan nominal Rp 4,436,833.",
+        "affected_item_index": 122
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #46 ('Belanja Operasional Perkantoran') dan Item #184 ('Belanja Operasional Perkantoran') dengan nominal Rp 4,436,833.",
+        "affected_item_index": 183
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #48 ('Belanja Operasional Perkantoran lainnya 0,00') dan Item #108 ('Belanja Operasional Perkantoran lainnya') dengan nominal Rp 84,260.",
+        "affected_item_index": 107
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #48 ('Belanja Operasional Perkantoran lainnya 0,00') dan Item #118 ('Belanja Operasional Perkantoran lainnya') dengan nominal Rp 84,260.",
+        "affected_item_index": 117
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #48 ('Belanja Operasional Perkantoran lainnya 0,00') dan Item #185 ('Belanja Operasional Perkantoran lainnya') dengan nominal Rp 84,260.",
+        "affected_item_index": 184
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #49 ('Belanja Pemeliharaan') dan Item #67 ('Belanja Pemeliharaan') dengan nominal Rp 505,000.",
+        "affected_item_index": 66
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #49 ('Belanja Pemeliharaan') dan Item #99 ('Belanja Pemeliharaan') dengan nominal Rp 505,000.",
+        "affected_item_index": 98
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #58 ('Belanja Operasional Perkantoran') dan Item #97 ('Belanja Operasional Perkantoran') dengan nominal Rp 47,880,000.",
+        "affected_item_index": 96
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #58 ('Belanja Operasional Perkantoran') dan Item #107 ('Belanja Operasional Perkantoran') dengan nominal Rp 47,880,000.",
+        "affected_item_index": 106
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #58 ('Belanja Operasional Perkantoran') dan Item #117 ('Belanja Operasional Perkantoran') dengan nominal Rp 47,880,000.",
+        "affected_item_index": 116
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #58 ('Belanja Operasional Perkantoran') dan Item #123 ('Belanja Operasional Perkantoran') dengan nominal Rp 47,880,000.",
+        "affected_item_index": 122
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #58 ('Belanja Operasional Perkantoran') dan Item #184 ('Belanja Operasional Perkantoran') dengan nominal Rp 47,880,000.",
+        "affected_item_index": 183
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #77 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 76
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #82 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 81
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #87 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 86
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #92 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 91
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #110 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 109
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #132 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 131
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #143 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 142
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #62 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #63 ('Belanja Barang Perlengkapan Lainnya') dan Item #78 ('Belanja Barang Perlengkapan Lainnya') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 77
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #63 ('Belanja Barang Perlengkapan Lainnya') dan Item #168 ('Belanja Barang Perlengkapan Lainnya') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 167
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #63 ('Belanja Barang Perlengkapan Lainnya') dan Item #221 ('Belanja Barang Perlengkapan Lainnya') dengan nominal Rp 33,000,000.",
+        "affected_item_index": 220
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #67 ('Belanja Pemeliharaan') dan Item #99 ('Belanja Pemeliharaan') dengan nominal Rp 14,315,085.",
+        "affected_item_index": 98
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #70 ('Belanja Modal Gedung, Bangunan dan Taman') dan Item #139 ('Belanja Modal Gedung, Bangunan dan Taman') dengan nominal Rp 15,690,416.",
+        "affected_item_index": 138
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #70 ('Belanja Modal Gedung, Bangunan dan Taman') dan Item #213 ('Belanja Modal Gedung, Bangunan dan Taman') dengan nominal Rp 15,690,416.",
+        "affected_item_index": 212
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #70 ('Belanja Modal Gedung, Bangunan dan Taman') dan Item #217 ('Belanja Modal Gedung, Bangunan dan Taman') dengan nominal Rp 15,690,416.",
+        "affected_item_index": 216
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #71 ('Belanja Modal Jalan/Prasarana Jalan') dan Item #161 ('Belanja Modal Jalan/Prasarana Jalan') dengan nominal Rp 22,134,850.",
+        "affected_item_index": 160
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #71 ('Belanja Modal Jalan/Prasarana Jalan') dan Item #170 ('Belanja Modal Jalan/Prasarana Jalan') dengan nominal Rp 22,134,850.",
+        "affected_item_index": 169
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #72 ('Belanja Modal Jalan - Upah Tenaga Kerja') dan Item #162 ('Belanja Modal Jalan - Upah Tenaga Kerja') dengan nominal Rp 3,117,750.",
+        "affected_item_index": 161
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #72 ('Belanja Modal Jalan - Upah Tenaga Kerja') dan Item #171 ('Belanja Modal Jalan - Upah Tenaga Kerja') dengan nominal Rp 3,117,750.",
+        "affected_item_index": 170
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #73 ('Belanja Modal Jalan - Bahan Baku/Material') dan Item #163 ('Belanja Modal Jalan - Bahan Baku/Material') dengan nominal Rp 19,017,100.",
+        "affected_item_index": 162
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #73 ('Belanja Modal Jalan - Bahan Baku/Material') dan Item #172 ('Belanja Modal Jalan - Bahan Baku/Material') dengan nominal Rp 19,017,100.",
+        "affected_item_index": 171
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #76 ('Belanja Barang dan Jasa') dan Item #219 ('Belanja Barang dan Jasa') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 218
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #82 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 81
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #87 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 86
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #92 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 91
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #110 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 109
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #132 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 131
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #143 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 142
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #77 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #78 ('Belanja Barang Perlengkapan Lainnya') dan Item #168 ('Belanja Barang Perlengkapan Lainnya') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 167
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #78 ('Belanja Barang Perlengkapan Lainnya') dan Item #221 ('Belanja Barang Perlengkapan Lainnya') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 220
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #87 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 86
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #92 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 91
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #110 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 109
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #132 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 131
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #143 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 142
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #82 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,472,500.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #83 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #88 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 547,500.",
+        "affected_item_index": 87
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #83 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #93 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 547,500.",
+        "affected_item_index": 92
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #83 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #111 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 547,500.",
+        "affected_item_index": 110
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #83 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #133 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 547,500.",
+        "affected_item_index": 132
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #83 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #156 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 547,500.",
+        "affected_item_index": 155
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #83 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #206 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 547,500.",
+        "affected_item_index": 205
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #84 ('Belanja Barang Cetak dan Penggandaan') dan Item #89 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 88
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #84 ('Belanja Barang Cetak dan Penggandaan') dan Item #94 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 93
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #84 ('Belanja Barang Cetak dan Penggandaan') dan Item #112 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 111
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #84 ('Belanja Barang Cetak dan Penggandaan') dan Item #134 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 133
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #84 ('Belanja Barang Cetak dan Penggandaan') dan Item #157 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 156
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #84 ('Belanja Barang Cetak dan Penggandaan') dan Item #183 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 182
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #84 ('Belanja Barang Cetak dan Penggandaan') dan Item #189 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 188
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #84 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #92 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 91
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #110 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 109
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #132 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 131
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #143 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 142
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #87 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,667,500.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #88 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #93 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 592,500.",
+        "affected_item_index": 92
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #88 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #111 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 592,500.",
+        "affected_item_index": 110
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #88 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #133 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 592,500.",
+        "affected_item_index": 132
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #88 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #156 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 592,500.",
+        "affected_item_index": 155
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #88 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #206 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 592,500.",
+        "affected_item_index": 205
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #89 ('Belanja Barang Cetak dan Penggandaan') dan Item #94 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 93
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #89 ('Belanja Barang Cetak dan Penggandaan') dan Item #112 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 111
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #89 ('Belanja Barang Cetak dan Penggandaan') dan Item #134 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 133
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #89 ('Belanja Barang Cetak dan Penggandaan') dan Item #157 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 156
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #89 ('Belanja Barang Cetak dan Penggandaan') dan Item #183 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 182
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #89 ('Belanja Barang Cetak dan Penggandaan') dan Item #189 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 188
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #89 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #110 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 109
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #132 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 131
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #143 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 142
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #92 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 9,202,500.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #93 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #111 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 277,500.",
+        "affected_item_index": 110
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #93 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #133 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 277,500.",
+        "affected_item_index": 132
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #93 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #156 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 277,500.",
+        "affected_item_index": 155
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #93 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #206 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 277,500.",
+        "affected_item_index": 205
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #94 ('Belanja Barang Cetak dan Penggandaan') dan Item #112 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 111
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #94 ('Belanja Barang Cetak dan Penggandaan') dan Item #134 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 133
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #94 ('Belanja Barang Cetak dan Penggandaan') dan Item #157 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 156
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #94 ('Belanja Barang Cetak dan Penggandaan') dan Item #183 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 182
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #94 ('Belanja Barang Cetak dan Penggandaan') dan Item #189 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 188
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #94 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 825,000.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #97 ('Belanja Operasional Perkantoran') dan Item #107 ('Belanja Operasional Perkantoran') dengan nominal Rp 13,200,000.",
+        "affected_item_index": 106
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #97 ('Belanja Operasional Perkantoran') dan Item #117 ('Belanja Operasional Perkantoran') dengan nominal Rp 13,200,000.",
+        "affected_item_index": 116
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #97 ('Belanja Operasional Perkantoran') dan Item #123 ('Belanja Operasional Perkantoran') dengan nominal Rp 13,200,000.",
+        "affected_item_index": 122
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #97 ('Belanja Operasional Perkantoran') dan Item #184 ('Belanja Operasional Perkantoran') dengan nominal Rp 13,200,000.",
+        "affected_item_index": 183
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #105 ('Belanja Perjalanan Dinas') dan Item #115 ('Belanja Perjalanan Dinas') dengan nominal Rp 18,000,000.",
+        "affected_item_index": 114
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #105 ('Belanja Perjalanan Dinas') dan Item #121 ('Belanja Perjalanan Dinas') dengan nominal Rp 18,000,000.",
+        "affected_item_index": 120
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #105 ('Belanja Perjalanan Dinas') dan Item #150 ('Belanja Perjalanan Dinas') dengan nominal Rp 18,000,000.",
+        "affected_item_index": 149
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #105 ('Belanja Perjalanan Dinas') dan Item #158 ('Belanja Perjalanan Dinas') dengan nominal Rp 18,000,000.",
+        "affected_item_index": 157
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #105 ('Belanja Perjalanan Dinas') dan Item #209 ('Belanja Perjalanan Dinas') dengan nominal Rp 18,000,000.",
+        "affected_item_index": 208
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #107 ('Belanja Operasional Perkantoran') dan Item #117 ('Belanja Operasional Perkantoran') dengan nominal Rp 5,338,700.",
+        "affected_item_index": 116
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #107 ('Belanja Operasional Perkantoran') dan Item #123 ('Belanja Operasional Perkantoran') dengan nominal Rp 5,338,700.",
+        "affected_item_index": 122
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #107 ('Belanja Operasional Perkantoran') dan Item #184 ('Belanja Operasional Perkantoran') dengan nominal Rp 5,338,700.",
+        "affected_item_index": 183
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #108 ('Belanja Operasional Perkantoran lainnya') dan Item #118 ('Belanja Operasional Perkantoran lainnya') dengan nominal Rp 5,338,700.",
+        "affected_item_index": 117
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #108 ('Belanja Operasional Perkantoran lainnya') dan Item #185 ('Belanja Operasional Perkantoran lainnya') dengan nominal Rp 5,338,700.",
+        "affected_item_index": 184
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #132 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 131
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #143 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 142
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #110 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,390,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #111 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #133 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 555,000.",
+        "affected_item_index": 132
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #111 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #156 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 555,000.",
+        "affected_item_index": 155
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #111 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #206 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 555,000.",
+        "affected_item_index": 205
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #112 ('Belanja Barang Cetak dan Penggandaan') dan Item #134 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 335,000.",
+        "affected_item_index": 133
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #112 ('Belanja Barang Cetak dan Penggandaan') dan Item #157 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 335,000.",
+        "affected_item_index": 156
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #112 ('Belanja Barang Cetak dan Penggandaan') dan Item #183 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 335,000.",
+        "affected_item_index": 182
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #112 ('Belanja Barang Cetak dan Penggandaan') dan Item #189 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 335,000.",
+        "affected_item_index": 188
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #112 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 335,000.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #113 ('Belanja Jasa Honorarium') dan Item #128 ('Belanja Jasa Honorarium') dengan nominal Rp 860,000.",
+        "affected_item_index": 127
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #113 ('Belanja Jasa Honorarium') dan Item #135 ('Belanja Jasa Honorarium') dengan nominal Rp 860,000.",
+        "affected_item_index": 134
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #113 ('Belanja Jasa Honorarium') dan Item #144 ('Belanja Jasa Honorarium') dengan nominal Rp 860,000.",
+        "affected_item_index": 143
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #113 ('Belanja Jasa Honorarium') dan Item #191 ('Belanja Jasa Honorarium') dengan nominal Rp 860,000.",
+        "affected_item_index": 190
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #113 ('Belanja Jasa Honorarium') dan Item #201 ('Belanja Jasa Honorarium') dengan nominal Rp 860,000.",
+        "affected_item_index": 200
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #114 ('Belanja Jasa Honorarium Lainnya') dan Item #129 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 860,000.",
+        "affected_item_index": 128
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #114 ('Belanja Jasa Honorarium Lainnya') dan Item #145 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 860,000.",
+        "affected_item_index": 144
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #114 ('Belanja Jasa Honorarium Lainnya') dan Item #192 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 860,000.",
+        "affected_item_index": 191
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #114 ('Belanja Jasa Honorarium Lainnya') dan Item #202 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 860,000.",
+        "affected_item_index": 201
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #115 ('Belanja Perjalanan Dinas') dan Item #121 ('Belanja Perjalanan Dinas') dengan nominal Rp 3,750,000.",
+        "affected_item_index": 120
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #115 ('Belanja Perjalanan Dinas') dan Item #150 ('Belanja Perjalanan Dinas') dengan nominal Rp 3,750,000.",
+        "affected_item_index": 149
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #115 ('Belanja Perjalanan Dinas') dan Item #158 ('Belanja Perjalanan Dinas') dengan nominal Rp 3,750,000.",
+        "affected_item_index": 157
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #115 ('Belanja Perjalanan Dinas') dan Item #209 ('Belanja Perjalanan Dinas') dengan nominal Rp 3,750,000.",
+        "affected_item_index": 208
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #116 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #122 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 3,750,000.",
+        "affected_item_index": 121
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #116 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #151 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 3,750,000.",
+        "affected_item_index": 150
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #116 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #159 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 3,750,000.",
+        "affected_item_index": 158
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #116 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #210 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 3,750,000.",
+        "affected_item_index": 209
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #117 ('Belanja Operasional Perkantoran') dan Item #123 ('Belanja Operasional Perkantoran') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 122
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #117 ('Belanja Operasional Perkantoran') dan Item #184 ('Belanja Operasional Perkantoran') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 183
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #118 ('Belanja Operasional Perkantoran lainnya') dan Item #185 ('Belanja Operasional Perkantoran lainnya') dengan nominal Rp 5,000,000.",
+        "affected_item_index": 184
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #121 ('Belanja Perjalanan Dinas') dan Item #150 ('Belanja Perjalanan Dinas') dengan nominal Rp 12,000,000.",
+        "affected_item_index": 149
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #121 ('Belanja Perjalanan Dinas') dan Item #158 ('Belanja Perjalanan Dinas') dengan nominal Rp 12,000,000.",
+        "affected_item_index": 157
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #121 ('Belanja Perjalanan Dinas') dan Item #209 ('Belanja Perjalanan Dinas') dengan nominal Rp 12,000,000.",
+        "affected_item_index": 208
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #122 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #151 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 12,000,000.",
+        "affected_item_index": 150
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #122 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #159 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 12,000,000.",
+        "affected_item_index": 158
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #122 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #210 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 12,000,000.",
+        "affected_item_index": 209
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #123 ('Belanja Operasional Perkantoran') dan Item #184 ('Belanja Operasional Perkantoran') dengan nominal Rp 3,544,000.",
+        "affected_item_index": 183
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #128 ('Belanja Jasa Honorarium') dan Item #135 ('Belanja Jasa Honorarium') dengan nominal Rp 52,800,000.",
+        "affected_item_index": 134
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #128 ('Belanja Jasa Honorarium') dan Item #144 ('Belanja Jasa Honorarium') dengan nominal Rp 52,800,000.",
+        "affected_item_index": 143
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #128 ('Belanja Jasa Honorarium') dan Item #191 ('Belanja Jasa Honorarium') dengan nominal Rp 52,800,000.",
+        "affected_item_index": 190
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #128 ('Belanja Jasa Honorarium') dan Item #201 ('Belanja Jasa Honorarium') dengan nominal Rp 52,800,000.",
+        "affected_item_index": 200
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #129 ('Belanja Jasa Honorarium Lainnya') dan Item #145 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 52,800,000.",
+        "affected_item_index": 144
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #129 ('Belanja Jasa Honorarium Lainnya') dan Item #192 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 52,800,000.",
+        "affected_item_index": 191
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #129 ('Belanja Jasa Honorarium Lainnya') dan Item #202 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 52,800,000.",
+        "affected_item_index": 201
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #132 ('Belanja Barang Perlengkapan') dan Item #143 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,580,000.",
+        "affected_item_index": 142
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #132 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,580,000.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #132 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,580,000.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #132 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,580,000.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #132 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,580,000.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #132 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,580,000.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #132 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,580,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #132 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,580,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #133 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #156 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 570,000.",
+        "affected_item_index": 155
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #133 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #206 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 570,000.",
+        "affected_item_index": 205
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #134 ('Belanja Barang Cetak dan Penggandaan') dan Item #157 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 210,000.",
+        "affected_item_index": 156
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #134 ('Belanja Barang Cetak dan Penggandaan') dan Item #183 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 210,000.",
+        "affected_item_index": 182
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #134 ('Belanja Barang Cetak dan Penggandaan') dan Item #189 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 210,000.",
+        "affected_item_index": 188
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #134 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 210,000.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #135 ('Belanja Jasa Honorarium') dan Item #144 ('Belanja Jasa Honorarium') dengan nominal Rp 400,000.",
+        "affected_item_index": 143
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #135 ('Belanja Jasa Honorarium') dan Item #191 ('Belanja Jasa Honorarium') dengan nominal Rp 400,000.",
+        "affected_item_index": 190
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #135 ('Belanja Jasa Honorarium') dan Item #201 ('Belanja Jasa Honorarium') dengan nominal Rp 400,000.",
+        "affected_item_index": 200
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #137 ('Belanja Barang dan Jasa') dan Item #204 ('Belanja Barang dan Jasa') dengan nominal Rp 8,000,000.",
+        "affected_item_index": 203
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #139 ('Belanja Modal Gedung, Bangunan dan Taman') dan Item #213 ('Belanja Modal Gedung, Bangunan dan Taman') dengan nominal Rp 10,000,000.",
+        "affected_item_index": 212
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #139 ('Belanja Modal Gedung, Bangunan dan Taman') dan Item #217 ('Belanja Modal Gedung, Bangunan dan Taman') dengan nominal Rp 10,000,000.",
+        "affected_item_index": 216
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #143 ('Belanja Barang Perlengkapan') dan Item #149 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,050,000.",
+        "affected_item_index": 148
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #143 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,050,000.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #143 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,050,000.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #143 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,050,000.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #143 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,050,000.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #143 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,050,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #143 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 5,050,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #144 ('Belanja Jasa Honorarium') dan Item #191 ('Belanja Jasa Honorarium') dengan nominal Rp 27,000,000.",
+        "affected_item_index": 190
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #144 ('Belanja Jasa Honorarium') dan Item #201 ('Belanja Jasa Honorarium') dengan nominal Rp 27,000,000.",
+        "affected_item_index": 200
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #145 ('Belanja Jasa Honorarium Lainnya') dan Item #192 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 27,000,000.",
+        "affected_item_index": 191
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #145 ('Belanja Jasa Honorarium Lainnya') dan Item #202 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 27,000,000.",
+        "affected_item_index": 201
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #149 ('Belanja Barang Perlengkapan') dan Item #155 ('Belanja Barang Perlengkapan') dengan nominal Rp 29,400,000.",
+        "affected_item_index": 154
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #149 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 29,400,000.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #149 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 29,400,000.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #149 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 29,400,000.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #149 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 29,400,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #149 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 29,400,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #150 ('Belanja Perjalanan Dinas') dan Item #158 ('Belanja Perjalanan Dinas') dengan nominal Rp 2,250,000.",
+        "affected_item_index": 157
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #150 ('Belanja Perjalanan Dinas') dan Item #209 ('Belanja Perjalanan Dinas') dengan nominal Rp 2,250,000.",
+        "affected_item_index": 208
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #151 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #159 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 2,250,000.",
+        "affected_item_index": 158
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #151 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #210 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 2,250,000.",
+        "affected_item_index": 209
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #155 ('Belanja Barang Perlengkapan') dan Item #167 ('Belanja Barang Perlengkapan') dengan nominal Rp 402,500.",
+        "affected_item_index": 166
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #155 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 402,500.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #155 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 402,500.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #155 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 402,500.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #155 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 402,500.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #156 ('Belanja Alat Tulis Kantor dan Benda Pos') dan Item #206 ('Belanja Alat Tulis Kantor dan Benda Pos') dengan nominal Rp 140,000.",
+        "affected_item_index": 205
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #157 ('Belanja Barang Cetak dan Penggandaan') dan Item #183 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 100,000.",
+        "affected_item_index": 182
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #157 ('Belanja Barang Cetak dan Penggandaan') dan Item #189 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 100,000.",
+        "affected_item_index": 188
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #157 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 100,000.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #158 ('Belanja Perjalanan Dinas') dan Item #209 ('Belanja Perjalanan Dinas') dengan nominal Rp 200,000.",
+        "affected_item_index": 208
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #159 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dan Item #210 ('Belanja Perjalanan Dinas Dalam Kabupaten/Kota') dengan nominal Rp 200,000.",
+        "affected_item_index": 209
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #161 ('Belanja Modal Jalan/Prasarana Jalan') dan Item #170 ('Belanja Modal Jalan/Prasarana Jalan') dengan nominal Rp 390,093,312.",
+        "affected_item_index": 169
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #162 ('Belanja Modal Jalan - Upah Tenaga Kerja') dan Item #171 ('Belanja Modal Jalan - Upah Tenaga Kerja') dengan nominal Rp 97,532,757.",
+        "affected_item_index": 170
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #163 ('Belanja Modal Jalan - Bahan Baku/Material') dan Item #172 ('Belanja Modal Jalan - Bahan Baku/Material') dengan nominal Rp 291,960,554.",
+        "affected_item_index": 171
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #167 ('Belanja Barang Perlengkapan') dan Item #182 ('Belanja Barang Perlengkapan') dengan nominal Rp 6,600,000.",
+        "affected_item_index": 181
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #167 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 6,600,000.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #167 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 6,600,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #167 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 6,600,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #168 ('Belanja Barang Perlengkapan Lainnya') dan Item #221 ('Belanja Barang Perlengkapan Lainnya') dengan nominal Rp 6,600,000.",
+        "affected_item_index": 220
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #182 ('Belanja Barang Perlengkapan') dan Item #188 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,625,000.",
+        "affected_item_index": 187
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #182 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,625,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #182 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 2,625,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #183 ('Belanja Barang Cetak dan Penggandaan') dan Item #189 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 2,625,000.",
+        "affected_item_index": 188
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #183 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 2,625,000.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #188 ('Belanja Barang Perlengkapan') dan Item #205 ('Belanja Barang Perlengkapan') dengan nominal Rp 10,005,000.",
+        "affected_item_index": 204
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #188 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 10,005,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #189 ('Belanja Barang Cetak dan Penggandaan') dan Item #207 ('Belanja Barang Cetak dan Penggandaan') dengan nominal Rp 255,000.",
+        "affected_item_index": 206
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #190 ('Belanja Pakaian Dinas/Seragam/Atribut') dan Item #208 ('Belanja Pakaian Dinas/Seragam/Atribut') dengan nominal Rp 9,000,000.",
+        "affected_item_index": 207
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #191 ('Belanja Jasa Honorarium') dan Item #201 ('Belanja Jasa Honorarium') dengan nominal Rp 8,160,000.",
+        "affected_item_index": 200
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #192 ('Belanja Jasa Honorarium Lainnya') dan Item #202 ('Belanja Jasa Honorarium Lainnya') dengan nominal Rp 7,760,000.",
+        "affected_item_index": 201
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #205 ('Belanja Barang Perlengkapan') dan Item #220 ('Belanja Barang Perlengkapan') dengan nominal Rp 6,500,000.",
+        "affected_item_index": 219
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #213 ('Belanja Modal Gedung, Bangunan dan Taman') dan Item #217 ('Belanja Modal Gedung, Bangunan dan Taman') dengan nominal Rp 120,000,000.",
+        "affected_item_index": 216
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #224 ('Belanja Tidak Terduga') dan Item #225 ('Belanja Tidak Terduga') dengan nominal Rp 10,450,400.",
+        "affected_item_index": 224
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #224 ('Belanja Tidak Terduga') dan Item #226 ('Belanja Tidak Terduga') dengan nominal Rp 10,450,400.",
+        "affected_item_index": 225
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #225 ('Belanja Tidak Terduga') dan Item #226 ('Belanja Tidak Terduga') dengan nominal Rp 10,450,400.",
+        "affected_item_index": 225
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #225 ('Belanja Tidak Terduga') dan Item #230 ('Belanja Tidak Terduga') dengan nominal Rp 10,450,400.",
+        "affected_item_index": 229
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #226 ('Belanja Tidak Terduga') dan Item #231 ('Belanja Tidak Terduga') dengan nominal Rp 10,450,400.",
+        "affected_item_index": 230
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #229 ('Belanja Tidak Terduga') dan Item #230 ('Belanja Tidak Terduga') dengan nominal Rp 18,000,000.",
+        "affected_item_index": 229
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #229 ('Belanja Tidak Terduga') dan Item #231 ('Belanja Tidak Terduga') dengan nominal Rp 18,000,000.",
+        "affected_item_index": 230
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #230 ('Belanja Tidak Terduga') dan Item #231 ('Belanja Tidak Terduga') dengan nominal Rp 18,000,000.",
+        "affected_item_index": 230
+      },
+      {
+        "rule_code": "R4_DUPLICATE_ITEM",
+        "is_passed": false,
+        "penalty_score": 0.15,
+        "error_message": "Potensi duplikasi antara Item #233 ('SILPA Tahun Sebelumnya') dan Item #234 ('SILPA Tahun Sebelumnya') dengan nominal Rp 91,052,219.",
+        "affected_item_index": 233
       }
     ]
   },
   "confidence_result": {
-    "confidence_score": 98,
-    "score_validation": 100,
-    "score_llm": 95,
+    "confidence_score": 44,
+    "score_validation": 0,
+    "score_llm": 80,
     "score_ocr": 98,
-    "action": "auto_approved",
-    "routing_reason": "Confidence Score tinggi (98%) dan seluruh 5 aturan validasi lulus. Auto-Approved langsung diterbitkan ke publik."
+    "action": "needs_review",
+    "routing_reason": "Confidence Score (44%) di bawah ambang batas 85%. Memerlukan verifikasi oleh admin verifikator."
   }
 }

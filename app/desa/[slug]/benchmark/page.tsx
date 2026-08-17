@@ -1,291 +1,330 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, use, useMemo } from 'react'
 import Link from 'next/link'
-import { ChevronRight, BarChart3, Info, ShieldCheck, AlertTriangle, Sparkles, Layers } from 'lucide-react'
+import {
+  ChevronRight,
+  BarChart3,
+  Info,
+  ShieldCheck,
+  AlertTriangle,
+  Sparkles,
+  Layers,
+  MapPin,
+  TrendingUp,
+  Sliders,
+  CheckCircle2,
+} from 'lucide-react'
 import { AppHeader } from '@/components/app-header'
 import { BenchmarkBarChart, CategoryComparison } from '@/components/benchmark/benchmark-bar-chart'
 import { BenchmarkFilter, FilterOptions } from '@/components/benchmark/benchmark-filter'
 import { MetodologiModal } from '@/components/metodologi-modal'
 import { runHybridAnomalyDetection, HybridAnomalyReport } from '@/lib/anomaly/hybrid-engine'
 import { Badge } from '@/components/ui/badge'
+import { getVillageBySlug, VILLAGES_DATABASE } from '@/lib/data/villages-store'
+import { getBenchmarkForRegion } from '@/lib/data/benchmark-dataset'
 
-// Mock Data Desa
-const dataDesa = {
-  nama: 'Desa Sukamaju (Desa Contoh)',
-  kabupaten: 'Kabupaten Klaten',
-  provinsi: 'Jawa Tengah',
-}
-
-const LIST_PROVINSI = ['Semua Provinsi', 'Jawa Tengah', 'Jawa Barat', 'Jawa Timur', 'DI Yogyakarta']
-const LIST_KARAKTERISTIK = [
+const PROVINSI_LIST = ['Semua Provinsi', 'Jawa Tengah', 'Jawa Timur', 'Bali', 'Jawa Barat']
+const KARAKTERISTIK_LIST = [
   'Semua Karakteristik',
-  'Desa Wisata / Mandiri',
-  'Desa Pertanian / Agraris',
-  'Desa Pesisir / Nelayan',
+  'Desa Pertanian & Agroindustri',
+  'Desa Pertanian & Lumbung Pangan',
+  'Desa Wisata & Budaya Pertanian',
+  'Desa Pesisir & Sentra Perikanan',
   'Desa Berkembang',
 ]
 
-export default function BenchmarkDesaPage() {
+interface PageProps {
+  params: Promise<{ slug: string }>
+}
+
+export default function BenchmarkDesaPage({ params }: PageProps) {
+  const { slug } = use(params)
+  const village = getVillageBySlug(slug)
+  const currentData = village.years[village.currentYear] || Object.values(village.years)[0]
+
   const [filters, setFilters] = useState<FilterOptions>({
-    provinsi: 'Semua Provinsi',
-    karakteristik: 'Desa Wisata / Mandiri',
+    provinsi: village.provinsi || 'Semua Provinsi',
+    karakteristik: village.karakteristik || 'Desa Pertanian & Agroindustri',
   })
 
   const [contextFlags, setContextFlags] = useState({
     is_disaster_declared: false,
-    is_multiyear_project: true, // Proyek pembangunan fisik besar multi-tahun
-    has_external_grant: true, // Bantuan khusus provinsi
+    is_multiyear_project: true,
+    has_external_grant: true,
   })
 
-  // Jalankan Hybrid Engine untuk kategori Infrastruktur
-  const hybridReportInfrastruktur: HybridAnomalyReport = runHybridAnomalyDetection(
-    'Infrastruktur',
-    960, // 960 Juta Rp
-    [650, 680, 700, 620, 690, 640, 670, 710, 660, 680], // Peer amounts
-    { r_infra: 0.40, r_pendidikan: 0.20, r_kesehatan: 0.15, r_pemberdayaan: 0.15, r_operasional: 0.10, r_darurat: 0, per_capita: 461000 },
-    [
-      { r_infra: 0.28, r_pendidikan: 0.22, r_kesehatan: 0.18, r_pemberdayaan: 0.17, r_operasional: 0.10, r_darurat: 0.05, per_capita: 350000 },
-      { r_infra: 0.30, r_pendidikan: 0.20, r_kesehatan: 0.17, r_pemberdayaan: 0.18, r_operasional: 0.10, r_darurat: 0.05, per_capita: 360000 },
-    ],
-    2400000000, // Total Anggaran Rp 2.4M
-    240000000, // Operasional Pemdes 10%
-    360000000, // Kesehatan 15%
-    25000000, // Operasional BPD
-    480000000, // Tahun lalu 480 Juta
-    contextFlags,
-    3 // 3 Tahun data histori
-  )
+  // Ambil benchmark dataset riil berdasarkan region
+  const benchmarkStats = useMemo(() => {
+    return getBenchmarkForRegion(filters.provinsi)
+  }, [filters.provinsi])
 
-  const comparisonData: CategoryComparison[] = [
-    {
-      kategori: 'Infrastruktur',
-      desaIni: 960,
-      rataRata: 680,
-      selisihPersen: 41.1,
-      isAnomali: hybridReportInfrastruktur.risk_level !== 'LOW',
-      anomaliMessage: hybridReportInfrastruktur.explanation,
-    },
-    {
-      kategori: 'Pemberdayaan',
-      desaIni: 480,
-      rataRata: 520,
-      selisihPersen: -7.6,
-      isAnomali: false,
-    },
-    {
-      kategori: 'Pemerintahan',
-      desaIni: 600,
-      rataRata: 580,
-      selisihPersen: 3.4,
-      isAnomali: false,
-    },
-    {
-      kategori: 'Pembinaan',
-      desaIni: 240,
-      rataRata: 220,
-      selisihPersen: 9.1,
-      isAnomali: false,
-    },
-    {
-      kategori: 'Bencana/Darurat',
-      desaIni: 120,
-      rataRata: 150,
-      selisihPersen: -20,
-      isAnomali: false,
-    },
-  ]
+  // Hitung pengeluaran desa dalam Juta Rupiah per kategori
+  const villageCategoryAmountsJuta = useMemo(() => {
+    const res: Record<string, number> = {
+      Infrastruktur: 0,
+      'Operasional Pemerintah Desa': 0,
+      'Pemberdayaan Masyarakat': 0,
+      Kesehatan: 0,
+      Pendidikan: 0,
+      Lainnya: 0,
+    }
+
+    currentData.alokasi.forEach((a) => {
+      if (res[a.kategori] !== undefined) {
+        res[a.kategori] = Math.round(a.nominal / 1000000)
+      } else {
+        res['Lainnya'] += Math.round(a.nominal / 1000000)
+      }
+    })
+
+    return res
+  }, [currentData])
+
+  // Jalankan Hybrid Anomaly Detection Engine
+  const hybridReportInfrastruktur: HybridAnomalyReport = useMemo(() => {
+    const infraJuta = villageCategoryAmountsJuta['Infrastruktur'] || 781
+    const totalAnggaran = currentData.totalBelanja
+    const operasional = (villageCategoryAmountsJuta['Operasional Pemerintah Desa'] || 852) * 1000000
+    const kesehatan = (villageCategoryAmountsJuta['Kesehatan'] || 116) * 1000000
+
+    return runHybridAnomalyDetection(
+      'Infrastruktur',
+      infraJuta,
+      benchmarkStats.peersInfrastrukturJuta,
+      {
+        r_infra: currentData.alokasi.find((a) => a.kategori === 'Infrastruktur')?.persen
+          ? currentData.alokasi.find((a) => a.kategori === 'Infrastruktur')!.persen / 100
+          : 0.38,
+        r_pendidikan: 0.05,
+        r_kesehatan: 0.08,
+        r_pemberdayaan: 0.12,
+        r_operasional: 0.35,
+        r_darurat: 0.02,
+        per_capita: 350000,
+      },
+      [
+        { r_infra: 0.35, r_pendidikan: 0.06, r_kesehatan: 0.08, r_pemberdayaan: 0.14, r_operasional: 0.32, r_darurat: 0.05, per_capita: 320000 },
+      ],
+      totalAnggaran,
+      operasional,
+      kesehatan,
+      25000000,
+      infraJuta * 1000000 * 0.9,
+      contextFlags,
+      3
+    )
+  }, [villageCategoryAmountsJuta, benchmarkStats, currentData, contextFlags])
+
+  const comparisonData: CategoryComparison[] = useMemo(() => {
+    const categories = [
+      { key: 'Infrastruktur', label: 'Infrastruktur', isMain: true },
+      { key: 'Operasional Pemerintah Desa', label: 'Operasional Pemdes' },
+      { key: 'Pemberdayaan Masyarakat', label: 'Pemberdayaan' },
+      { key: 'Kesehatan', label: 'Kesehatan' },
+      { key: 'Pendidikan', label: 'Pendidikan' },
+      { key: 'Lainnya', label: 'Darurat & Lainnya' },
+    ]
+
+    return categories.map((cat) => {
+      const desaIni = villageCategoryAmountsJuta[cat.key] || 0
+      const rataRata = (benchmarkStats.categoryAveragesJuta as any)[cat.key] || 100
+      const selisihPersen = rataRata > 0 ? Number((((desaIni - rataRata) / rataRata) * 100).toFixed(1)) : 0
+
+      const isAnomali = cat.isMain ? hybridReportInfrastruktur.risk_level !== 'LOW' : Math.abs(selisihPersen) > 40
+
+      return {
+        kategori: cat.label,
+        desaIni,
+        rataRata,
+        selisihPersen,
+        isAnomali,
+        anomaliMessage: cat.isMain ? hybridReportInfrastruktur.explanation : undefined,
+      }
+    })
+  }, [villageCategoryAmountsJuta, benchmarkStats, hybridReportInfrastruktur])
 
   return (
     <div className="min-h-dvh bg-surface">
       <AppHeader />
 
-      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
-        {/* Breadcrumb: Beranda > [Nama Desa] > Bandingkan Desa */}
-        <nav aria-label="Breadcrumb" className="mb-6">
-          <ol className="flex flex-wrap items-center gap-1.5 text-sm">
-            <li>
-              <Link href="/dashboard" className="text-muted-foreground transition-colors hover:text-primary">
-                Dashboard
-              </Link>
-            </li>
-            <li aria-hidden="true">
-              <ChevronRight className="size-4 text-muted-foreground/60" />
-            </li>
-            <li>
-              <Link href="/desa/sukamaju" className="text-muted-foreground transition-colors hover:text-primary">
-                {dataDesa.nama}
-              </Link>
-            </li>
-            <li aria-hidden="true">
-              <ChevronRight className="size-4 text-muted-foreground/60" />
-            </li>
-            <li>
-              <span className="font-medium text-foreground" aria-current="page">
-                Bandingkan Desa
-              </span>
-            </li>
-          </ol>
-        </nav>
+      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10 space-y-8">
+        {/* Breadcrumb */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <nav aria-label="Breadcrumb">
+            <ol className="flex flex-wrap items-center gap-1.5 text-sm">
+              <li>
+                <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
+                  Beranda
+                </Link>
+              </li>
+              <li aria-hidden="true">
+                <ChevronRight className="size-4 text-muted-foreground/60" />
+              </li>
+              <li>
+                <Link href={`/desa/${village.slug}`} className="text-muted-foreground transition-colors hover:text-primary">
+                  {village.nama}
+                </Link>
+              </li>
+              <li aria-hidden="true">
+                <ChevronRight className="size-4 text-muted-foreground/60" />
+              </li>
+              <li>
+                <span className="font-medium text-foreground" aria-current="page">
+                  Benchmark &amp; Anomali
+                </span>
+              </li>
+            </ol>
+          </nav>
 
-        {/* Page Title & Subtitle */}
-        <div className="mb-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
-          <div className="flex items-center gap-3">
-            <div className="flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
-              <BarChart3 className="size-6" />
+          {/* Quick Village Switcher */}
+          <div className="flex items-center gap-1.5 overflow-x-auto text-xs">
+            <span className="text-muted-foreground font-medium mr-1">Desa:</span>
+            {Object.values(VILLAGES_DATABASE).map((v) => (
+              <Link
+                key={v.slug}
+                href={`/desa/${v.slug}/benchmark`}
+                className={`px-2.5 py-1 rounded-lg font-medium transition-all ${
+                  v.slug === village.slug
+                    ? 'bg-primary text-white font-bold'
+                    : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+                }`}
+              >
+                {v.nama}
+              </Link>
+            ))}
+          </div>
+        </div>
+
+        {/* Page Title & Methodology Banner */}
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+          <div>
+            <div className="flex flex-wrap items-center gap-2.5">
+              <h1 className="font-heading text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
+                BenchmarkDesa &amp; Deteksi Anomali
+              </h1>
+              <Badge className="bg-lime/15 text-lime-dark border-lime/30 font-medium inline-flex items-center gap-1 py-1">
+                <Sparkles className="size-3.5" />
+                <span>Hybrid Statistical &amp; Domain Engine</span>
+              </Badge>
             </div>
-            <div>
-              <div className="flex items-center gap-2">
-                <h1 className="font-heading text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                  Benchmark & Hybrid Anomaly Detection
-                </h1>
-                <Badge className="bg-primary/10 text-primary border-primary/20 text-xs font-semibold">
-                  Hybrid 4-Layer Engine
-                </Badge>
+            <p className="mt-1 text-sm text-muted-foreground">
+              Membandingkan alokasi anggaran {village.nama} ({village.kabupaten}) terhadap data agregasi {benchmarkStats.region}.
+            </p>
+          </div>
+
+          <MetodologiModal />
+        </div>
+
+        {/* Filter Wilayah & Karakteristik Peer Group */}
+        <BenchmarkFilter
+          filters={filters}
+          onFilterChange={setFilters}
+          provinsiList={PROVINSI_LIST}
+          karakteristikList={KARAKTERISTIK_LIST}
+        />
+
+        {/* AI Hybrid Engine Context & Risk Banner */}
+        <div
+          className={`rounded-2xl border p-5 shadow-xs transition-all ${
+            hybridReportInfrastruktur.risk_level === 'HIGH'
+              ? 'border-terracotta/40 bg-terracotta/5 text-terracotta'
+              : hybridReportInfrastruktur.risk_level === 'MEDIUM'
+              ? 'border-amber-500/40 bg-amber-500/5 text-amber-900 dark:text-amber-300'
+              : 'border-primary/20 bg-primary/5 text-primary'
+          }`}
+        >
+          <div className="flex flex-col sm:flex-row sm:items-start justify-between gap-4">
+            <div className="flex items-start gap-3">
+              <div className="mt-0.5 rounded-xl bg-card p-2 shadow-xs border border-border">
+                {hybridReportInfrastruktur.risk_level === 'LOW' ? (
+                  <CheckCircle2 className="size-5 text-primary" />
+                ) : (
+                  <AlertTriangle className="size-5 text-terracotta" />
+                )}
               </div>
-              <p className="mt-0.5 text-sm text-muted-foreground">
-                Perbandingan alokasi anggaran APBDes {dataDesa.nama} terhadap kelompok desa serupa
-              </p>
+              <div className="space-y-1">
+                <div className="flex items-center gap-2 flex-wrap">
+                  <span className="font-heading font-bold text-sm text-foreground">
+                    Hasil Diagnosis Hybrid AI Engine: Pos Belanja {hybridReportInfrastruktur.category_name}
+                  </span>
+                  <span
+                    className={`text-[11px] font-bold px-2 py-0.5 rounded-md uppercase tracking-wider ${
+                      hybridReportInfrastruktur.risk_level === 'LOW'
+                        ? 'bg-primary/20 text-primary'
+                        : 'bg-terracotta/20 text-terracotta'
+                    }`}
+                  >
+                    Risk Level: {hybridReportInfrastruktur.risk_level} ({hybridReportInfrastruktur.risk_label})
+                  </span>
+                  <span className="text-xs text-muted-foreground font-mono">
+                    Score: {(hybridReportInfrastruktur.cas_final * 100).toFixed(1)}/100
+                  </span>
+                </div>
+                <p className="text-xs text-foreground/80 leading-relaxed max-w-3xl">
+                  {hybridReportInfrastruktur.explanation}
+                </p>
+              </div>
+            </div>
+
+            {/* Context Adjustment Toggles */}
+            <div className="flex items-center gap-2 shrink-0 text-xs">
+              <span className="text-muted-foreground font-medium flex items-center gap-1">
+                <Sliders className="size-3" /> Konteks:
+              </span>
+              <button
+                onClick={() =>
+                  setContextFlags((prev) => ({
+                    ...prev,
+                    is_multiyear_project: !prev.is_multiyear_project,
+                  }))
+                }
+                className={`px-2.5 py-1 rounded-lg border text-[11px] font-medium transition-colors ${
+                  contextFlags.is_multiyear_project
+                    ? 'bg-primary text-white border-primary font-bold'
+                    : 'bg-card border-border text-muted-foreground'
+                }`}
+              >
+                Proyek Multi-Tahun
+              </button>
             </div>
           </div>
         </div>
 
-        {/* Section Filter */}
-        <section aria-label="Filter Pembanding" className="mb-6">
-          <BenchmarkFilter
-            filters={filters}
-            onFilterChange={setFilters}
-            provinsiList={LIST_PROVINSI}
-            karakteristikList={LIST_KARAKTERISTIK}
+        {/* Benchmark Bar Chart Comparison */}
+        <section aria-label="Grafik Perbandingan Anggaran">
+          <BenchmarkBarChart
+            data={comparisonData}
+            namaDesa={village.nama}
           />
         </section>
 
-        {/* Dynamic Contextual Adjustments Toggle Simulator */}
-        <section aria-label="Simulasi Konteks Khusus" className="mb-6 rounded-xl border border-border bg-card p-4 shadow-xs">
-          <div className="flex items-center gap-2 mb-3">
-            <Layers className="size-4 text-primary" />
-            <h3 className="text-xs font-bold uppercase tracking-wider text-foreground">
-              Simulasi Contextual Adjustment Filter (Penyaring Kondisi Khusus Desa)
-            </h3>
-          </div>
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 text-xs">
-            <label className="flex items-center gap-2 p-2.5 rounded-lg border border-border bg-muted/20 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={contextFlags.is_disaster_declared}
-                onChange={(e) => setContextFlags((prev) => ({ ...prev, is_disaster_declared: e.target.checked }))}
-                className="size-4 rounded accent-primary"
-              />
-              <span>🚨 Status Tanggap Bencana Alam</span>
-            </label>
-            <label className="flex items-center gap-2 p-2.5 rounded-lg border border-border bg-muted/20 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={contextFlags.is_multiyear_project}
-                onChange={(e) => setContextFlags((prev) => ({ ...prev, is_multiyear_project: e.target.checked }))}
-                className="size-4 rounded accent-primary"
-              />
-              <span>🏗️ Pembangunan Fisik Multi-Tahun</span>
-            </label>
-            <label className="flex items-center gap-2 p-2.5 rounded-lg border border-border bg-muted/20 cursor-pointer">
-              <input
-                type="checkbox"
-                checked={contextFlags.has_external_grant}
-                onChange={(e) => setContextFlags((prev) => ({ ...prev, has_external_grant: e.target.checked }))}
-                className="size-4 rounded accent-primary"
-              />
-              <span>💰 Dana Bantuan Khusus Prov/Kab</span>
-            </label>
-          </div>
-        </section>
-
-        {/* Hybrid Anomaly Breakdown Report Panel */}
-        <section aria-label="Laporan Hybrid Anomaly Engine" className="mb-8 rounded-2xl border border-border bg-card p-5 sm:p-6 shadow-xs space-y-4">
-          <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-border pb-4">
-            <div className="flex items-center gap-3">
-              <div className={`flex size-10 items-center justify-center rounded-xl ${
-                hybridReportInfrastruktur.risk_level === 'LOW'
-                  ? 'bg-emerald-100 text-emerald-700'
-                  : hybridReportInfrastruktur.risk_level === 'MEDIUM'
-                  ? 'bg-amber-100 text-amber-700'
-                  : 'bg-rose-100 text-rose-700'
-              }`}>
-                {hybridReportInfrastruktur.risk_level === 'LOW' ? <ShieldCheck className="size-6" /> : <AlertTriangle className="size-6" />}
-              </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <h3 className="font-heading font-bold text-foreground text-base">
-                    Hasil Analisis Hybrid: Alokasi Infrastruktur
-                  </h3>
-                  <Badge className={`text-xs font-extrabold ${
-                    hybridReportInfrastruktur.badge_color === 'emerald'
-                      ? 'bg-emerald-100 text-emerald-800 border-emerald-300'
-                      : hybridReportInfrastruktur.badge_color === 'amber'
-                      ? 'bg-amber-100 text-amber-800 border-amber-300'
-                      : 'bg-rose-100 text-rose-800 border-rose-300'
-                  }`}>
-                    {hybridReportInfrastruktur.risk_label}
-                  </Badge>
-                </div>
-                <p className="text-xs text-muted-foreground mt-0.5">{hybridReportInfrastruktur.explanation}</p>
-              </div>
-            </div>
-
-            <div className="text-left sm:text-right border-t sm:border-t-0 pt-2 sm:pt-0 border-border/60">
-              <span className="text-xs text-muted-foreground block font-semibold">Composite Anomaly Score (CAS)</span>
-              <span className="font-heading text-xl font-bold text-foreground">
-                {hybridReportInfrastruktur.cas_final} <span className="text-xs font-normal text-muted-foreground">(Conf: {hybridReportInfrastruktur.confidence_level_percent}%)</span>
-              </span>
-            </div>
+        {/* Peer Sample Statistics Cards */}
+        <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="rounded-2xl border border-border bg-card p-4 shadow-xs">
+            <p className="text-xs text-muted-foreground font-medium">Ukuran Sampel Peer Group</p>
+            <p className="mt-1 font-heading text-xl font-bold text-foreground">
+              {benchmarkStats.sampleSize.toLocaleString('id-ID')} Desa
+            </p>
+            <p className="text-[11px] text-muted-foreground mt-0.5">Database IDM &amp; SIKD Kemendagri</p>
           </div>
 
-          {/* Rincian 4-Layer Breakdown Grid */}
-          <div className="grid grid-cols-1 sm:grid-cols-4 gap-3 text-xs">
-            <div className="p-3 rounded-xl border border-border bg-muted/20 space-y-1">
-              <span className="text-[10px] font-bold text-muted-foreground uppercase">Layer 1: Robust MAD Stat</span>
-              <p className="font-semibold text-foreground">Mod-Z: {hybridReportInfrastruktur.breakdown.layer1_stat.modified_z_score}</p>
-              <p className="text-[11px] text-muted-foreground">Median: Rp {hybridReportInfrastruktur.breakdown.layer1_stat.median} Jt</p>
-            </div>
-            <div className="p-3 rounded-xl border border-border bg-muted/20 space-y-1">
-              <span className="text-[10px] font-bold text-muted-foreground uppercase">Layer 2: Isolation Forest ML</span>
-              <p className="font-semibold text-foreground">Skor ML: {hybridReportInfrastruktur.breakdown.layer2_iforest.score_iforest}</p>
-              <p className="text-[11px] text-muted-foreground">{hybridReportInfrastruktur.breakdown.layer2_iforest.description}</p>
-            </div>
-            <div className="p-3 rounded-xl border border-border bg-muted/20 space-y-1">
-              <span className="text-[10px] font-bold text-muted-foreground uppercase">Layer 3: Permendagri Rules</span>
-              <p className="font-semibold text-foreground">Skor Permendagri: {hybridReportInfrastruktur.breakdown.layer3_rules.score_rule}</p>
-              <p className="text-[11px] text-muted-foreground">
-                {hybridReportInfrastruktur.breakdown.layer3_rules.violations.length === 0 ? '✓ Tidak ada pelanggaran' : `${hybridReportInfrastruktur.breakdown.layer3_rules.violations.length} Aturan terlanggar`}
-              </p>
-            </div>
-            <div className="p-3 rounded-xl border border-border bg-muted/20 space-y-1">
-              <span className="text-[10px] font-bold text-muted-foreground uppercase">Layer 4: Historical YoY</span>
-              <p className="font-semibold text-foreground">YoY Change: +{hybridReportInfrastruktur.breakdown.layer4_hist.yoy_change_percent}%</p>
-              <p className="text-[11px] text-muted-foreground">{hybridReportInfrastruktur.breakdown.layer4_hist.description}</p>
-            </div>
+          <div className="rounded-2xl border border-border bg-card p-4 shadow-xs">
+            <p className="text-xs text-muted-foreground font-medium">Rata-rata Pagu Anggaran Wilayah</p>
+            <p className="mt-1 font-heading text-xl font-bold text-foreground">
+              Rp {benchmarkStats.avgTotalBudgetJuta} Juta
+            </p>
+            <p className="text-[11px] text-muted-foreground mt-0.5">Pagu belanja APBDes tahunan</p>
           </div>
-        </section>
 
-        {/* Section Main Chart */}
-        <section aria-label="Grafik Perbandingan Anggaran" className="mb-10">
-          <BenchmarkBarChart namaDesa={dataDesa.nama} data={comparisonData} />
-        </section>
-
-        {/* Info Box Catatan Metodologi */}
-        <section aria-label="Catatan Metodologi" className="rounded-xl border border-border bg-card p-4 sm:p-5 shadow-xs">
-          <div className="flex items-start gap-3">
-            <Info className="size-5 shrink-0 text-primary mt-0.5" />
-            <div className="text-xs text-muted-foreground space-y-1 flex-1">
-              <p className="font-semibold text-foreground text-sm">Bagaimana Hybrid Anomaly System Ini Bekerja?</p>
-              <p>
-                TransparanDesa mengombinasikan 4 layer analisis (Robust MAD Z-Score, Isolation Forest ML, Rule Engine Permendagri No. 20/2018, dan Historical YoY Pattern Analysis) serta menyaring faktor konteks khusus (bencana alam dan bantuan khusus) untuk mencegah tuduhan palsu.
-              </p>
-            </div>
+          <div className="rounded-2xl border border-border bg-card p-4 shadow-xs">
+            <p className="text-xs text-muted-foreground font-medium">Status IDM Desa Terpilih</p>
+            <p className="mt-1 font-heading text-xl font-bold text-primary">
+              Desa {village.idmStatus} ({village.idmScore.toFixed(3)})
+            </p>
+            <p className="text-[11px] text-muted-foreground mt-0.5">{village.karakteristik}</p>
           </div>
-          <div className="mt-4 flex justify-end">
-            <MetodologiModal />
-          </div>
-        </section>
+        </div>
       </main>
     </div>
   )

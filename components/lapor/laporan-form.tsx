@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import { Upload, Camera, X, CheckCircle, ShieldCheck, User, Phone, Mail } from 'lucide-react'
+import { Upload, Camera, X, CheckCircle, ShieldCheck, User, Phone, Mail, FileText, CheckCircle2 } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import {
@@ -11,24 +11,35 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
+import { BudgetItem } from '@/lib/data/villages-store'
 
 export const KATEGORI_APBDES_LIST = [
   'Infrastruktur',
-  'Pendidikan',
-  'Kesehatan',
-  'Pemberdayaan Masyarakat',
   'Operasional Pemerintah Desa',
+  'Pemberdayaan Masyarakat',
+  'Kesehatan',
+  'Pendidikan',
   'Lainnya / Bencana',
 ]
 
-export function LaporanForm() {
+interface LaporanFormProps {
+  namaDesa?: string
+  desaSlug?: string
+  budgetItems?: BudgetItem[]
+}
+
+export function LaporanForm({ namaDesa = 'Desa Karanganyar', desaSlug = 'karanganyar', budgetItems = [] }: LaporanFormProps) {
   const [kategori, setKategori] = useState<string>('')
+  const [posBelanja, setPosBelanja] = useState<string>('')
   const [deskripsi, setDeskripsi] = useState<string>('')
   const [files, setFiles] = useState<File[]>([])
   const [isAnonim, setIsAnonim] = useState<boolean>(true)
   const [nama, setNama] = useState<string>('')
   const [kontak, setKontak] = useState<string>('')
   const [isSubmitted, setIsSubmitted] = useState<boolean>(false)
+
+  // Filter items matching selected category
+  const filteredBudgetItems = budgetItems.filter((i) => !kategori || i.kategori === kategori)
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     if (e.target.files) {
@@ -47,14 +58,13 @@ export function LaporanForm() {
       alert('Harap isi kategori anggaran dan deskripsi laporan!')
       return
     }
-    // Generate random ticket ID for demo
-    const randomTicket = `TD-2026-${Math.floor(10000 + Math.random() * 90000)}`
+    const randomTicket = `TD-${new Date().getFullYear()}-${Math.floor(10000 + Math.random() * 90000)}`
     window.location.href = `/lapor/${randomTicket}`
   }
 
   if (isSubmitted) {
     return (
-      <div className="rounded-xl border border-border bg-card p-6 sm:p-8 text-center shadow-xs">
+      <div className="rounded-2xl border border-border bg-card p-6 sm:p-8 text-center shadow-xs">
         <div className="mx-auto flex size-14 items-center justify-center rounded-full bg-primary/10 text-primary mb-4">
           <CheckCircle className="size-8" />
         </div>
@@ -62,13 +72,14 @@ export function LaporanForm() {
           Laporan Berhasil Terkirim!
         </h3>
         <p className="mt-2 text-sm text-muted-foreground max-w-md mx-auto">
-          Terima kasih telah berpartisipasi menjaga transparansi desa. Tim verifikasi kami akan meninjau laporan ini sebelum dipublikasikan secara transparan.
+          Terima kasih telah berpartisipasi menjaga transparansi {namaDesa}. Tim verifikasi kami akan meninjau laporan ini sebelum dipublikasikan secara transparan.
         </p>
         <div className="mt-6 flex justify-center gap-3">
           <Button
             onClick={() => {
               setIsSubmitted(false)
               setKategori('')
+              setPosBelanja('')
               setDeskripsi('')
               setFiles([])
               setIsAnonim(true)
@@ -76,7 +87,7 @@ export function LaporanForm() {
               setKontak('')
             }}
             variant="outline"
-            className="h-10 px-5 text-sm"
+            className="h-10 px-5 text-sm rounded-xl"
           >
             Buat Laporan Lain
           </Button>
@@ -86,14 +97,23 @@ export function LaporanForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} className="rounded-xl border border-border bg-card p-5 sm:p-8 shadow-xs space-y-6">
+    <form onSubmit={handleSubmit} className="rounded-2xl border border-border bg-card p-6 sm:p-8 shadow-xs space-y-6">
+      <div className="border-b border-border pb-4">
+        <h3 className="font-heading text-lg font-bold text-foreground">
+          Form Pengaduan Partisipatif Warga — {namaDesa}
+        </h3>
+        <p className="text-xs text-muted-foreground mt-0.5">
+          Laporan Anda dijamin kerahasiaannya dan akan langsung terhubung ke pos belanja APBDes.
+        </p>
+      </div>
+
       {/* 1. Dropdown Kategori Anggaran */}
       <div className="space-y-2">
         <label className="text-sm font-semibold text-foreground flex items-center justify-between">
           <span>Kategori Anggaran APBDes <span className="text-terracotta">*</span></span>
         </label>
-        <Select value={kategori} onValueChange={(val) => val && setKategori(val)}>
-          <SelectTrigger className="w-full h-10 bg-background text-sm">
+        <Select value={kategori} onValueChange={(val) => { if (val) { setKategori(val); setPosBelanja('') } }}>
+          <SelectTrigger className="w-full h-11 bg-background text-sm rounded-xl">
             <SelectValue placeholder="Pilih Kategori Anggaran" />
           </SelectTrigger>
           <SelectContent>
@@ -106,60 +126,77 @@ export function LaporanForm() {
         </Select>
       </div>
 
-      {/* 2. Textarea Deskripsi Ketidaksesuaian */}
+      {/* 2. Optional Spesifik Pos Belanja */}
+      {filteredBudgetItems.length > 0 && (
+        <div className="space-y-2">
+          <label className="text-sm font-semibold text-foreground flex items-center justify-between">
+            <span>Pos Belanja Terkait <span className="text-xs font-normal text-muted-foreground">(Opsional)</span></span>
+          </label>
+          <Select value={posBelanja} onValueChange={(val) => val && setPosBelanja(val)}>
+            <SelectTrigger className="w-full h-11 bg-background text-sm rounded-xl">
+              <SelectValue placeholder="Pilih Pos Belanja Spesifik dari APBDes" />
+            </SelectTrigger>
+            <SelectContent>
+              {filteredBudgetItems.slice(0, 30).map((item, idx) => (
+                <SelectItem key={idx} value={item.uraian} className="text-xs">
+                  {item.kode_rekening} — {item.uraian} (Rp {(item.nominal_anggaran / 1000000).toFixed(1)} Jt)
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
+        </div>
+      )}
+
+      {/* 3. Textarea Deskripsi Ketidaksesuaian */}
       <div className="space-y-2">
         <label className="text-sm font-semibold text-foreground">
-          Deskripsi Ketidaksesuaian <span className="text-terracotta">*</span>
+          Deskripsi Laporan / Temuan Lapangan <span className="text-terracotta">*</span>
         </label>
         <textarea
           rows={4}
           value={deskripsi}
           onChange={(e) => setDeskripsi(e.target.value)}
-          placeholder="Contoh: Anggaran perbaikan jalan desa tercatat Rp 100 juta di APBDes, namun kondisi jalan di Dusun 2 masih rusak parah dan belum ada pengerjaan..."
-          className="w-full rounded-lg border border-input bg-background p-3 text-sm text-foreground placeholder:text-muted-foreground focus-visible:border-ring focus-visible:ring-3 focus-visible:ring-ring/50 outline-none transition-colors"
+          placeholder={`Contoh: Pembangunan jalan rabat beton di Dusun II tercatat Rp 120 juta di APBDes ${namaDesa}, namun kondisi di lapangan belum ada pengerjaan dan material belum dikirim...`}
+          className="w-full rounded-xl border border-input bg-background p-3.5 text-sm text-foreground placeholder:text-muted-foreground focus-visible:border-primary focus-visible:ring-2 focus-visible:ring-primary/20 outline-none transition-all"
         />
       </div>
 
-      {/* 3. Upload Foto Bukti (Dropzone Multiple) */}
+      {/* 4. Upload Foto Bukti */}
       <div className="space-y-2">
         <label className="text-sm font-semibold text-foreground">
-          Bukti Foto / Dokumen <span className="text-xs font-normal text-muted-foreground">(Opsional, bisa lebih dari 1)</span>
+          Bukti Foto Lapangan / Dokumen <span className="text-xs font-normal text-muted-foreground">(Maks. 5 foto)</span>
         </label>
 
-        <div className="relative flex flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-muted/40 p-6 text-center hover:bg-muted/60 transition-colors cursor-pointer">
+        <div className="relative flex flex-col items-center justify-center rounded-xl border-2 border-dashed border-border bg-muted/30 p-6 text-center hover:bg-muted/50 transition-colors cursor-pointer">
           <input
             type="file"
+            accept="image/*"
             multiple
-            accept="image/*,.pdf"
             onChange={handleFileChange}
-            className="absolute inset-0 size-full opacity-0 cursor-pointer"
+            className="absolute inset-0 opacity-0 cursor-pointer"
           />
-          <div className="flex size-10 items-center justify-center rounded-full bg-secondary text-primary mb-2">
-            <Camera className="size-5" />
+          <div className="flex size-12 items-center justify-center rounded-full bg-primary/10 text-primary mb-2">
+            <Camera className="size-6" />
           </div>
-          <p className="text-sm font-medium text-foreground">
-            Klik atau seret foto bukti ke sini
-          </p>
-          <p className="text-xs text-muted-foreground mt-0.5">
-            Format PNG, JPG, atau PDF (Maks 10MB)
-          </p>
+          <p className="text-sm font-medium text-foreground">Klik atau Tarik Foto Bukti Lapangan</p>
+          <p className="text-xs text-muted-foreground mt-0.5">PNG, JPG atau WEBP (Maksimal 10MB)</p>
         </div>
 
-        {/* List Files Uploaded */}
         {files.length > 0 && (
-          <div className="mt-3 flex flex-wrap gap-2">
-            {files.map((file, idx) => (
+          <div className="flex flex-wrap gap-2 pt-2">
+            {files.map((f, index) => (
               <div
-                key={idx}
-                className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-3 py-1.5 text-xs text-foreground"
+                key={index}
+                className="inline-flex items-center gap-1.5 rounded-lg border border-border bg-background px-3 py-1.5 text-xs text-foreground shadow-xs"
               >
-                <span className="truncate max-w-[160px]">{file.name}</span>
+                <FileText className="size-3.5 text-primary" />
+                <span className="max-w-[150px] truncate">{f.name}</span>
                 <button
                   type="button"
-                  onClick={() => removeFile(idx)}
-                  className="text-muted-foreground hover:text-terracotta"
+                  onClick={() => removeFile(index)}
+                  className="text-muted-foreground hover:text-terracotta transition-colors ml-1"
                 >
-                  <X className="size-3.5" />
+                  <X className="size-3" />
                 </button>
               </div>
             ))}
@@ -167,68 +204,58 @@ export function LaporanForm() {
         )}
       </div>
 
-      {/* 4. Checkbox / Toggle Kirim sebagai anonim */}
-      <div className="pt-2 border-t border-border/80">
-        <label className="flex items-center gap-3 cursor-pointer select-none">
+      {/* 5. Identitas Pelapor (Anonim Switcher) */}
+      <div className="rounded-xl border border-border bg-muted/20 p-4 space-y-3">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2">
+            <ShieldCheck className="size-5 text-primary" />
+            <div>
+              <span className="text-sm font-bold text-foreground block">Laporkan Sebagai Anonim</span>
+              <span className="text-xs text-muted-foreground">Identitas Anda tidak akan ditampilkan ke publik.</span>
+            </div>
+          </div>
           <input
             type="checkbox"
             checked={isAnonim}
             onChange={(e) => setIsAnonim(e.target.checked)}
-            className="size-4 rounded-xs border-input text-primary focus:ring-primary accent-primary"
+            className="size-5 rounded accent-primary cursor-pointer"
           />
-          <div>
-            <span className="text-sm font-semibold text-foreground">Kirim sebagai Anonim</span>
-            <p className="text-xs text-muted-foreground">
-              Identitas Anda tidak akan ditampilkan atau disimpan publik.
-            </p>
-          </div>
-        </label>
+        </div>
 
-        {/* Form Identitas (Jika tidak anonim) */}
         {!isAnonim && (
-          <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 gap-4 p-4 rounded-lg border border-border bg-muted/20">
-            <div className="space-y-1.5">
-              <label className="text-xs font-semibold text-foreground flex items-center gap-1.5">
-                <User className="size-3.5 text-muted-foreground" /> Nama Lengkap
-              </label>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 pt-2">
+            <div>
+              <label className="text-xs font-medium text-muted-foreground block mb-1">Nama Lengkap</label>
               <Input
                 type="text"
+                placeholder="Nama Anda"
                 value={nama}
                 onChange={(e) => setNama(e.target.value)}
-                placeholder="Nama Anda"
-                className="bg-background h-9 text-xs"
+                className="h-10 rounded-xl text-xs bg-background"
               />
             </div>
-            <div className="space-y-1.5">
-              <label className="text-xs font-semibold text-foreground flex items-center gap-1.5">
-                <Phone className="size-3.5 text-muted-foreground" /> No. WhatsApp / Kontak
-              </label>
+            <div>
+              <label className="text-xs font-medium text-muted-foreground block mb-1">Nomor WhatsApp / Kontak</label>
               <Input
                 type="text"
+                placeholder="0812xxxxxxx"
                 value={kontak}
                 onChange={(e) => setKontak(e.target.value)}
-                placeholder="0812xxxxxxx"
-                className="bg-background h-9 text-xs"
+                className="h-10 rounded-xl text-xs bg-background"
               />
             </div>
           </div>
         )}
       </div>
 
-      {/* 5. Tombol Submit & Informasi Keamanan */}
-      <div className="space-y-3 pt-2">
-        <Button
-          type="submit"
-          className="w-full h-11 bg-primary text-primary-foreground hover:bg-primary/90 font-semibold text-base shadow-xs"
-        >
-          Kirim Laporan
-        </Button>
-
-        <div className="flex items-center justify-center gap-1.5 text-xs text-muted-foreground">
-          <ShieldCheck className="size-4 text-primary" />
-          <span>Data Anda aman dan hanya digunakan untuk verifikasi internal</span>
-        </div>
-      </div>
+      {/* Submit Button */}
+      <Button
+        type="submit"
+        size="lg"
+        className="w-full h-12 rounded-xl text-sm font-bold bg-primary hover:bg-primary/90 text-primary-foreground shadow-xs"
+      >
+        Kirim Laporan Pengaduan Warga
+      </Button>
     </form>
   )
 }

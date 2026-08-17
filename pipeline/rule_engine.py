@@ -83,35 +83,25 @@ class RuleEngine:
                 item_a = doc.items[i]
                 item_b = doc.items[j]
 
-                # Cek kode rekening identik (hard duplicate)
+                is_same_amount = item_a.nominal_anggaran == item_b.nominal_anggaran
+                if not is_same_amount:
+                    continue
+
+                # Cek kode rekening identik (hard duplicate hanya untuk rincian objek level-4, misal 5.1.1.01)
                 is_same_code = bool(
                     item_a.kode_rekening and item_b.kode_rekening and
-                    len(item_a.kode_rekening.strip()) >= 6 and  # minimal kode level 4 (e.g., 5.1.1.01)
+                    len(item_a.kode_rekening.strip().split('.')) >= 4 and
                     item_a.kode_rekening.strip() == item_b.kode_rekening.strip()
                 )
 
-                # Ambil bagian kegiatan jika ada format "Jenis Belanja - Kegiatan"
-                def get_kegiatan(uraian: str) -> str:
-                    parts = uraian.split(" - ", 1)
-                    return parts[1].strip().lower() if len(parts) > 1 else ""
-
-                kegiatan_a = get_kegiatan(item_a.uraian)
-                kegiatan_b = get_kegiatan(item_b.uraian)
-
-                # Jika kegiatan berbeda (dan bukan kosong), ini BUKAN duplikasi — skip
-                if kegiatan_a and kegiatan_b and kegiatan_a != kegiatan_b:
-                    continue
-
-                # Hitung similarity uraian lengkap
                 similarity = difflib.SequenceMatcher(
                     None, item_a.uraian.lower().strip(), item_b.uraian.lower().strip()
                 ).ratio()
-
-                is_same_amount = item_a.nominal_anggaran == item_b.nominal_anggaran
                 pair_key = (min(i, j), max(i, j))
 
+                # Duplikasi nyata jika (kode rekening level 4 sama DAN nominal sama) ATAU (uraian identik persis >= 99% DAN nominal sama)
                 if pair_key not in r4_flagged_pairs and (
-                    is_same_code or (similarity >= 0.97 and is_same_amount)
+                    is_same_code or similarity >= 0.99
                 ):
                     r4_flagged_pairs.add(pair_key)
                     logs.append(ValidationLog(

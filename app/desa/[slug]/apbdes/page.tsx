@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, use, useMemo } from 'react'
 import Link from 'next/link'
 import {
   ChevronRight,
@@ -10,6 +10,11 @@ import {
   TrendingUp,
   BarChart2,
   Calendar,
+  Layers,
+  ArrowRight,
+  CheckCircle2,
+  AlertTriangle,
+  Building,
 } from 'lucide-react'
 import { AppHeader } from '@/components/app-header'
 import { Badge } from '@/components/ui/badge'
@@ -20,176 +25,144 @@ import {
   SelectTrigger,
   SelectValue,
 } from '@/components/ui/select'
-import { AlokasiPieChart, AlokasiItem } from '@/components/apbdes/alokasi-pie-chart'
+import { AlokasiPieChart } from '@/components/apbdes/alokasi-pie-chart'
 import { RealisasiProgressList, RealisasiItem } from '@/components/apbdes/realisasi-progress-list'
-import { PencairanTimeline, TahapPencairan } from '@/components/apbdes/pencairan-timeline'
+import { PencairanTimeline } from '@/components/apbdes/pencairan-timeline'
+import { BudgetItemsTable } from '@/components/apbdes/budget-items-table'
+import { getVillageBySlug, VILLAGES_DATABASE } from '@/lib/data/villages-store'
 
-// Mock Data Desa
-const dataDesa = {
-  nama: 'Desa Sukamaju (Desa Contoh)',
-  kabupaten: 'Kabupaten Klaten',
-  provinsi: 'Jawa Tengah',
+interface PageProps {
+  params: Promise<{ slug: string }>
 }
 
-// Data Dummy per Tahun Anggaran
-const TAHUN_LIST = ['2025', '2024', '2026']
+export default function ApbdesVisualizerPage({ params }: PageProps) {
+  const { slug } = use(params)
+  const village = getVillageBySlug(slug)
 
-interface DataAnggaranTahun {
-  totalAnggaran: string
-  totalRealisasi: string
-  persenRealisasi: number
-  alokasi: AlokasiItem[]
-  realisasi: RealisasiItem[]
-  pencairan: TahapPencairan[]
-}
+  const availableYears = useMemo(() => {
+    return Object.keys(village.years)
+      .map(Number)
+      .sort((a, b) => b - a)
+      .map(String)
+  }, [village])
 
-const DATA_BY_TAHUN: Record<string, DataAnggaranTahun> = {
-  '2025': {
-    totalAnggaran: 'Rp 1,00 Miliar',
-    totalRealisasi: 'Rp 780 Juta',
-    persenRealisasi: 78,
-    alokasi: [
-      { kategori: 'Infrastruktur', persen: 35, fill: '#2F6E3F' }, // Brand Green
-      { kategori: 'Pendidikan', persen: 20, fill: '#3D8B4C' }, // Medium Green
-      { kategori: 'Kesehatan', persen: 15, fill: '#84CC16' }, // Lime
-      { kategori: 'Pemberdayaan Masyarakat', persen: 15, fill: '#C2703D' }, // Terracotta
-      { kategori: 'Operasional Pemerintah Desa', persen: 10, fill: '#A3B18A' }, // Soft Olive Green
-      { kategori: 'Lainnya', persen: 5, fill: '#CBD5C0' }, // Neutral Sage
-    ],
-    realisasi: [
-      { kategori: 'Infrastruktur', anggaran: 350000000, realisasi: 280000000 }, // 80%
-      { kategori: 'Pendidikan', anggaran: 200000000, realisasi: 160000000 }, // 80%
-      { kategori: 'Kesehatan', anggaran: 150000000, realisasi: 127500000 }, // 85%
-      { kategori: 'Pemberdayaan Masyarakat', anggaran: 150000000, realisasi: 82500000 }, // 55% (low)
-      { kategori: 'Operasional Pemerintah Desa', anggaran: 100000000, realisasi: 90000000 }, // 90%
-      { kategori: 'Lainnya', anggaran: 50000000, realisasi: 40000000 }, // 80%
-    ],
-    pencairan: [
-      { tahap: 'Tahap 1', nominal: 'Rp 400 Juta', persen: 40, bulan: 'Maret 2025', isCair: true },
-      { tahap: 'Tahap 2', nominal: 'Rp 400 Juta', persen: 40, bulan: 'Juli 2025', isCair: true },
-      { tahap: 'Tahap 3', nominal: 'Rp 200 Juta', persen: 20, bulan: 'November 2025', isCair: false },
-    ],
-  },
-  '2024': {
-    totalAnggaran: 'Rp 950 Juta',
-    totalRealisasi: 'Rp 950 Juta',
-    persenRealisasi: 100,
-    alokasi: [
-      { kategori: 'Infrastruktur', persen: 40, fill: '#2F6E3F' },
-      { kategori: 'Pendidikan', persen: 15, fill: '#3D8B4C' },
-      { kategori: 'Kesehatan', persen: 15, fill: '#84CC16' },
-      { kategori: 'Pemberdayaan Masyarakat', persen: 15, fill: '#C2703D' },
-      { kategori: 'Operasional Pemerintah Desa', persen: 10, fill: '#A3B18A' },
-      { kategori: 'Lainnya', persen: 5, fill: '#CBD5C0' },
-    ],
-    realisasi: [
-      { kategori: 'Infrastruktur', anggaran: 380000000, realisasi: 380000000 },
-      { kategori: 'Pendidikan', anggaran: 142500000, realisasi: 142500000 },
-      { kategori: 'Kesehatan', anggaran: 142500000, realisasi: 142500000 },
-      { kategori: 'Pemberdayaan Masyarakat', anggaran: 142500000, realisasi: 142500000 },
-      { kategori: 'Operasional Pemerintah Desa', anggaran: 95000000, realisasi: 95000000 },
-      { kategori: 'Lainnya', anggaran: 47500000, realisasi: 47500000 },
-    ],
-    pencairan: [
-      { tahap: 'Tahap 1', nominal: 'Rp 380 Juta', persen: 40, bulan: 'Maret 2024', isCair: true },
-      { tahap: 'Tahap 2', nominal: 'Rp 380 Juta', persen: 40, bulan: 'Juli 2024', isCair: true },
-      { tahap: 'Tahap 3', nominal: 'Rp 190 Juta', persen: 20, bulan: 'November 2024', isCair: true },
-    ],
-  },
-  '2026': {
-    totalAnggaran: 'Rp 1,10 Miliar',
-    totalRealisasi: 'Rp 0',
-    persenRealisasi: 0,
-    alokasi: [
-      { kategori: 'Infrastruktur', persen: 30, fill: '#2F6E3F' },
-      { kategori: 'Pendidikan', persen: 25, fill: '#3D8B4C' },
-      { kategori: 'Kesehatan', persen: 15, fill: '#84CC16' },
-      { kategori: 'Pemberdayaan Masyarakat', persen: 15, fill: '#C2703D' },
-      { kategori: 'Operasional Pemerintah Desa', persen: 10, fill: '#A3B18A' },
-      { kategori: 'Lainnya', persen: 5, fill: '#CBD5C0' },
-    ],
-    realisasi: [
-      { kategori: 'Infrastruktur', anggaran: 330000000, realisasi: 0 },
-      { kategori: 'Pendidikan', anggaran: 275000000, realisasi: 0 },
-      { kategori: 'Kesehatan', anggaran: 165000000, realisasi: 0 },
-      { kategori: 'Pemberdayaan Masyarakat', anggaran: 165000000, realisasi: 0 },
-      { kategori: 'Operasional Pemerintah Desa', anggaran: 110000000, realisasi: 0 },
-      { kategori: 'Lainnya', anggaran: 55000000, realisasi: 0 },
-    ],
-    pencairan: [
-      { tahap: 'Tahap 1', nominal: 'Rp 440 Juta', persen: 40, bulan: 'Maret 2026', isCair: false },
-      { tahap: 'Tahap 2', nominal: 'Rp 440 Juta', persen: 40, bulan: 'Juli 2026', isCair: false },
-      { tahap: 'Tahap 3', nominal: 'Rp 220 Juta', persen: 20, bulan: 'November 2026', isCair: false },
-    ],
-  },
-}
+  const [selectedYearStr, setSelectedYearStr] = useState<string>(String(village.currentYear || availableYears[0]))
 
-export default function ApbdesVisualizerPage() {
-  const [tahun, setTahun] = useState<string>('2025')
-  const currentData = DATA_BY_TAHUN[tahun] || DATA_BY_TAHUN['2025']
+  const selectedYear = Number(selectedYearStr)
+  const currentData = village.years[selectedYear] || village.years[village.currentYear] || Object.values(village.years)[0]
+
+  const formatMiliar = (val: number) => {
+    if (val >= 1000000000) {
+      return `Rp ${(val / 1000000000).toFixed(2)} Miliar`
+    }
+    return `Rp ${(val / 1000000).toFixed(0)} Juta`
+  }
+
+  // Format realisasi progress items
+  const realisasiProgressData: RealisasiItem[] = currentData.alokasi.map((a) => {
+    const matchingItems = currentData.items.filter((i) => i.kategori === a.kategori)
+    const realisasiSum = matchingItems.reduce((acc, curr) => acc + (curr.nominal_realisasi || 0), 0)
+    return {
+      kategori: a.kategori,
+      anggaran: a.nominal,
+      realisasi: realisasiSum > 0 ? realisasiSum : Math.round(a.nominal * (currentData.persenRealisasi / 100)),
+    }
+  })
+
+  // Format pie chart data
+  const pieChartData = currentData.alokasi.map((a) => ({
+    kategori: a.kategori,
+    persen: a.persen,
+    fill: a.color,
+  }))
+
+  const surplusDefisit = currentData.totalPendapatan - currentData.totalBelanja
+  const isSurplus = surplusDefisit >= 0
 
   return (
     <div className="min-h-dvh bg-surface">
       <AppHeader />
 
-      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10">
-        {/* Breadcrumb: Beranda > [Nama Desa] > Rincian Anggaran */}
-        <nav aria-label="Breadcrumb" className="mb-6">
-          <ol className="flex flex-wrap items-center gap-1.5 text-sm">
-            <li>
-              <Link href="/dashboard" className="text-muted-foreground transition-colors hover:text-primary">
-                Dashboard
-              </Link>
-            </li>
-            <li aria-hidden="true">
-              <ChevronRight className="size-4 text-muted-foreground/60" />
-            </li>
-            <li>
+      <main className="mx-auto max-w-6xl px-4 py-8 sm:px-6 sm:py-10 space-y-8">
+        {/* Breadcrumb: Beranda > [Nama Desa] > APBDes Visualizer */}
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+          <nav aria-label="Breadcrumb">
+            <ol className="flex flex-wrap items-center gap-1.5 text-sm">
+              <li>
+                <Link href="/" className="text-muted-foreground transition-colors hover:text-primary">
+                  Beranda
+                </Link>
+              </li>
+              <li aria-hidden="true">
+                <ChevronRight className="size-4 text-muted-foreground/60" />
+              </li>
+              <li>
+                <Link
+                  href={`/desa/${village.slug}`}
+                  className="text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {village.nama}
+                </Link>
+              </li>
+              <li aria-hidden="true">
+                <ChevronRight className="size-4 text-muted-foreground/60" />
+              </li>
+              <li>
+                <span className="font-medium text-foreground" aria-current="page">
+                  APBDes Visualizer
+                </span>
+              </li>
+            </ol>
+          </nav>
+
+          {/* Quick Village Switcher Pills */}
+          <div className="flex items-center gap-1.5 overflow-x-auto text-xs">
+            <span className="text-muted-foreground font-medium mr-1">Desa:</span>
+            {Object.values(VILLAGES_DATABASE).map((v) => (
               <Link
-                href="/desa/sukamaju"
-                className="text-muted-foreground transition-colors hover:text-primary"
+                key={v.slug}
+                href={`/desa/${v.slug}/apbdes`}
+                className={`px-2.5 py-1 rounded-lg font-medium transition-all ${
+                  v.slug === village.slug
+                    ? 'bg-primary text-white font-bold'
+                    : 'bg-card border border-border text-muted-foreground hover:text-foreground'
+                }`}
               >
-                {dataDesa.nama}
+                {v.nama}
               </Link>
-            </li>
-            <li aria-hidden="true">
-              <ChevronRight className="size-4 text-muted-foreground/60" />
-            </li>
-            <li>
-              <span className="font-medium text-foreground" aria-current="page">
-                Rincian Anggaran
-              </span>
-            </li>
-          </ol>
-        </nav>
+            ))}
+          </div>
+        </div>
 
         {/* Page Header + Filter Tahun + AI Badge */}
-        <div className="mb-8 flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+        <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
           <div>
             <div className="flex flex-wrap items-center gap-2.5">
               <h1 className="font-heading text-2xl font-bold tracking-tight text-foreground sm:text-3xl">
-                APBDes Visualizer
+                APBDes Visualizer — {village.nama}
               </h1>
-              <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/15 font-medium inline-flex items-center gap-1.5 py-1">
-                <Sparkles className="size-3.5" />
-                <span>Data diekstrak otomatis dari dokumen APBDes resmi</span>
-              </Badge>
+              {village.isRealData && (
+                <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/15 font-medium inline-flex items-center gap-1.5 py-1">
+                  <Sparkles className="size-3.5" />
+                  <span>Data Riil Siskeudes ({currentData.items.length} Pos Belanja)</span>
+                </Badge>
+              )}
             </div>
             <p className="mt-1 text-sm text-muted-foreground">
-              Rincian alokasi dan realisasi anggaran APBDes {dataDesa.nama} Tahun {tahun}
+              {village.kecamatan}, {village.kabupaten}, {village.provinsi} — Tahun Anggaran {selectedYearStr}
             </p>
           </div>
 
           {/* Filter Tahun Anggaran Dropdown */}
           <div className="flex items-center gap-2">
             <Calendar className="size-4 text-muted-foreground" />
-            <span className="text-xs text-muted-foreground">Tahun:</span>
-            <Select value={tahun} onValueChange={(val) => val && setTahun(val)}>
-              <SelectTrigger className="w-[120px] bg-card text-xs font-semibold">
+            <span className="text-xs text-muted-foreground font-medium">Tahun Anggaran:</span>
+            <Select value={selectedYearStr} onValueChange={(val) => val && setSelectedYearStr(val)}>
+              <SelectTrigger className="w-[130px] bg-card text-xs font-semibold rounded-xl">
                 <SelectValue placeholder="Pilih Tahun" />
               </SelectTrigger>
               <SelectContent>
-                {TAHUN_LIST.map((t) => (
+                {availableYears.map((t) => (
                   <SelectItem key={t} value={t} className="text-xs">
                     Tahun {t}
                   </SelectItem>
@@ -199,73 +172,139 @@ export default function ApbdesVisualizerPage() {
           </div>
         </div>
 
-        {/* Highlight Anggaran Big Cards */}
-        <section aria-label="Ringkasan Anggaran Utama" className="mb-8">
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
-            <div className="rounded-xl border border-border bg-card p-5 shadow-xs flex items-center justify-between">
+        {/* Highlight Anggaran Big Cards (Pendapatan, Belanja, Realisasi, Surplus/Defisit) */}
+        <section aria-label="Ringkasan Anggaran Utama">
+          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
+            {/* Total Pendapatan */}
+            <div className="rounded-2xl border border-border bg-card p-5 shadow-xs flex items-center justify-between">
               <div>
-                <p className="text-xs font-medium text-muted-foreground">Total Anggaran Tahun {tahun}</p>
-                <p className="mt-1.5 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-                  {currentData.totalAnggaran}
+                <p className="text-xs font-medium text-muted-foreground">Total Pendapatan</p>
+                <p className="mt-1 font-heading text-xl font-bold text-foreground sm:text-2xl">
+                  {formatMiliar(currentData.totalPendapatan)}
                 </p>
-                <p className="mt-1 text-xs text-muted-foreground">Pagu APBDes resmi</p>
+                <p className="mt-0.5 text-[11px] text-muted-foreground">Transfer DD, ADD &amp; PAD</p>
               </div>
-              <div className="flex size-12 items-center justify-center rounded-xl bg-secondary text-primary">
-                <Wallet className="size-6" />
+              <div className="flex size-11 items-center justify-center rounded-xl bg-primary/10 text-primary">
+                <Wallet className="size-5" />
               </div>
             </div>
 
-            <div className="rounded-xl border border-border bg-card p-5 shadow-xs flex items-center justify-between">
+            {/* Total Belanja */}
+            <div className="rounded-2xl border border-border bg-card p-5 shadow-xs flex items-center justify-between">
               <div>
-                <p className="text-xs font-medium text-muted-foreground">Total Realisasi</p>
-                <p className="mt-1.5 font-heading text-2xl font-bold text-foreground sm:text-3xl">
-                  {currentData.totalRealisasi}
+                <p className="text-xs font-medium text-muted-foreground">Total Belanja Pagu</p>
+                <p className="mt-1 font-heading text-xl font-bold text-foreground sm:text-2xl">
+                  {formatMiliar(currentData.totalBelanja)}
                 </p>
-                <p className="mt-1 text-xs text-muted-foreground">Dana terpakai s/d saat ini</p>
+                <p className="mt-0.5 text-[11px] text-muted-foreground">Alokasi resmi {selectedYearStr}</p>
               </div>
-              <div className="flex size-12 items-center justify-center rounded-xl bg-secondary text-primary">
-                <TrendingUp className="size-6" />
+              <div className="flex size-11 items-center justify-center rounded-xl bg-sage/20 text-brand-green">
+                <Building className="size-5" />
               </div>
             </div>
 
-            <div className="rounded-xl border border-border bg-card p-5 shadow-xs flex items-center justify-between">
+            {/* Total Realisasi & Serapan */}
+            <div className="rounded-2xl border border-border bg-card p-5 shadow-xs flex items-center justify-between">
               <div>
-                <p className="text-xs font-medium text-muted-foreground">Persentase Serapan</p>
-                <p className="mt-1.5 font-heading text-2xl font-bold text-primary sm:text-3xl">
+                <p className="text-xs font-medium text-muted-foreground">Serapan Realisasi</p>
+                <p className="mt-1 font-heading text-xl font-bold text-primary sm:text-2xl">
                   {currentData.persenRealisasi}%
                 </p>
-                <p className="mt-1 text-xs text-muted-foreground">Dari total pagu {tahun}</p>
+                <p className="mt-0.5 text-[11px] text-muted-foreground">{formatMiliar(currentData.totalRealisasi)}</p>
               </div>
-              <div className="flex size-12 items-center justify-center rounded-xl bg-secondary text-primary">
-                <BarChart2 className="size-6" />
+              <div className="flex size-11 items-center justify-center rounded-xl bg-lime/10 text-lime-dark">
+                <TrendingUp className="size-5" />
+              </div>
+            </div>
+
+            {/* Surplus / Defisit / Pembiayaan */}
+            <div className="rounded-2xl border border-border bg-card p-5 shadow-xs flex items-center justify-between">
+              <div>
+                <p className="text-xs font-medium text-muted-foreground">Surplus / Defisit</p>
+                <p
+                  className={`mt-1 font-heading text-xl font-bold sm:text-2xl ${
+                    isSurplus ? 'text-primary' : 'text-terracotta'
+                  }`}
+                >
+                  {isSurplus ? `+${formatMiliar(surplusDefisit)}` : formatMiliar(surplusDefisit)}
+                </p>
+                <p className="mt-0.5 text-[11px] text-muted-foreground">
+                  Pembiayaan SILPA: {formatMiliar(currentData.totalPembiayaan)}
+                </p>
+              </div>
+              <div
+                className={`flex size-11 items-center justify-center rounded-xl ${
+                  isSurplus ? 'bg-primary/10 text-primary' : 'bg-terracotta/10 text-terracotta'
+                }`}
+              >
+                <BarChart2 className="size-5" />
               </div>
             </div>
           </div>
         </section>
 
         {/* Grid 2 Kolom: Pie Chart Alokasi & Progress List Realisasi */}
-        <section aria-label="Visualisasi Anggaran" className="mb-8 grid grid-cols-1 gap-6 lg:grid-cols-12">
+        <section aria-label="Visualisasi Anggaran" className="grid grid-cols-1 gap-6 lg:grid-cols-12">
           {/* Pie Chart Alokasi */}
-          <div className="rounded-xl border border-border bg-card p-5 shadow-xs lg:col-span-6">
-            <h3 className="font-heading text-base font-semibold text-foreground mb-4">
-              Alokasi Anggaran per Kategori
-            </h3>
-            <AlokasiPieChart data={currentData.alokasi} />
+          <div className="rounded-2xl border border-border bg-card p-6 shadow-xs lg:col-span-6 flex flex-col justify-between">
+            <div>
+              <h3 className="font-heading text-base font-bold text-foreground mb-1">
+                Alokasi Anggaran per 6 Kategori Baku
+              </h3>
+              <p className="text-xs text-muted-foreground mb-4">
+                Proporsi belanja modal &amp; operasional dihitung dari pos belanja APBDes
+              </p>
+            </div>
+            <AlokasiPieChart data={pieChartData} />
           </div>
 
           {/* Progress Realisasi */}
-          <div className="rounded-xl border border-border bg-card p-5 shadow-xs lg:col-span-6">
-            <h3 className="font-heading text-base font-semibold text-foreground mb-4">
-              Progress Realisasi per Kategori
-            </h3>
-            <RealisasiProgressList data={currentData.realisasi} />
+          <div className="rounded-2xl border border-border bg-card p-6 shadow-xs lg:col-span-6 flex flex-col justify-between">
+            <div>
+              <h3 className="font-heading text-base font-bold text-foreground mb-1">
+                Progress Serapan Realisasi per Kategori
+              </h3>
+              <p className="text-xs text-muted-foreground mb-4">
+                Perbandingan target nominal anggaran terhadap pengeluaran aktual
+              </p>
+            </div>
+            <RealisasiProgressList data={realisasiProgressData} />
           </div>
         </section>
 
-        {/* Horizontal Timeline Status Pencairan */}
-        <section aria-label="Timeline Pencairan Dana" className="mb-10">
-          <PencairanTimeline tahapList={currentData.pencairan} />
+        {/* Tabel Pos Belanja Siskeudes Riil */}
+        <section aria-label="Tabel Rincian Pos Belanja">
+          <BudgetItemsTable
+            items={currentData.items}
+            namaDesa={village.nama}
+            tahun={selectedYear}
+          />
         </section>
+
+        {/* Horizontal Timeline Status Pencairan */}
+        {currentData.pencairan && currentData.pencairan.length > 0 && (
+          <section aria-label="Timeline Pencairan Dana">
+            <PencairanTimeline tahapList={currentData.pencairan} />
+          </section>
+        )}
+
+        {/* Bottom Action Footer */}
+        <div className="flex flex-col sm:flex-row items-center justify-between gap-4 p-5 rounded-2xl border border-border bg-card shadow-xs">
+          <div>
+            <h4 className="font-bold text-sm text-foreground">Ingin membandingkan alokasi belanja ini dengan desa lain?</h4>
+            <p className="text-xs text-muted-foreground mt-0.5">
+              Gunakan fitur Benchmark Desa untuk mendeteksi anomali anggaran secara saintifik.
+            </p>
+          </div>
+          <div className="flex items-center gap-3">
+            <Link
+              href={`/desa/${village.slug}/benchmark`}
+              className="inline-flex items-center gap-1.5 rounded-xl bg-primary px-4 py-2.5 text-xs font-bold text-white hover:bg-primary/90 transition-all shadow-xs"
+            >
+              <BarChart2 className="size-4" /> Buka Benchmark &amp; Anomali <ArrowRight className="size-3.5" />
+            </Link>
+          </div>
+        </div>
       </main>
     </div>
   )
