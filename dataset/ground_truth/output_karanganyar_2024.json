@@ -1,0 +1,769 @@
+{
+  "file_name": "1737009663369277.pdf",
+  "page_count": 9,
+  "extracted_data": {
+    "nama_desa": "Karanganyar",
+    "kabupaten": null,
+    "provinsi": null,
+    "tahun_anggaran": 2024,
+    "total_pendapatan": 2029831300,
+    "total_belanja": 2120883519,
+    "total_pembiayaan": 91052219,
+    "items": [
+      {
+        "kode_rekening": "5.1.1.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penghasilan Tetap Kepala Desa",
+        "nominal_anggaran": 48620000,
+        "nominal_realisasi": 48620000
+      },
+      {
+        "kode_rekening": "5.1.1.02",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Tunjangan Kepala Desa",
+        "nominal_anggaran": 18600000,
+        "nominal_realisasi": 18600000
+      },
+      {
+        "kode_rekening": "5.1.2.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Penghasilan Tetap Perangkat Desa",
+        "nominal_anggaran": 320138000,
+        "nominal_realisasi": 320138000
+      },
+      {
+        "kode_rekening": "5.1.2.02",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Tunjangan Perangkat Desa",
+        "nominal_anggaran": 123750000,
+        "nominal_realisasi": 123750000
+      },
+      {
+        "kode_rekening": "5.1.3.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Jaminan Kesehatan Kepala Desa",
+        "nominal_anggaran": 2244000,
+        "nominal_realisasi": 2244000
+      },
+      {
+        "kode_rekening": "5.1.3.02",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Jaminan Kesehatan Perangkat Desa",
+        "nominal_anggaran": 14775600,
+        "nominal_realisasi": 14775600
+      },
+      {
+        "kode_rekening": "5.1.3.03",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Jaminan Ketenagakerjaan Kepala Desa",
+        "nominal_anggaran": 2800200,
+        "nominal_realisasi": 2800200
+      },
+      {
+        "kode_rekening": "5.1.3.04",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Jaminan Ketenagakerjaan Perangkat Desa",
+        "nominal_anggaran": 18436200,
+        "nominal_realisasi": 17908200
+      },
+      {
+        "kode_rekening": "5.2.1.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Operasional Pemdes",
+        "nominal_anggaran": 4103000,
+        "nominal_realisasi": 4103000
+      },
+      {
+        "kode_rekening": "5.2.1.03",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Perlengkapan Alat Rumah Tangga dan Bahan Kebersihan",
+        "nominal_anggaran": 689936,
+        "nominal_realisasi": 615000
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Operasional Pemdes",
+        "nominal_anggaran": 1201800,
+        "nominal_realisasi": 1201800
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Operasional Pemdes",
+        "nominal_anggaran": 2840000,
+        "nominal_realisasi": 1920000
+      },
+      {
+        "kode_rekening": "5.2.1.09",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut - Operasional Pemdes",
+        "nominal_anggaran": 3000000,
+        "nominal_realisasi": 3000000
+      },
+      {
+        "kode_rekening": "5.2.2.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Jasa Honorarium Lainnya - Operasional Pemdes",
+        "nominal_anggaran": 3000000,
+        "nominal_realisasi": 3000000
+      },
+      {
+        "kode_rekening": "5.2.3.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Operasional Pemdes",
+        "nominal_anggaran": 8550000,
+        "nominal_realisasi": 5000000
+      },
+      {
+        "kode_rekening": "5.2.5.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Jasa Langganan Listrik",
+        "nominal_anggaran": 4436833,
+        "nominal_realisasi": 2326000
+      },
+      {
+        "kode_rekening": "5.2.5.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran lainnya - Operasional Pemdes",
+        "nominal_anggaran": 0,
+        "nominal_realisasi": 84260
+      },
+      {
+        "kode_rekening": "5.2.6.02",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Pemeliharaan Kendaraan Bermotor",
+        "nominal_anggaran": 505000,
+        "nominal_realisasi": 488000
+      },
+      {
+        "kode_rekening": "5.1.4.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Tunjangan Kedudukan BPD",
+        "nominal_anggaran": 20700000,
+        "nominal_realisasi": 20700000
+      },
+      {
+        "kode_rekening": "5.1.4.02",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Tunjangan Kinerja BPD",
+        "nominal_anggaran": 12600000,
+        "nominal_realisasi": 12600000
+      },
+      {
+        "kode_rekening": "5.2.5.08",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Insentif/Operasional RT/RW",
+        "nominal_anggaran": 47880000,
+        "nominal_realisasi": 47520000
+      },
+      {
+        "kode_rekening": "5.2.1.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Perlengkapan Lainnya - Operasional Dana Desa",
+        "nominal_anggaran": 33000000,
+        "nominal_realisasi": 32916000
+      },
+      {
+        "kode_rekening": "5.2.6.04",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Pemeliharaan Bangunan Kantor Desa",
+        "nominal_anggaran": 14315085,
+        "nominal_realisasi": 14056500
+      },
+      {
+        "kode_rekening": "5.3.4.02",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Upah Tenaga Kerja Kantor Desa",
+        "nominal_anggaran": 893625,
+        "nominal_realisasi": 843750
+      },
+      {
+        "kode_rekening": "5.3.4.03",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Bahan Baku/Material Kantor Desa",
+        "nominal_anggaran": 14796791,
+        "nominal_realisasi": 14758125
+      },
+      {
+        "kode_rekening": "5.3.5.02",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja Prasarana Kantor Desa",
+        "nominal_anggaran": 3117750,
+        "nominal_realisasi": 3075000
+      },
+      {
+        "kode_rekening": "5.3.5.03",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Bahan Baku/Material Prasarana Kantor Desa",
+        "nominal_anggaran": 19017100,
+        "nominal_realisasi": 18995000
+      },
+      {
+        "kode_rekening": "5.2.1.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Perlengkapan Lainnya - Pemutakhiran Profil Desa",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4000000
+      },
+      {
+        "kode_rekening": "5.2.1.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Musrenbangdes",
+        "nominal_anggaran": 547500,
+        "nominal_realisasi": 547500
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Musrenbangdes",
+        "nominal_anggaran": 825000,
+        "nominal_realisasi": 805000
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Musrenbangdes",
+        "nominal_anggaran": 8100000,
+        "nominal_realisasi": 5850000
+      },
+      {
+        "kode_rekening": "5.2.1.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Musdes Non Reguler",
+        "nominal_anggaran": 592500,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Musdes Non Reguler",
+        "nominal_anggaran": 825000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Musdes Non Reguler",
+        "nominal_anggaran": 8250000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.1.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - RPJMDesa/RKPDesa",
+        "nominal_anggaran": 277500,
+        "nominal_realisasi": 127500
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - RPJMDesa/RKPDesa",
+        "nominal_anggaran": 825000,
+        "nominal_realisasi": 280000
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - RPJMDesa/RKPDesa",
+        "nominal_anggaran": 8100000,
+        "nominal_realisasi": 1950000
+      },
+      {
+        "kode_rekening": "5.2.5.05",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Jasa Langganan Internet - Sistem Informasi Desa",
+        "nominal_anggaran": 13200000,
+        "nominal_realisasi": 7517200
+      },
+      {
+        "kode_rekening": "5.2.6.03",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Pemeliharaan Peralatan - Sistem Informasi Desa",
+        "nominal_anggaran": 3405000,
+        "nominal_realisasi": 1900000
+      },
+      {
+        "kode_rekening": "5.2.6.08",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Pemeliharaan Jaringan dan Instalasi",
+        "nominal_anggaran": 10100000,
+        "nominal_realisasi": 10100000
+      },
+      {
+        "kode_rekening": "5.3.2.03",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Modal Peralatan Komputer",
+        "nominal_anggaran": 19050000,
+        "nominal_realisasi": 19050000
+      },
+      {
+        "kode_rekening": "5.2.3.03",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Kursus Pelatihan Kerjasama Pemerintahan",
+        "nominal_anggaran": 18000000,
+        "nominal_realisasi": 1250000
+      },
+      {
+        "kode_rekening": "5.2.5.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran lainnya - Koordinasi Pemerintahan",
+        "nominal_anggaran": 5338700,
+        "nominal_realisasi": 5338700
+      },
+      {
+        "kode_rekening": "5.2.1.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Sosialisasi Pilkades/BPD",
+        "nominal_anggaran": 555000,
+        "nominal_realisasi": 555000
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Sosialisasi Pilkades/BPD",
+        "nominal_anggaran": 335000,
+        "nominal_realisasi": 335000
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Sosialisasi Pilkades/BPD",
+        "nominal_anggaran": 4500000,
+        "nominal_realisasi": 4500000
+      },
+      {
+        "kode_rekening": "5.2.2.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Jasa Honorarium Lainnya - Sosialisasi Pilkades/BPD",
+        "nominal_anggaran": 860000,
+        "nominal_realisasi": 860000
+      },
+      {
+        "kode_rekening": "5.2.3.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Sosialisasi Pilkades/BPD",
+        "nominal_anggaran": 3750000,
+        "nominal_realisasi": 3750000
+      },
+      {
+        "kode_rekening": "5.2.5.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran lainnya - Sosialisasi Pilkades/BPD",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 4470000
+      },
+      {
+        "kode_rekening": "5.2.3.01",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Administrasi PBB",
+        "nominal_anggaran": 12000000,
+        "nominal_realisasi": 12000000
+      },
+      {
+        "kode_rekening": "5.2.5.07",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Jasa Perpanjangan Ijin/Pajak",
+        "nominal_anggaran": 3544000,
+        "nominal_realisasi": 3230000
+      },
+      {
+        "kode_rekening": "5.2.2.99",
+        "kategori": "Pendidikan",
+        "uraian": "Belanja Jasa Honorarium Lainnya - PAUD/TK/TPA/Madrasah Nonformal",
+        "nominal_anggaran": 52800000,
+        "nominal_realisasi": 47600000
+      },
+      {
+        "kode_rekening": "5.2.1.01",
+        "kategori": "Pendidikan",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Pelatihan Pendidikan",
+        "nominal_anggaran": 570000,
+        "nominal_realisasi": 570000
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Pendidikan",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Pelatihan Pendidikan",
+        "nominal_anggaran": 210000,
+        "nominal_realisasi": 210000
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Pendidikan",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Pelatihan Pendidikan",
+        "nominal_anggaran": 1800000,
+        "nominal_realisasi": 1800000
+      },
+      {
+        "kode_rekening": "5.2.2.04",
+        "kategori": "Pendidikan",
+        "uraian": "Belanja Jasa Honorarium Tenaga Ahli/Narasumber - Pelatihan Pendidikan",
+        "nominal_anggaran": 400000,
+        "nominal_realisasi": 400000
+      },
+      {
+        "kode_rekening": "5.2.7.99",
+        "kategori": "Pendidikan",
+        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Sarpras/Alat Peraga PAUD",
+        "nominal_anggaran": 8000000,
+        "nominal_realisasi": 8000000
+      },
+      {
+        "kode_rekening": "5.3.4.02",
+        "kategori": "Pendidikan",
+        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Upah Tenaga Kerja Sarpras PAUD",
+        "nominal_anggaran": 3822000,
+        "nominal_realisasi": 3822000
+      },
+      {
+        "kode_rekening": "5.3.4.03",
+        "kategori": "Pendidikan",
+        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Bahan Baku/Material Sarpras PAUD",
+        "nominal_anggaran": 6178000,
+        "nominal_realisasi": 6177000
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Kesehatan",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Poskesdes/Polindes",
+        "nominal_anggaran": 5050000,
+        "nominal_realisasi": 4800000
+      },
+      {
+        "kode_rekening": "5.2.2.99",
+        "kategori": "Kesehatan",
+        "uraian": "Belanja Jasa Honorarium Lainnya - Poskesdes/Polindes",
+        "nominal_anggaran": 27000000,
+        "nominal_realisasi": 27000000
+      },
+      {
+        "kode_rekening": "5.2.4.03",
+        "kategori": "Kesehatan",
+        "uraian": "Belanja Jasa Sewa Sarana Mobilitas - Poskesdes",
+        "nominal_anggaran": 300000,
+        "nominal_realisasi": 300000
+      },
+      {
+        "kode_rekening": "5.2.7.99",
+        "kategori": "Kesehatan",
+        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Poskesdes",
+        "nominal_anggaran": 1730000,
+        "nominal_realisasi": 1380000
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Kesehatan",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Makanan Tambahan Posyandu",
+        "nominal_anggaran": 29400000,
+        "nominal_realisasi": 23400000
+      },
+      {
+        "kode_rekening": "5.2.3.01",
+        "kategori": "Kesehatan",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Posyandu",
+        "nominal_anggaran": 2250000,
+        "nominal_realisasi": 1450000
+      },
+      {
+        "kode_rekening": "5.2.7.99",
+        "kategori": "Kesehatan",
+        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Posyandu",
+        "nominal_anggaran": 41250000,
+        "nominal_realisasi": 35500000
+      },
+      {
+        "kode_rekening": "5.2.1.01",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Peningkatan Jalan Lingkungan",
+        "nominal_anggaran": 140000,
+        "nominal_realisasi": 140000
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Peningkatan Jalan Lingkungan",
+        "nominal_anggaran": 100000,
+        "nominal_realisasi": 100000
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Peningkatan Jalan Lingkungan",
+        "nominal_anggaran": 162500,
+        "nominal_realisasi": 162500
+      },
+      {
+        "kode_rekening": "5.2.3.01",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Peningkatan Jalan Lingkungan",
+        "nominal_anggaran": 200000,
+        "nominal_realisasi": 200000
+      },
+      {
+        "kode_rekening": "5.3.5.02",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja Jalan Lingkungan",
+        "nominal_anggaran": 97532758,
+        "nominal_realisasi": 97345000
+      },
+      {
+        "kode_rekening": "5.3.5.03",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Bahan Baku/Material Jalan Lingkungan",
+        "nominal_anggaran": 291960554,
+        "nominal_realisasi": 274562850
+      },
+      {
+        "kode_rekening": "5.3.5.05",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Administrasi Kegiatan Jalan Lingkungan",
+        "nominal_anggaran": 600000,
+        "nominal_realisasi": 600000
+      },
+      {
+        "kode_rekening": "5.2.1.99",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Barang Perlengkapan Lainnya - Jalan Usaha Tani",
+        "nominal_anggaran": 6600000,
+        "nominal_realisasi": 6600000
+      },
+      {
+        "kode_rekening": "5.3.5.02",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Upah Tenaga Kerja Jalan Usaha Tani",
+        "nominal_anggaran": 54471988,
+        "nominal_realisasi": 54416000
+      },
+      {
+        "kode_rekening": "5.3.5.03",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Jalan - Bahan Baku/Material Jalan Usaha Tani",
+        "nominal_anggaran": 222193000,
+        "nominal_realisasi": 216796500
+      },
+      {
+        "kode_rekening": "5.2.7.03",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Bantuan Bangunan untuk Diserahkan kepada Masyarakat - RTLH",
+        "nominal_anggaran": 50000000,
+        "nominal_realisasi": 40000000
+      },
+      {
+        "kode_rekening": "5.3.7.02",
+        "kategori": "Infrastruktur",
+        "uraian": "Belanja Modal Irigasi/Embung/Drainase/dll - Upah Tenaga Kerja Sanitasi Pemukiman",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.7.03",
+        "kategori": "Kesehatan",
+        "uraian": "Belanja Bantuan Bangunan untuk Diserahkan kepada Masyarakat - Jamban/MCK Umum",
+        "nominal_anggaran": 10000000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Informasi Publik Desa",
+        "nominal_anggaran": 2625000,
+        "nominal_realisasi": 1295000
+      },
+      {
+        "kode_rekening": "5.2.5.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Operasional Perkantoran lainnya - Informasi Publik Desa",
+        "nominal_anggaran": 2919599,
+        "nominal_realisasi": 2500000
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Keamanan/Ketertiban",
+        "nominal_anggaran": 255000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Keamanan/Ketertiban",
+        "nominal_anggaran": 750000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.1.09",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut - Keamanan/Ketertiban (Linmas)",
+        "nominal_anggaran": 9000000,
+        "nominal_realisasi": 7900000
+      },
+      {
+        "kode_rekening": "5.2.2.04",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Jasa Honorarium Tenaga Ahli/Narasumber - Pelatihan Keamanan",
+        "nominal_anggaran": 400000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.2.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Jasa Honorarium Lainnya - Peningkatan Kapasitas Keamanan",
+        "nominal_anggaran": 7760000,
+        "nominal_realisasi": 7520000
+      },
+      {
+        "kode_rekening": "5.2.7.99",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Kesiapsiagaan/Tanggap Bencana",
+        "nominal_anggaran": 12569000,
+        "nominal_realisasi": 8300000
+      },
+      {
+        "kode_rekening": "5.2.7.99",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Festival Kesenian/HUT RI",
+        "nominal_anggaran": 7362600,
+        "nominal_realisasi": 7350000
+      },
+      {
+        "kode_rekening": "5.2.2.99",
+        "kategori": "Operasional Pemerintah Desa",
+        "uraian": "Belanja Jasa Honorarium Lainnya - Pembinaan LKMD/LPM/LPMD",
+        "nominal_anggaran": 4080000,
+        "nominal_realisasi": 4010000
+      },
+      {
+        "kode_rekening": "5.2.1.01",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Alat Tulis Kantor dan Benda Pos - Pembinaan PKK",
+        "nominal_anggaran": 350000,
+        "nominal_realisasi": 350000
+      },
+      {
+        "kode_rekening": "5.2.1.05",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Barang Cetak dan Penggandaan - Pembinaan PKK",
+        "nominal_anggaran": 300000,
+        "nominal_realisasi": 297000
+      },
+      {
+        "kode_rekening": "5.2.1.06",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Barang Konsumsi (Makan/Minum) - Pembinaan PKK",
+        "nominal_anggaran": 4350000,
+        "nominal_realisasi": 4350000
+      },
+      {
+        "kode_rekening": "5.2.1.09",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Pakaian Dinas/Seragam/Atribut - Pembinaan PKK",
+        "nominal_anggaran": 1500000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.2.3.01",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Perjalanan Dinas Dalam Kabupaten/Kota - Pembinaan PKK",
+        "nominal_anggaran": 1500000,
+        "nominal_realisasi": 1425000
+      },
+      {
+        "kode_rekening": "5.3.4.02",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Upah Tenaga Kerja Produksi Tanaman Pangan",
+        "nominal_anggaran": 33203000,
+        "nominal_realisasi": 33203000
+      },
+      {
+        "kode_rekening": "5.3.4.03",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Bahan Baku/Material Produksi Tanaman Pangan",
+        "nominal_anggaran": 86797000,
+        "nominal_realisasi": 82846800
+      },
+      {
+        "kode_rekening": "5.2.7.02",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Bantuan Mesin/Peralatan/Kendaraan untuk Diserahkan kepada Masyarakat - Peternakan",
+        "nominal_anggaran": 7312500,
+        "nominal_realisasi": 7312500
+      },
+      {
+        "kode_rekening": "5.2.7.05",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Bantuan Bibit Tanaman/Hewan/Ikan",
+        "nominal_anggaran": 63000000,
+        "nominal_realisasi": 63000000
+      },
+      {
+        "kode_rekening": "5.2.7.99",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Barang untuk Diserahkan kepada Masyarakat Lainnya - Peternakan",
+        "nominal_anggaran": 13004550,
+        "nominal_realisasi": 12965500
+      },
+      {
+        "kode_rekening": "5.3.4.02",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Upah Tenaga Kerja Kandang/Produksi Peternakan",
+        "nominal_anggaran": 11993900,
+        "nominal_realisasi": 6793500
+      },
+      {
+        "kode_rekening": "5.3.4.03",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Modal Gedung, Bangunan, Taman - Bahan Baku/Material Kandang/Produksi Peternakan",
+        "nominal_anggaran": 19689050,
+        "nominal_realisasi": 18981125
+      },
+      {
+        "kode_rekening": "5.2.1.99",
+        "kategori": "Pemberdayaan Masyarakat",
+        "uraian": "Belanja Barang Perlengkapan Lainnya - Pelatihan Pengelolaan BUM Desa",
+        "nominal_anggaran": 5000000,
+        "nominal_realisasi": 0
+      },
+      {
+        "kode_rekening": "5.4.1.01",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Tidak Terduga - Kegiatan Penanggulangan Bencana",
+        "nominal_anggaran": 10450400,
+        "nominal_realisasi": 7892000
+      },
+      {
+        "kode_rekening": "5.4.1.01",
+        "kategori": "Lainnya",
+        "uraian": "Belanja Tidak Terduga - Penanganan Keadaan Mendesak (BLT Desa)",
+        "nominal_anggaran": 18000000,
+        "nominal_realisasi": 18000000
+      }
+    ]
+  },
+  "validation_report": {
+    "is_valid": true,
+    "hard_violation_count": 0,
+    "warning_count": 0,
+    "total_penalty": 0.0,
+    "calculated_total_belanja": 2120883519,
+    "document_total_belanja": 2120883519,
+    "subtotal_difference": 0,
+    "logs": [
+      {
+        "rule_code": "R2_SUBTOTAL_CONSISTENCY",
+        "is_passed": true,
+        "penalty_score": 0.0,
+        "error_message": "Konsistensi subtotal valid (Total Belanja: Rp 2,120,883,519).",
+        "affected_item_index": null
+      }
+    ]
+  },
+  "confidence_result": {
+    "confidence_score": 98,
+    "score_validation": 100,
+    "score_llm": 95,
+    "score_ocr": 98,
+    "action": "auto_approved",
+    "routing_reason": "Confidence Score tinggi (98%) dan seluruh 5 aturan validasi lulus. Auto-Approved langsung diterbitkan ke publik."
+  }
+}
