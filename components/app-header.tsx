@@ -4,7 +4,6 @@ import Link from 'next/link'
 import { LogOut } from 'lucide-react'
 import { Logo } from '@/components/logo'
 import Swal from 'sweetalert2'
-
 import { useState, useEffect } from 'react'
 import { getActiveUserProfile, logoutUser, PRESET_USERS, UserProfile } from '@/lib/auth/user-store'
 
@@ -51,8 +50,6 @@ export function AppHeader() {
         <Link href="/dashboard" className="flex items-center gap-2">
           <Logo />
         </Link>
-
-
 
         {/* Right User Actions */}
         <div className="flex items-center gap-2.5 sm:gap-3">
