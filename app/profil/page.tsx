@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import Link from 'next/link'
 import { AppHeader } from '@/components/app-header'
 import {
@@ -20,32 +20,39 @@ import {
   Eye,
   Award,
   AlertCircle,
+  Briefcase,
+  KeyRound,
 } from 'lucide-react'
 import { Badge } from '@/components/ui/badge'
 import { Button } from '@/components/ui/button'
-
-type RoleType = 'warga' | 'bpd' | 'admin'
+import { getActiveUserProfile, PRESET_USERS, UserProfile, UserRole } from '@/lib/auth/user-store'
 
 export default function ProfilePage() {
   const [activeTab, setActiveTab] = useState<'identitas' | 'riwayat' | 'keamanan'>('identitas')
-  const [currentRole, setCurrentRole] = useState<RoleType>('warga')
+  const [userProfile, setUserProfile] = useState<UserProfile>(PRESET_USERS.warga)
   const [isAnonymousDefault, setIsAnonymousDefault] = useState(true)
   const [savedSuccess, setSavedSuccess] = useState(false)
 
-  // Profile data states
-  const [profileData, setProfileData] = useState({
-    nama: 'Warga Demo',
-    email: 'warga@demo.id',
-    nik: '331301******0002',
-    telepon: '+62 812-3456-7890',
-    desaDomisili: 'Desa Karanganyar',
-    kecamatan: 'Kecamatan Karanganyar',
-    kabupaten: 'Kabupaten Karanganyar',
-    provinsi: 'Jawa Tengah',
-    pekerjaan: 'Wiraswasta / Pemerhati Kebijakan Publik',
-    tanggalDaftar: '12 Januari 2024',
-    statusVerifikasi: 'Terverifikasi KTP (Terenkripsi SHA-256)',
+  // Profile editable fields
+  const [formData, setFormData] = useState({
+    nama: '',
+    email: '',
+    telepon: '',
+    desaDomisili: '',
+    pekerjaan: '',
   })
+
+  useEffect(() => {
+    const profile = getActiveUserProfile()
+    setUserProfile(profile)
+    setFormData({
+      nama: profile.nama,
+      email: profile.email,
+      telepon: profile.telepon,
+      desaDomisili: profile.desaDomisili,
+      pekerjaan: profile.jabatan,
+    })
+  }, [])
 
   const handleSave = (e: React.FormEvent) => {
     e.preventDefault()
@@ -53,38 +60,115 @@ export default function ProfilePage() {
     setTimeout(() => setSavedSuccess(false), 3000)
   }
 
-  const roleConfigs = {
+  const roleMeta: Record<UserRole, {
+    badge: string
+    badgeColor: string
+    heroDesc: string
+    credentialsBadge: string
+    credentialsDesc: string
+    quickActions: { label: string; href: string; icon: any; desc: string }[]
+    historyTitle: string
+    historyItems: { id: string; date: string; title: string; desc: string; status: string; statusColor: string; note: string }[]
+  }> = {
     warga: {
-      title: 'Warga / Pemantau Publik',
-      badge: 'Warga Terverifikasi',
-      color: 'bg-emerald-50 text-emerald-800 border-emerald-300',
-      desc: 'Memantau alokasi belanja desa, memeriksa transparansi proyek APBDes, dan berpartisipasi menyampaikan aspirasi/laporan partisipatif.',
-      quickLinks: [
-        { label: 'Lihat APBDes Desa Karanganyar', href: '/desa/karanganyar/apbdes', icon: FileText },
-        { label: 'Kirim Laporan / Aduan Baru', href: '/desa/karanganyar/lapor', icon: AlertCircle },
+      badge: 'Warga / Pemantau Terverifikasi',
+      badgeColor: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+      heroDesc: 'Akun warga desa untuk memantau alokasi APBDes, membaca infografis anggaran, dan mengirim aduan partisipatif.',
+      credentialsBadge: 'KTP Digital Terverifikasi',
+      credentialsDesc: 'Identitas kependudukan terenkripsi SHA-256 untuk menjamin keaslian aduan tanpa menghilangkan hak anonimitas pelapor.',
+      quickActions: [
+        { label: 'Pantau APBDes Desa', href: '/desa/karanganyar/apbdes', icon: Eye, desc: 'Lihat rincian 170+ pos belanja dan realisasi' },
+        { label: 'Kirim Laporan Warga', href: '/desa/karanganyar/lapor', icon: AlertCircle, desc: 'Kirim laporan temuan lapangan & foto bukti' },
+      ],
+      historyTitle: 'Riwayat Laporan & Partisipasi Warga',
+      historyItems: [
+        {
+          id: '#LAP-2024-001',
+          date: '18 Juni 2024',
+          title: 'Perbaikan Tutup Saluran Drainase RT 02 Dusun I',
+          desc: 'Terdapat beberapa titik plat beton penutup drainase yang retak akibat sering dilalui armada panen.',
+          status: 'Selesai',
+          statusColor: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+          note: 'Tanggapan Resmi: TPK telah mengganti plat beton pembesian baru pada 22 Juni 2024.',
+        },
+        {
+          id: '#LAP-2024-002',
+          date: '05 Agustus 2024',
+          title: 'Jadwal Timbangan Posyandu Balita RW 03',
+          desc: 'Mohon penambahan alat ukur infantometer digital agar pencatatan stunting balita lebih presisi.',
+          status: 'Ditindaklanjuti',
+          statusColor: 'bg-blue-100 text-blue-800 border-blue-300',
+          note: 'Tanggapan Resmi: Dimasukkan ke pengadaan Tahap 2 dan didistribusikan ke Bidan Desa.',
+        },
       ],
     },
     bpd: {
-      title: 'BPD & Auditor Lapangan',
-      badge: 'Badan Permusyawaratan Desa',
-      color: 'bg-blue-50 text-blue-800 border-blue-300',
-      desc: 'Melakukan fungsi pengawasan legislatif desa sesuai UU No. 6/2014, audit statistik Modified Z-Score/MAD, dan ekspor lembar kerja pengawasan.',
-      quickLinks: [
-        { label: 'Buka Portal Analisis Auditor', href: '/auditor', icon: Shield },
-        { label: 'Deteksi Anomali Hybrid Karanganyar', href: '/desa/karanganyar/benchmark', icon: Award },
+      badge: 'Badan Permusyawaratan Desa (BPD)',
+      badgeColor: 'bg-blue-100 text-blue-800 border-blue-300',
+      heroDesc: 'Kredensial pengawasan legislatif desa sesuai UU No. 6/2014 dengan akses ke modul Anomali Hybrid & Audit.',
+      credentialsBadge: 'Kredensial Resmi BPD (SK Bupati)',
+      credentialsDesc: 'Otorisasi pengawasan keuangan desa dengan akses penuh ke matriks anomali Modified Z-Score dan Isolation Forest.',
+      quickActions: [
+        { label: 'Portal Analisis Auditor', href: '/auditor', icon: Shield, desc: 'Breakdown analitik 4-layer & monitoring multi-desa' },
+        { label: 'Deteksi Anomali Hybrid', href: '/desa/karanganyar/benchmark', icon: Award, desc: 'Perbandingan statistik MAD vs 75k desa' },
+      ],
+      historyTitle: 'Log Aktivitas Pengawasan BPD',
+      historyItems: [
+        {
+          id: '#AUDIT-2024-04',
+          date: '15 Juli 2024',
+          title: 'Verifikasi Laporan Realisasi APBDes Semester I 2024',
+          desc: 'Pemeriksaan kepatuhan serapan anggaran 93.6% dan kesesuaian fisik pekerjaan rabat beton Dusun II.',
+          status: 'Terverifikasi',
+          statusColor: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+          note: 'Hasil Pengawasan: Seluruh pos anggaran dinyatakan wajar (CAS 0.08 / Low Risk).',
+        },
+        {
+          id: '#AUDIT-2024-02',
+          date: '20 Mei 2024',
+          title: 'Review Pengadaan Pupuk & Benih Jagung Poktan',
+          desc: 'Audit faktur dan berita acara serah terima bantuan sarana produksi pertanian Tahap 1.',
+          status: 'Selesai',
+          statusColor: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+          note: 'BAST Nomor 045/BAST-POKTAN/2024 telah sesuai dengan alokasi RKPDes.',
+        },
       ],
     },
     admin: {
-      title: 'Perangkat Desa / Administrator',
-      badge: 'Sekretariat / Bendahara Desa',
-      color: 'bg-amber-50 text-amber-800 border-amber-300',
-      desc: 'Mengunggah file PDF APBDes Siskeudes resmi, memverifikasi hasil ekstraksi AI, dan memberikan klarifikasi/Hak Jawab resmi atas laporan warga.',
-      quickLinks: [
-        { label: 'Upload PDF Siskeudes Baru', href: '/desa/karanganyar/upload', icon: FileText },
-        { label: 'Antrean Review Ekstraksi AI', href: '/admin/review-queue', icon: Clock },
+      badge: 'Administrator / Perangkat Desa',
+      badgeColor: 'bg-amber-100 text-amber-800 border-amber-300',
+      heroDesc: 'Kewenangan sekretariat desa untuk mengunggah dokumen Siskeudes, memvalidasi hasil AI, dan memberikan Hak Jawab resmi.',
+      credentialsBadge: 'Administrator Siskeudes Terakreditasi',
+      credentialsDesc: 'Otorisasi unggah berkas resmi APBDes, pengelolaan publikasi data, dan representasi resmi Pemerintah Desa.',
+      quickActions: [
+        { label: 'Upload PDF APBDes Siskeudes', href: '/desa/karanganyar/upload', icon: FileText, desc: 'Ekstraksi PDF otomatis & validasi Rule Engine' },
+        { label: 'Antrean Review Manual Dokumen', href: '/admin/review-queue', icon: Clock, desc: 'Audit dokumen dengan skor di bawah ambang' },
+      ],
+      historyTitle: 'Log Publikasi Dokumen & Hak Jawab Resmi',
+      historyItems: [
+        {
+          id: '#DOC-2024-01',
+          date: '10 Maret 2024',
+          title: 'Publikasi APBDes 2024 (Lampiran 1b Siskeudes 9 Halaman)',
+          desc: '172 Pos Belanja berhasil diparsing dan dipublikasikan dengan Confidence Score 98%.',
+          status: 'Auto-Approved',
+          statusColor: 'bg-emerald-100 text-emerald-800 border-emerald-300',
+          note: 'Validasi: 5 Rule Akuntansi Desa Lulus 100% tanpa selisih matematis.',
+        },
+        {
+          id: '#HAK-JAWAB-02',
+          date: '20 Mei 2024',
+          title: 'Klarifikasi Resmi Alokasi Bantuan Bibit Jagung',
+          desc: 'Penjelasan transparansi penyaluran bantuan pertanian kepada 4 Kelompok Tani.',
+          status: 'Terpublikasi',
+          statusColor: 'bg-blue-100 text-blue-800 border-blue-300',
+          note: 'Dokumen pendukung BAST telah diunggah ke portal dialog publik.',
+        },
       ],
     },
   }
+
+  const currentMeta = roleMeta[userProfile.role] || roleMeta.warga
 
   return (
     <div className="min-h-dvh bg-surface">
@@ -97,18 +181,18 @@ export default function ProfilePage() {
             Dasbor
           </Link>
           <ChevronRight className="size-3.5" />
-          <span className="font-semibold text-foreground">Profil Pengguna</span>
+          <span className="font-semibold text-foreground">Profil Akun ({userProfile.peran})</span>
         </nav>
 
         {/* Top Profile Header Card */}
         <div className="rounded-3xl border border-border bg-card p-6 sm:p-8 shadow-xs relative overflow-hidden mb-8">
-          <div className="absolute top-0 right-0 h-40 w-72 bg-gradient-to-bl from-primary/10 via-accent/10 to-transparent pointer-events-none" />
+          <div className="absolute top-0 right-0 h-44 w-80 bg-gradient-to-bl from-primary/10 via-accent/10 to-transparent pointer-events-none" />
 
           <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 relative z-10">
             <div className="flex items-center gap-4 sm:gap-6">
               <div className="relative">
                 <div className="flex size-20 sm:size-24 items-center justify-center rounded-2xl bg-gradient-to-br from-primary to-primary/80 text-primary-foreground font-heading text-3xl font-bold shadow-md shadow-primary/20">
-                  {profileData.nama[0]}
+                  {userProfile.avatar || userProfile.nama[0] || 'U'}
                 </div>
                 <div className="absolute -bottom-1 -right-1 flex size-6 items-center justify-center rounded-full bg-emerald-600 text-white shadow-xs" title="Akun Terverifikasi">
                   <CheckCircle2 className="size-3.5" />
@@ -118,81 +202,50 @@ export default function ProfilePage() {
               <div className="space-y-1">
                 <div className="flex flex-wrap items-center gap-2">
                   <h1 className="font-heading text-2xl sm:text-3xl font-bold text-foreground">
-                    {profileData.nama}
+                    {userProfile.nama}
                   </h1>
-                  <Badge className={`text-xs font-semibold ${roleConfigs[currentRole].color}`}>
-                    {roleConfigs[currentRole].badge}
+                  <Badge className={`text-xs font-semibold ${currentMeta.badgeColor}`}>
+                    {currentMeta.badge}
                   </Badge>
                 </div>
                 <p className="text-xs sm:text-sm text-muted-foreground flex items-center gap-2">
                   <Mail className="size-3.5" />
-                  {profileData.email}
+                  {userProfile.email}
                   <span className="text-border">•</span>
                   <MapPin className="size-3.5 text-primary" />
-                  {profileData.desaDomisili}, {profileData.kabupaten}
+                  {userProfile.desaDomisili}, {userProfile.kabupaten}
                 </p>
                 <p className="text-[11px] text-muted-foreground">
-                  Bergabung sejak {profileData.tanggalDaftar}
+                  Jabatan: <span className="font-semibold text-foreground">{userProfile.jabatan}</span> • Terdaftar sejak {userProfile.tanggalDaftar}
                 </p>
               </div>
             </div>
 
-            {/* Quick Action Button */}
-            <div className="flex sm:flex-col items-center sm:items-end gap-2 border-t sm:border-t-0 pt-4 sm:pt-0 border-border">
-              <Link href="/desa/karanganyar/apbdes">
-                <Button size="sm" className="rounded-xl shadow-xs gap-1.5 text-xs font-semibold">
-                  <Eye className="size-3.5" />
-                  Pantau APBDes
-                </Button>
-              </Link>
+            {/* Quick Primary Actions for this Role */}
+            <div className="flex flex-wrap sm:flex-col items-stretch gap-2 border-t sm:border-t-0 pt-4 sm:pt-0 border-border">
+              {currentMeta.quickActions.map((qa, idx) => (
+                <Link key={idx} href={qa.href}>
+                  <Button size="sm" variant={idx === 0 ? 'default' : 'outline'} className="rounded-xl shadow-xs gap-1.5 text-xs font-semibold w-full justify-start">
+                    <qa.icon className="size-3.5" />
+                    {qa.label}
+                  </Button>
+                </Link>
+              ))}
             </div>
           </div>
 
-          {/* Role Switcher Pill Bar (Demo Persona Switcher) */}
+          {/* Role Description Banner */}
           <div className="mt-6 pt-5 border-t border-border/70">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+            <div className="rounded-xl border border-border/80 bg-muted/30 p-3.5 flex items-start gap-3">
+              <Shield className="size-4 text-primary shrink-0 mt-0.5" />
               <div>
-                <span className="text-xs font-bold text-foreground uppercase tracking-wider block">
-                  Simulasi Peran / Persona Pengguna:
+                <span className="text-xs font-bold text-foreground block">
+                  Peran Akun Aktif: {userProfile.peran}
                 </span>
-                <p className="text-[11px] text-muted-foreground">
-                  {roleConfigs[currentRole].desc}
+                <p className="text-[11px] text-muted-foreground leading-relaxed">
+                  {currentMeta.heroDesc}
                 </p>
               </div>
-
-              <div className="flex items-center gap-1.5 bg-muted/60 p-1 rounded-2xl border border-border">
-                {(['warga', 'bpd', 'admin'] as RoleType[]).map((r) => (
-                  <button
-                    key={r}
-                    type="button"
-                    onClick={() => setCurrentRole(r)}
-                    className={`px-3 py-1.5 rounded-xl text-xs font-semibold transition-all cursor-pointer ${
-                      currentRole === r
-                        ? 'bg-card text-foreground shadow-xs border border-border/80'
-                        : 'text-muted-foreground hover:text-foreground'
-                    }`}
-                  >
-                    {r === 'warga' && '👥 Warga'}
-                    {r === 'bpd' && '⚖️ BPD / Auditor'}
-                    {r === 'admin' && '🏢 Admin Desa'}
-                  </button>
-                ))}
-              </div>
-            </div>
-
-            {/* Role Quick Links */}
-            <div className="mt-3 flex flex-wrap gap-2">
-              {roleConfigs[currentRole].quickLinks.map((ql, idx) => (
-                <Link
-                  key={idx}
-                  href={ql.href}
-                  className="inline-flex items-center gap-1.5 rounded-xl border border-border bg-card/80 hover:bg-muted px-3 py-1.5 text-xs font-medium text-foreground transition-colors shadow-2xs"
-                >
-                  <ql.icon className="size-3 text-primary" />
-                  {ql.label}
-                  <ArrowRight className="size-3 text-muted-foreground" />
-                </Link>
-              ))}
             </div>
           </div>
         </div>
@@ -209,7 +262,7 @@ export default function ProfilePage() {
             }`}
           >
             <User className="size-4" />
-            Identitas &amp; Domisili
+            Identitas &amp; Jabatan
           </button>
           <button
             type="button"
@@ -221,7 +274,7 @@ export default function ProfilePage() {
             }`}
           >
             <Clock className="size-4" />
-            Riwayat Partisipasi &amp; Laporan
+            {currentMeta.historyTitle}
           </button>
           <button
             type="button"
@@ -233,24 +286,24 @@ export default function ProfilePage() {
             }`}
           >
             <Lock className="size-4" />
-            Keamanan &amp; Privasi
+            Keamanan &amp; Kredensial
           </button>
         </div>
 
-        {/* TAB 1: IDENTITAS & DOMISILI */}
+        {/* TAB 1: IDENTITAS */}
         {activeTab === 'identitas' && (
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="md:col-span-2 rounded-2xl border border-border bg-card p-6 shadow-xs">
               <h2 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
                 <User className="size-4 text-primary" />
-                Data Profil &amp; Kependudukan
+                Data Profil Pengguna
               </h2>
 
               <form onSubmit={handleSave} className="space-y-4 text-xs">
                 {savedSuccess && (
                   <div className="p-3 rounded-xl bg-emerald-50 border border-emerald-200 text-emerald-800 flex items-center gap-2 animate-fade-in">
                     <CheckCircle2 className="size-4 text-emerald-600 shrink-0" />
-                    <span>Perubahan profil berhasil disimpan secara lokal!</span>
+                    <span>Perubahan profil berhasil disimpan!</span>
                   </div>
                 )}
 
@@ -259,8 +312,8 @@ export default function ProfilePage() {
                     <label className="font-semibold text-foreground">Nama Lengkap</label>
                     <input
                       type="text"
-                      value={profileData.nama}
-                      onChange={(e) => setProfileData({ ...profileData, nama: e.target.value })}
+                      value={formData.nama}
+                      onChange={(e) => setFormData({ ...formData, nama: e.target.value })}
                       className="w-full h-9 rounded-xl border border-input bg-background px-3 text-xs text-foreground outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                     />
                   </div>
@@ -269,8 +322,8 @@ export default function ProfilePage() {
                     <label className="font-semibold text-foreground">Alamat Email</label>
                     <input
                       type="email"
-                      value={profileData.email}
-                      onChange={(e) => setProfileData({ ...profileData, email: e.target.value })}
+                      value={formData.email}
+                      onChange={(e) => setFormData({ ...formData, email: e.target.value })}
                       className="w-full h-9 rounded-xl border border-input bg-background px-3 text-xs text-foreground outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                     />
                   </div>
@@ -280,7 +333,7 @@ export default function ProfilePage() {
                     <input
                       type="text"
                       disabled
-                      value={profileData.nik}
+                      value={userProfile.nik}
                       className="w-full h-9 rounded-xl border border-input bg-muted/60 px-3 text-xs text-muted-foreground cursor-not-allowed"
                     />
                   </div>
@@ -289,8 +342,8 @@ export default function ProfilePage() {
                     <label className="font-semibold text-foreground">Nomor WhatsApp / Kontak</label>
                     <input
                       type="text"
-                      value={profileData.telepon}
-                      onChange={(e) => setProfileData({ ...profileData, telepon: e.target.value })}
+                      value={formData.telepon}
+                      onChange={(e) => setFormData({ ...formData, telepon: e.target.value })}
                       className="w-full h-9 rounded-xl border border-input bg-background px-3 text-xs text-foreground outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                     />
                   </div>
@@ -299,8 +352,8 @@ export default function ProfilePage() {
                     <label className="font-semibold text-foreground">Desa Domisili</label>
                     <input
                       type="text"
-                      value={profileData.desaDomisili}
-                      onChange={(e) => setProfileData({ ...profileData, desaDomisili: e.target.value })}
+                      value={formData.desaDomisili}
+                      onChange={(e) => setFormData({ ...formData, desaDomisili: e.target.value })}
                       className="w-full h-9 rounded-xl border border-input bg-background px-3 text-xs text-foreground outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                     />
                   </div>
@@ -310,18 +363,18 @@ export default function ProfilePage() {
                     <input
                       type="text"
                       disabled
-                      value={`${profileData.kabupaten}, ${profileData.provinsi}`}
+                      value={`${userProfile.kabupaten}, ${userProfile.provinsi}`}
                       className="w-full h-9 rounded-xl border border-input bg-muted/60 px-3 text-xs text-muted-foreground cursor-not-allowed"
                     />
                   </div>
                 </div>
 
                 <div className="space-y-1.5">
-                  <label className="font-semibold text-foreground">Pekerjaan / Bidang Kepentingan</label>
+                  <label className="font-semibold text-foreground">Jabatan / Peran Resmi</label>
                   <input
                     type="text"
-                    value={profileData.pekerjaan}
-                    onChange={(e) => setProfileData({ ...profileData, pekerjaan: e.target.value })}
+                    value={formData.pekerjaan}
+                    onChange={(e) => setFormData({ ...formData, pekerjaan: e.target.value })}
                     className="w-full h-9 rounded-xl border border-input bg-background px-3 text-xs text-foreground outline-none focus:border-primary focus:ring-1 focus:ring-primary"
                   />
                 </div>
@@ -339,139 +392,105 @@ export default function ProfilePage() {
               <div className="rounded-2xl border border-border bg-card p-5 shadow-xs space-y-3">
                 <div className="flex items-center gap-2 text-primary font-bold text-xs uppercase tracking-wider">
                   <Shield className="size-4" />
-                  Status Kredensial
+                  Status Kredensial &amp; Otoritas
                 </div>
-                <div className="p-3 rounded-xl bg-muted/40 border border-border text-xs space-y-1.5">
+                <div className="p-3 rounded-xl bg-muted/40 border border-border text-xs space-y-2">
                   <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">KTP Digital</span>
+                    <span className="text-muted-foreground">Kredensial</span>
                     <span className="text-emerald-600 font-bold flex items-center gap-1">
-                      <CheckCircle2 className="size-3" /> Terverifikasi
+                      <CheckCircle2 className="size-3" /> {currentMeta.credentialsBadge}
                     </span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">Enkripsi NIK</span>
-                    <span className="font-mono text-[10px] text-foreground">SHA-256</span>
+                    <span className="text-muted-foreground">Tingkat Hak Akses</span>
+                    <span className="font-mono text-[11px] font-bold text-foreground">{userProfile.role.toUpperCase()} LEVEL</span>
                   </div>
                   <div className="flex items-center justify-between">
-                    <span className="text-muted-foreground">Hak Lapor Warga</span>
-                    <span className="text-primary font-semibold">Aktif</span>
+                    <span className="text-muted-foreground">Database Supabase</span>
+                    <span className="text-emerald-600 font-semibold">Tersinkronisasi</span>
                   </div>
                 </div>
                 <p className="text-[11px] text-muted-foreground leading-relaxed">
-                  Identitas Anda terhubung dengan verifikasi kependudukan desa untuk mencegah bot/spam, dengan opsi tetap anonim saat mengirim aduan.
+                  {currentMeta.credentialsDesc}
                 </p>
               </div>
 
               <div className="rounded-2xl border border-border bg-card p-5 shadow-xs space-y-3">
                 <h3 className="font-bold text-xs uppercase tracking-wider text-foreground">
-                  Desa yang Dipantau
+                  Pintasan Cepat Sesuai Peran
                 </h3>
                 <div className="space-y-2 text-xs">
-                  <Link
-                    href="/desa/karanganyar"
-                    className="flex items-center justify-between p-2.5 rounded-xl border border-border hover:bg-muted transition-colors"
-                  >
-                    <div className="flex items-center gap-2">
-                      <Building2 className="size-3.5 text-primary" />
-                      <span className="font-semibold text-foreground">Desa Karanganyar</span>
-                    </div>
-                    <Badge variant="outline" className="text-[10px]">Data Riil</Badge>
-                  </Link>
-                  <Link
-                    href="/desa/bojonegoro-nganti"
-                    className="flex items-center justify-between p-2.5 rounded-xl border border-border hover:bg-muted transition-colors"
-                  >
-                    <div className="flex items-center gap-2">
-                      <Building2 className="size-3.5 text-muted-foreground" />
-                      <span className="font-semibold text-foreground">Desa Nganti (Bojonegoro)</span>
-                    </div>
-                    <Badge variant="outline" className="text-[10px]">SIKD</Badge>
-                  </Link>
+                  {currentMeta.quickActions.map((qa, idx) => (
+                    <Link
+                      key={idx}
+                      href={qa.href}
+                      className="flex items-center justify-between p-2.5 rounded-xl border border-border hover:bg-muted transition-colors group"
+                    >
+                      <div className="flex items-center gap-2">
+                        <qa.icon className="size-3.5 text-primary" />
+                        <div>
+                          <span className="font-semibold text-foreground block group-hover:text-primary transition-colors">{qa.label}</span>
+                          <span className="text-[10px] text-muted-foreground">{qa.desc}</span>
+                        </div>
+                      </div>
+                      <ArrowRight className="size-3.5 text-muted-foreground group-hover:text-foreground transition-colors shrink-0" />
+                    </Link>
+                  ))}
                 </div>
               </div>
             </div>
           </div>
         )}
 
-        {/* TAB 2: RIWAYAT PARTISIPASI & LAPORAN */}
+        {/* TAB 2: RIWAYAT AKTIVITAS */}
         {activeTab === 'riwayat' && (
           <div className="space-y-6">
             <div className="rounded-2xl border border-border bg-card p-6 shadow-xs">
               <h2 className="font-heading text-lg font-bold text-foreground mb-4 flex items-center gap-2">
                 <FileText className="size-4 text-primary" />
-                Daftar Laporan &amp; Aduan Partisipatif Anda
+                {currentMeta.historyTitle}
               </h2>
 
               <div className="space-y-3">
-                <div className="p-4 rounded-xl border border-border bg-muted/20 hover:bg-muted/40 transition-colors space-y-2">
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div className="flex items-center gap-2">
-                      <Badge className="bg-emerald-100 text-emerald-800 border-emerald-300 text-[11px]">
-                        Selesai
-                      </Badge>
-                      <span className="font-mono text-xs font-bold text-foreground">#LAP-2024-001</span>
+                {currentMeta.historyItems.map((item, idx) => (
+                  <div key={idx} className="p-4 rounded-xl border border-border bg-muted/20 hover:bg-muted/40 transition-colors space-y-2">
+                    <div className="flex flex-wrap items-center justify-between gap-2">
+                      <div className="flex items-center gap-2">
+                        <Badge className={`text-[11px] ${item.statusColor}`}>
+                          {item.status}
+                        </Badge>
+                        <span className="font-mono text-xs font-bold text-foreground">{item.id}</span>
+                      </div>
+                      <span className="text-[11px] text-muted-foreground">{item.date}</span>
                     </div>
-                    <span className="text-[11px] text-muted-foreground">18 Juni 2024</span>
-                  </div>
 
-                  <h3 className="font-heading text-sm font-bold text-foreground">
-                    Perbaikan Tutup Saluran Drainase RT 02 Dusun I (Desa Karanganyar)
-                  </h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Terdapat beberapa titik plat beton penutup drainase yang retak akibat sering dilalui armada pengangkut hasil panen padi.
-                  </p>
+                    <h3 className="font-heading text-sm font-bold text-foreground">
+                      {item.title}
+                    </h3>
+                    <p className="text-xs text-muted-foreground leading-relaxed">
+                      {item.desc}
+                    </p>
 
-                  <div className="pt-2 border-t border-border/60 flex items-center justify-between text-xs">
-                    <span className="text-[11px] text-emerald-700 font-semibold flex items-center gap-1">
-                      <CheckCircle2 className="size-3.5" />
-                      Tanggapan Resmi: TPK telah mengganti plat beton pembesian baru (22 Juni 2024).
-                    </span>
-                    <Link href="/lapor/LAP-2024-001" className="text-primary font-semibold hover:underline inline-flex items-center gap-1">
-                      Lihat Detail <ExternalLink className="size-3" />
-                    </Link>
-                  </div>
-                </div>
-
-                <div className="p-4 rounded-xl border border-border bg-muted/20 hover:bg-muted/40 transition-colors space-y-2">
-                  <div className="flex flex-wrap items-center justify-between gap-2">
-                    <div className="flex items-center gap-2">
-                      <Badge className="bg-blue-100 text-blue-800 border-blue-300 text-[11px]">
-                        Ditindaklanjuti
-                      </Badge>
-                      <span className="font-mono text-xs font-bold text-foreground">#LAP-2024-002</span>
+                    <div className="pt-2 border-t border-border/60 flex items-center justify-between text-xs">
+                      <span className="text-[11px] text-foreground/80 font-medium flex items-center gap-1">
+                        <CheckCircle2 className="size-3.5 text-primary" />
+                        {item.note}
+                      </span>
                     </div>
-                    <span className="text-[11px] text-muted-foreground">05 Agustus 2024</span>
                   </div>
-
-                  <h3 className="font-heading text-sm font-bold text-foreground">
-                    Jadwal Timbangan &amp; Alat Posyandu Balita RW 03
-                  </h3>
-                  <p className="text-xs text-muted-foreground leading-relaxed">
-                    Mohon penambahan alat ukur infantometer digital agar pencatatan stunting balita lebih presisi.
-                  </p>
-
-                  <div className="pt-2 border-t border-border/60 flex items-center justify-between text-xs">
-                    <span className="text-[11px] text-blue-700 font-semibold flex items-center gap-1">
-                      <Clock className="size-3.5" />
-                      Tanggapan Resmi: Dimasukkan ke pengadaan Tahap 2 dan didistribusikan ke Bidan Desa.
-                    </span>
-                    <Link href="/lapor/LAP-2024-002" className="text-primary font-semibold hover:underline inline-flex items-center gap-1">
-                      Lihat Detail <ExternalLink className="size-3" />
-                    </Link>
-                  </div>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         )}
 
-        {/* TAB 3: KEAMANAN & PRIVASI */}
+        {/* TAB 3: KEAMANAN & KREDENSIAL */}
         {activeTab === 'keamanan' && (
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div className="rounded-2xl border border-border bg-card p-6 shadow-xs space-y-4">
               <h2 className="font-heading text-lg font-bold text-foreground flex items-center gap-2">
-                <Lock className="size-4 text-primary" />
-                Preferensi Privasi Laporan
+                <Shield className="size-4 text-primary" />
+                Pengaturan Privasi &amp; Notifikasi
               </h2>
 
               <div className="space-y-4 text-xs">
@@ -479,7 +498,7 @@ export default function ProfilePage() {
                   <div>
                     <span className="font-semibold text-foreground block">Mode Anonim Otomatis</span>
                     <p className="text-[11px] text-muted-foreground mt-0.5">
-                      Sembunyikan nama dan kontak Anda secara otomatis saat mengirim laporan/aduan anggaran baru.
+                      Sembunyikan identitas nama saat mengirimkan aduan ke publik (hanya admin/BPD yang melihat token anonim).
                     </p>
                   </div>
                   <input
@@ -492,9 +511,9 @@ export default function ProfilePage() {
 
                 <div className="flex items-start justify-between gap-4 p-3 rounded-xl border border-border bg-muted/20">
                   <div>
-                    <span className="font-semibold text-foreground block">Notifikasi Tanggapan Resmi</span>
+                    <span className="font-semibold text-foreground block">Notifikasi Email &amp; WhatsApp</span>
                     <p className="text-[11px] text-muted-foreground mt-0.5">
-                      Terima pemberitahuan saat Kepala Desa / Sekdes memberikan Hak Jawab resmi atas laporan Anda.
+                      Kirimkan pembaruan saat terjadi perubahan status dokumen atau klarifikasi baru.
                     </p>
                   </div>
                   <input
@@ -508,8 +527,8 @@ export default function ProfilePage() {
 
             <div className="rounded-2xl border border-border bg-card p-6 shadow-xs space-y-4">
               <h2 className="font-heading text-lg font-bold text-foreground flex items-center gap-2">
-                <Shield className="size-4 text-primary" />
-                Keamanan Akun
+                <KeyRound className="size-4 text-primary" />
+                Ubah Kata Sandi
               </h2>
 
               <div className="space-y-3 text-xs">
@@ -530,7 +549,7 @@ export default function ProfilePage() {
                   />
                 </div>
                 <div className="pt-2">
-                  <Button size="sm" variant="outline" className="rounded-xl text-xs">
+                  <Button size="sm" variant="outline" className="rounded-xl text-xs font-semibold">
                     Perbarui Kata Sandi
                   </Button>
                 </div>

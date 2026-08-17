@@ -4,6 +4,9 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { Eye, EyeOff, ArrowLeft, Leaf, User, Mail, Lock, Phone } from 'lucide-react'
 
+import { loginUserByEmail } from '@/lib/auth/user-store'
+import { supabase } from '@/lib/supabase/client'
+
 export default function AuthPage() {
   const [isRegister, setIsRegister] = useState(false)
   const [showPw, setShowPw] = useState(false)
@@ -18,13 +21,22 @@ export default function AuthPage() {
   const [kontakReg, setKontakReg] = useState('')
   const [pwReg, setPwReg] = useState('')
 
-  const handleLogin = (e: React.FormEvent) => {
+  const handleLogin = async (e: React.FormEvent) => {
     e.preventDefault()
+    loginUserByEmail(email)
+    if (supabase) {
+      try {
+        await supabase.auth.signInWithPassword({ email, password })
+      } catch (err) {
+        console.warn('Supabase auth sign in error (falling back to local session):', err)
+      }
+    }
     window.location.href = '/dashboard'
   }
 
-  const handleRegister = (e: React.FormEvent) => {
+  const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault()
+    loginUserByEmail(emailReg)
     window.location.href = '/dashboard'
   }
 

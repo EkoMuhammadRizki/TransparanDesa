@@ -5,12 +5,21 @@ import { LogOut } from 'lucide-react'
 import { Logo } from '@/components/logo'
 import Swal from 'sweetalert2'
 
-const user = {
-  nama: 'Warga Demo',
-  peran: 'Warga / Pemantau',
-}
+import { useState, useEffect } from 'react'
+import { getActiveUserProfile, logoutUser, PRESET_USERS, UserProfile } from '@/lib/auth/user-store'
 
 export function AppHeader() {
+  const [currentUser, setCurrentUser] = useState<UserProfile>(PRESET_USERS.warga)
+
+  useEffect(() => {
+    setCurrentUser(getActiveUserProfile())
+    const handleAuthChange = () => {
+      setCurrentUser(getActiveUserProfile())
+    }
+    window.addEventListener('auth_state_change', handleAuthChange)
+    return () => window.removeEventListener('auth_state_change', handleAuthChange)
+  }, [])
+
   const handleLogout = (e: React.MouseEvent) => {
     e.preventDefault()
     Swal.fire({
@@ -30,6 +39,7 @@ export function AppHeader() {
       },
     }).then((result) => {
       if (result.isConfirmed) {
+        logoutUser()
         window.location.href = '/'
       }
     })
@@ -52,13 +62,13 @@ export function AppHeader() {
             className="flex items-center gap-2.5 rounded-xl border border-border bg-card px-3 py-1.5 hover:border-primary/50 hover:bg-muted/60 transition-all shadow-2xs group cursor-pointer"
           >
             <div className="flex size-7 items-center justify-center rounded-full bg-primary text-primary-foreground text-xs font-bold shadow-xs group-hover:scale-105 transition-transform">
-              {user.nama[0]}
+              {currentUser.avatar || currentUser.nama[0] || 'U'}
             </div>
             <div className="hidden sm:block text-left">
               <p className="text-xs font-semibold text-foreground group-hover:text-primary transition-colors leading-none">
-                {user.nama}
+                {currentUser.nama}
               </p>
-              <p className="text-[10px] text-muted-foreground">{user.peran}</p>
+              <p className="text-[10px] text-muted-foreground">{currentUser.peran}</p>
             </div>
           </Link>
 
